@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "mustang68",
+  "name": "Mustang 1968",
+  "world": { "width": 0.5, "length": 300 },
+  "baseStats": { "acc": 10, "vel": 10, "ade": 12, "frn": 10, "dir": 15 },
+  "flagsDefault": { "fumaca": true, "falhando": true },
+  "views": {
+    "rear": { "size": [320, 200], "anchor": [0.5, 1.0], "artScale": 2, "bodyWidth": 280,
+              "points": { "escapamentoEsq": [72, 176], "escapamentoDir": [248, 176], "lanternaEsq": [67, 126], "lanternaDir": [253, 126] } },
+    "side": { "size": [640, 240], "anchor": [0.5, 0.9], "artScale": 2,
+              "points": { "escapamento": [30, 200], "rodaTras": [150, 180], "rodaFrente": [482, 180] } }
+  },
+  "layers": [
+    { "id": "sombra",      "z": 0,   "default": "base" },
+    { "id": "neon",        "z": 5,   "default": null },
+    { "id": "pneus",       "z": 10,  "default": "careca" },
+    { "id": "rodas",       "z": 20,  "default": "enferrujada" },
+    { "id": "carroceria",  "z": 30,  "default": "base" },
+    { "id": "pintura",     "z": 40,  "default": "desbotada" },
+    { "id": "ferrugem",    "z": 50,  "default": "ferrugem" },
+    { "id": "amassados",   "z": 60,  "default": "amassado" },
+    { "id": "faixas",      "z": 70,  "default": null },
+    { "id": "adesivos",    "z": 80,  "default": null },
+    { "id": "vidros",      "z": 90,  "default": "trincado" },
+    { "id": "capo",        "z": 100, "default": null },
+    { "id": "escapamento", "z": 110, "default": "furado" },
+    { "id": "parachoques", "z": 120, "default": "amassado" },
+    { "id": "farois",      "z": 130, "default": "trincado" },
+    { "id": "aero",        "z": 140, "default": null },
+    { "id": "aerofolio",   "z": 150, "default": null },
+    { "id": "luzes",       "z": 160, "default": null }
+  ],
+  "customUnlockRequires": ["fer_1", "fun_1", "pin_1"]
+}

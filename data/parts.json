@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "slots": [
+    { "id": "ferrugem",     "category": "restauracao", "label": "Ferrugem",       "icon": "ico.ferrugem" },
+    { "id": "funilaria",    "category": "restauracao", "label": "Funilaria",      "icon": "ico.funilaria" },
+    { "id": "vidros",       "category": "restauracao", "label": "Vidros",         "icon": "ico.vidros" },
+    { "id": "farois",       "category": "restauracao", "label": "Faróis",         "icon": "ico.farois" },
+    { "id": "parachoques",  "category": "restauracao", "label": "Para-choques",   "icon": "ico.parachoques" },
+    { "id": "rodas",        "category": "restauracao", "label": "Rodas",          "icon": "ico.rodas" },
+    { "id": "revisao",      "category": "restauracao", "label": "Revisão",        "icon": "ico.revisao" },
+    { "id": "pintura",      "category": "restauracao", "label": "Pintura",        "icon": "ico.pintura" },
+    { "id": "motor",        "category": "desempenho",  "label": "Motor",          "icon": "ico.motor" },
+    { "id": "inducao",      "category": "desempenho",  "label": "Turbo",          "icon": "ico.inducao" },
+    { "id": "cambio",       "category": "desempenho",  "label": "Câmbio",         "icon": "ico.cambio" },
+    { "id": "escapamento",  "category": "desempenho",  "label": "Escapamento",    "icon": "ico.escapamento" },
+    { "id": "pneus",        "category": "desempenho",  "label": "Pneus",          "icon": "ico.pneus" },
+    { "id": "suspensao",    "category": "desempenho",  "label": "Suspensão",      "icon": "ico.suspensao" },
+    { "id": "freios",       "category": "desempenho",  "label": "Freios",         "icon": "ico.freios" },
+    { "id": "aero",         "category": "desempenho",  "label": "Aerodinâmica",   "icon": "ico.aero" },
+    { "id": "c_rodas",      "category": "estetica",    "label": "Rodas",          "icon": "ico.c_rodas" },
+    { "id": "c_faixas",     "category": "estetica",    "label": "Faixas",         "icon": "ico.c_faixas" },
+    { "id": "c_aerofolio",  "category": "estetica",    "label": "Aerofólio",      "icon": "ico.c_aerofolio" },
+    { "id": "c_luzes",      "category": "estetica",    "label": "Luzes",          "icon": "ico.c_luzes" },
+    { "id": "c_adesivos",   "category": "estetica",    "label": "Adesivos",       "icon": "ico.c_adesivos" },
+    { "id": "c_cor",        "category": "estetica",    "label": "Cor",            "icon": "ico.c_cor" }
+  ],
+  "parts": [
+    { "id": "fer_0", "slot": "ferrugem", "tier": 0, "name": "Cheio de ferrugem", "desc": "Manchas de ferrugem nas portas e rodas.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "fer_1", "slot": "ferrugem", "tier": 1, "name": "Remover ferrugem", "desc": "Lixa, tratamento e adeus ferrugem!", "price": 250, "requires": [], "stats": { "ade": 1, "frn": 1 }, "visual": [{ "layer": "ferrugem", "variant": null, "priority": 10 }], "flags": {} },
+
+    { "id": "fun_0", "slot": "funilaria", "tier": 0, "name": "Amassado", "desc": "Portas e para-lamas amassados.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "fun_1", "slot": "funilaria", "tier": 1, "name": "Funilaria", "desc": "Desamassa a lataria toda.", "price": 350, "requires": [], "stats": { "vel": 1, "dir": 2 }, "visual": [{ "layer": "amassados", "variant": null, "priority": 10 }], "flags": {} },
+
+    { "id": "vid_0", "slot": "vidros", "tier": 0, "name": "Vidros trincados", "desc": "Sujos e trincados.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "vid_1", "slot": "vidros", "tier": 1, "name": "Vidros novos", "desc": "Para enxergar bem a pista.", "price": 120, "requires": [], "stats": { "dir": 1 }, "visual": [{ "layer": "vidros", "variant": "limpo", "priority": 10 }], "flags": {} },
+
+    { "id": "far_0", "slot": "farois", "tier": 0, "name": "Farol trincado", "desc": "Farol e lanterna quebrados.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "far_1", "slot": "farois", "tier": 1, "name": "Faróis e lanternas", "desc": "Faróis e lanternas novos, brilhando.", "price": 120, "requires": [], "stats": { "dir": 1 }, "visual": [{ "layer": "farois", "variant": "novo", "priority": 10 }], "flags": {} },
+
+    { "id": "pch_0", "slot": "parachoques", "tier": 0, "name": "Para-choque amassado", "desc": "Torto e sem brilho.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "pch_1", "slot": "parachoques", "tier": 1, "name": "Para-choques cromados", "desc": "Cromado de espelho!", "price": 300, "requires": [], "stats": { "frn": 1 }, "visual": [{ "layer": "parachoques", "variant": "cromado", "priority": 10 }], "flags": {} },
+
+    { "id": "rod_0", "slot": "rodas", "tier": 0, "name": "Rodas enferrujadas", "desc": "Rodas de aço velhas.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "rod_1", "slot": "rodas", "tier": 1, "name": "Rodas originais", "desc": "Rodas restauradas com calotas.", "price": 300, "requires": [], "stats": { "ade": 2, "dir": 2 }, "visual": [{ "layer": "rodas", "variant": "original", "priority": 10 }], "flags": {} },
+
+    { "id": "rev_0", "slot": "revisao", "tier": 0, "name": "Motor cansado", "desc": "Falhando e soltando fumaça.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "rev_1", "slot": "revisao", "tier": 1, "name": "Revisão do motor", "desc": "Velas, filtro e óleo. Chega de fumaça!", "price": 250, "requires": [], "stats": { "acc": 4 }, "visual": [], "flags": { "fumaca": false, "falhando": false } },
+
+    { "id": "pin_0", "slot": "pintura", "tier": 0, "name": "Pintura desbotada", "desc": "Preto fosco e desbotado.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "pin_1", "slot": "pintura", "tier": 1, "name": "Pintura preta", "desc": "Preto novinho. Precisa tirar a ferrugem e desamassar antes.", "price": 600, "requires": ["fer_1", "fun_1"], "stats": { "vel": 1 }, "visual": [{ "layer": "pintura", "variant": "preta", "priority": 10 }], "flags": {} },
+    { "id": "pin_2", "slot": "pintura", "tier": 2, "name": "Polimento e verniz", "desc": "Preto brilhante de dar inveja.", "price": 900, "requires": [], "stats": { "vel": 1 }, "visual": [{ "layer": "pintura", "variant": "preta_brilhante", "priority": 20 }], "flags": {} },
+
+    { "id": "mot_0", "slot": "motor", "tier": 0, "name": "6 cilindros 200", "desc": "O motor original. Fraquinho.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {}, "engineProfile": "i6_200" },
+    { "id": "mot_1", "slot": "motor", "tier": 1, "name": "V8 289", "desc": "Primeiro V8! Ronco grave.", "price": 900, "requires": [], "stats": { "acc": 8, "vel": 8 }, "visual": [], "flags": {}, "engineProfile": "v8_289" },
+    { "id": "mot_2", "slot": "motor", "tier": 2, "name": "V8 302", "desc": "Mais forte e mais rápido.", "price": 2200, "requires": [], "stats": { "acc": 10, "vel": 10 }, "visual": [], "flags": {}, "engineProfile": "v8_302" },
+    { "id": "mot_3", "slot": "motor", "tier": 3, "name": "V8 390", "desc": "Motor grande com tomada de ar.", "price": 4500, "requires": [], "stats": { "acc": 12, "vel": 12 }, "visual": [{ "layer": "capo", "variant": "tomada_ar", "priority": 10 }], "flags": {}, "engineProfile": "v8_390" },
+    { "id": "mot_4", "slot": "motor", "tier": 4, "name": "V8 428", "desc": "O mais bravo de todos.", "price": 8000, "requires": [], "stats": { "acc": 14, "vel": 14 }, "visual": [{ "layer": "capo", "variant": "tomada_ar", "priority": 10 }], "flags": {}, "engineProfile": "v8_428" },
+
+    { "id": "ind_0", "slot": "inducao", "tier": 0, "name": "Sem turbo", "desc": "Aspirado.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {}, "induction": "none" },
+    { "id": "ind_1", "slot": "inducao", "tier": 1, "name": "Turbo", "desc": "Assobia e empurra! Precisa do V8 390.", "price": 3500, "requires": ["mot_3"], "stats": { "acc": 8, "vel": 5 }, "visual": [{ "layer": "capo", "variant": "tomada_ar", "priority": 20 }], "flags": {}, "induction": "turbo" },
+    { "id": "ind_2", "slot": "inducao", "tier": 2, "name": "Compressor", "desc": "Compressor saindo do capô! Precisa do V8 428.", "price": 6000, "requires": ["mot_4"], "stats": { "acc": 9, "vel": 6 }, "visual": [{ "layer": "capo", "variant": "compressor", "priority": 30 }], "flags": {}, "induction": "compressor" },
+
+    { "id": "cam_0", "slot": "cambio", "tier": 0, "name": "3 marchas", "desc": "Câmbio original.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {}, "gears": 3 },
+    { "id": "cam_1", "slot": "cambio", "tier": 1, "name": "4 marchas", "desc": "Uma marcha a mais.", "price": 500, "requires": [], "stats": { "acc": 4, "vel": 3 }, "visual": [], "flags": {}, "gears": 4 },
+    { "id": "cam_2", "slot": "cambio", "tier": 2, "name": "Câmbio esportivo", "desc": "Trocas rápidas.", "price": 1500, "requires": [], "stats": { "acc": 6, "vel": 4 }, "visual": [], "flags": {}, "gears": 4 },
+    { "id": "cam_3", "slot": "cambio", "tier": 3, "name": "Câmbio de corrida", "desc": "5 marchas de pista.", "price": 3500, "requires": [], "stats": { "acc": 6, "vel": 5 }, "visual": [], "flags": {}, "gears": 5 },
+
+    { "id": "esc_0", "slot": "escapamento", "tier": 0, "name": "Escapamento furado", "desc": "Barulhento e torto.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {}, "exhaust": 0 },
+    { "id": "esc_1", "slot": "escapamento", "tier": 1, "name": "Escapamento novo", "desc": "Sem furos.", "price": 200, "requires": [], "stats": { "acc": 1, "vel": 2 }, "visual": [{ "layer": "escapamento", "variant": "simples", "priority": 10 }], "flags": {}, "exhaust": 1 },
+    { "id": "esc_2", "slot": "escapamento", "tier": 2, "name": "Escapamento duplo", "desc": "Duas saídas, ronco forte.", "price": 800, "requires": [], "stats": { "acc": 1, "vel": 2 }, "visual": [{ "layer": "escapamento", "variant": "duplo", "priority": 20 }], "flags": {}, "exhaust": 2 },
+    { "id": "esc_3", "slot": "escapamento", "tier": 3, "name": "Escapamento esportivo", "desc": "Ponteiras grossas.", "price": 2000, "requires": [], "stats": { "acc": 2, "vel": 3 }, "visual": [{ "layer": "escapamento", "variant": "esportivo", "priority": 30 }], "flags": {}, "exhaust": 3 },
+
+    { "id": "pne_0", "slot": "pneus", "tier": 0, "name": "Pneus carecas", "desc": "Escorregam muito.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "pne_1", "slot": "pneus", "tier": 1, "name": "Pneus novos", "desc": "Grudam bem mais no chão.", "price": 180, "requires": [], "stats": { "ade": 8, "frn": 2, "dir": 4 }, "visual": [{ "layer": "pneus", "variant": "novo", "priority": 10 }], "flags": {} },
+    { "id": "pne_2", "slot": "pneus", "tier": 2, "name": "Pneus esportivos", "desc": "Mais largos.", "price": 900, "requires": [], "stats": { "ade": 10, "frn": 3, "dir": 4 }, "visual": [{ "layer": "pneus", "variant": "esportivo", "priority": 20 }], "flags": {} },
+    { "id": "pne_3", "slot": "pneus", "tier": 3, "name": "Pneus de corrida", "desc": "Lisos e grudentos.", "price": 2600, "requires": [], "stats": { "ade": 12, "frn": 3, "dir": 4 }, "visual": [{ "layer": "pneus", "variant": "slick", "priority": 30 }], "flags": {} },
+
+    { "id": "sus_0", "slot": "suspensao", "tier": 0, "name": "Suspensão cansada", "desc": "Balança feito barco.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "sus_1", "slot": "suspensao", "tier": 1, "name": "Suspensão nova", "desc": "Para de balançar.", "price": 400, "requires": [], "stats": { "ade": 6, "dir": 12 }, "visual": [], "flags": {} },
+    { "id": "sus_2", "slot": "suspensao", "tier": 2, "name": "Suspensão esportiva", "desc": "Mais baixa e firme.", "price": 1400, "requires": [], "stats": { "ade": 8, "dir": 14 }, "visual": [], "flags": {} },
+    { "id": "sus_3", "slot": "suspensao", "tier": 3, "name": "Suspensão de corrida", "desc": "Curvas no trilho.", "price": 3200, "requires": [], "stats": { "ade": 10, "dir": 16 }, "visual": [], "flags": {} },
+
+    { "id": "fre_0", "slot": "freios", "tier": 0, "name": "Freio a tambor", "desc": "Demora para parar.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "fre_1", "slot": "freios", "tier": 1, "name": "Disco na frente", "desc": "Freia bem melhor.", "price": 300, "requires": [], "stats": { "frn": 18 }, "visual": [], "flags": {} },
+    { "id": "fre_2", "slot": "freios", "tier": 2, "name": "Disco nas 4 rodas", "desc": "Para rapidinho.", "price": 1200, "requires": [], "stats": { "frn": 22 }, "visual": [], "flags": {} },
+    { "id": "fre_3", "slot": "freios", "tier": 3, "name": "Freio de corrida", "desc": "Freia na última hora.", "price": 3000, "requires": [], "stats": { "frn": 30 }, "visual": [], "flags": {} },
+
+    { "id": "aer_0", "slot": "aero", "tier": 0, "name": "Original", "desc": "Sem peças aerodinâmicas.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "aer_1", "slot": "aero", "tier": 1, "name": "Defletor dianteiro", "desc": "Gruda a frente no chão.", "price": 1500, "requires": [], "stats": { "vel": 4, "ade": 10, "dir": 5 }, "visual": [{ "layer": "aero", "variant": "defletor", "priority": 10 }], "flags": {} },
+    { "id": "aer_2", "slot": "aero", "tier": 2, "name": "Kit aerodinâmico", "desc": "Saias laterais e defletor.", "price": 3500, "requires": [], "stats": { "vel": 4, "ade": 11, "dir": 5 }, "visual": [{ "layer": "aero", "variant": "kit", "priority": 20 }], "flags": {} },
+
+    { "id": "c_rod_cinco",   "slot": "c_rodas", "tier": 1, "name": "Rodas cinco raios", "desc": "Clássicas de corrida.", "price": 600, "requires": [], "stats": {}, "visual": [{ "layer": "rodas", "variant": "cinco_raios", "priority": 100 }], "flags": {} },
+    { "id": "c_rod_cromo",   "slot": "c_rodas", "tier": 1, "name": "Rodas cromadas", "desc": "Brilham no sol.", "price": 800, "requires": [], "stats": {}, "visual": [{ "layer": "rodas", "variant": "cromada", "priority": 100 }], "flags": {} },
+    { "id": "c_rod_raiada",  "slot": "c_rodas", "tier": 1, "name": "Rodas raiadas", "desc": "Muitos raios finos.", "price": 1000, "requires": [], "stats": {}, "visual": [{ "layer": "rodas", "variant": "raiada", "priority": 100 }], "flags": {} },
+    { "id": "c_rod_preta",   "slot": "c_rodas", "tier": 1, "name": "Rodas pretas", "desc": "Tudo preto, estilo bravo.", "price": 1200, "requires": [], "stats": {}, "visual": [{ "layer": "rodas", "variant": "preta", "priority": 100 }], "flags": {} },
+
+    { "id": "c_fai_branca",  "slot": "c_faixas", "tier": 1, "name": "Faixas brancas", "desc": "Duas faixas no capô e teto.", "price": 400, "requires": [], "stats": {}, "visual": [{ "layer": "faixas", "variant": "dupla_branca", "priority": 100 }], "flags": {} },
+    { "id": "c_fai_vermelha","slot": "c_faixas", "tier": 1, "name": "Faixas vermelhas", "desc": "Duas faixas vermelhas.", "price": 500, "requires": [], "stats": {}, "visual": [{ "layer": "faixas", "variant": "dupla_vermelha", "priority": 100 }], "flags": {} },
+    { "id": "c_fai_lateral", "slot": "c_faixas", "tier": 1, "name": "Faixa lateral", "desc": "Faixa na lateral do carro.", "price": 600, "requires": [], "stats": {}, "visual": [{ "layer": "faixas", "variant": "lateral", "priority": 100 }], "flags": {} },
+    { "id": "c_fai_dourada", "slot": "c_faixas", "tier": 1, "name": "Faixas douradas", "desc": "Faixas cor de ouro.", "price": 800, "requires": [], "stats": {}, "visual": [{ "layer": "faixas", "variant": "dupla_dourada", "priority": 100 }], "flags": {} },
+
+    { "id": "c_aer_duck",    "slot": "c_aerofolio", "tier": 1, "name": "Aerofólio rabo de pato", "desc": "Pequeno e elegante.", "price": 700, "requires": [], "stats": {}, "visual": [{ "layer": "aerofolio", "variant": "rabo_de_pato", "priority": 100 }], "flags": {} },
+    { "id": "c_aer_asa",     "slot": "c_aerofolio", "tier": 1, "name": "Aerofólio alto", "desc": "Asa grande de corrida.", "price": 1500, "requires": [], "stats": {}, "visual": [{ "layer": "aerofolio", "variant": "asa_alta", "priority": 100 }], "flags": {} },
+
+    { "id": "c_luz_aux",     "slot": "c_luzes", "tier": 1, "name": "Faróis auxiliares", "desc": "Dois faróis extras na frente.", "price": 500, "requires": [], "stats": {}, "visual": [{ "layer": "luzes", "variant": "auxiliares", "priority": 100 }], "flags": {} },
+    { "id": "c_luz_neon",    "slot": "c_luzes", "tier": 1, "name": "Neon azul", "desc": "Luz azul embaixo do carro.", "price": 1200, "requires": [], "stats": {}, "visual": [{ "layer": "neon", "variant": "azul", "priority": 100 }], "flags": {} },
+
+    { "id": "c_ade_numero",  "slot": "c_adesivos", "tier": 1, "name": "Número de corrida", "desc": "Número 68 nas portas.", "price": 300, "requires": [], "stats": {}, "visual": [{ "layer": "adesivos", "variant": "numero_68", "priority": 100 }], "flags": {} },
+    { "id": "c_ade_raio",    "slot": "c_adesivos", "tier": 1, "name": "Raio", "desc": "Um raio na lateral.", "price": 500, "requires": [], "stats": {}, "visual": [{ "layer": "adesivos", "variant": "raio", "priority": 100 }], "flags": {} },
+    { "id": "c_ade_chamas",  "slot": "c_adesivos", "tier": 1, "name": "Chamas", "desc": "Chamas saindo da frente.", "price": 600, "requires": [], "stats": {}, "visual": [{ "layer": "adesivos", "variant": "chamas", "priority": 100 }], "flags": {} },
+
+    { "id": "c_cor_preta",    "slot": "c_cor", "tier": 1, "name": "Preto da família", "desc": "A cor original do nosso Mustang.", "price": 0, "requires": ["pin_2"], "stats": {}, "visual": [{ "layer": "pintura", "variant": "preta_brilhante", "priority": 100 }], "flags": {} },
+    { "id": "c_cor_vermelha", "slot": "c_cor", "tier": 1, "name": "Vermelho", "desc": "Vermelho brilhante.", "price": 1000, "requires": ["pin_2"], "stats": {}, "visual": [{ "layer": "pintura", "variant": "vermelha", "priority": 100 }], "flags": {} },
+    { "id": "c_cor_azul",     "slot": "c_cor", "tier": 1, "name": "Azul", "desc": "Azul metálico.", "price": 1000, "requires": ["pin_2"], "stats": {}, "visual": [{ "layer": "pintura", "variant": "azul", "priority": 100 }], "flags": {} },
+    { "id": "c_cor_verde",    "slot": "c_cor", "tier": 1, "name": "Verde", "desc": "Verde escuro clássico.", "price": 1000, "requires": ["pin_2"], "stats": {}, "visual": [{ "layer": "pintura", "variant": "verde", "priority": 100 }], "flags": {} },
+    { "id": "c_cor_branca",   "slot": "c_cor", "tier": 1, "name": "Branco", "desc": "Branco com tudo cromado.", "price": 1000, "requires": ["pin_2"], "stats": {}, "visual": [{ "layer": "pintura", "variant": "branca", "priority": 100 }], "flags": {} }
+  ]
+}

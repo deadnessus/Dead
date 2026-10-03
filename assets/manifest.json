@@ -1,0 +1,11989 @@
+{
+ "schemaVersion": 1,
+ "images": {
+  "car.rear.adesivos.chamas": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/adesivos__chamas.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       22,
+       170
+      ],
+      [
+       30,
+       150
+      ],
+      [
+       36,
+       162
+      ],
+      [
+       44,
+       146
+      ],
+      [
+       50,
+       170
+      ]
+     ],
+     "fill": "#ff7a1a"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       298,
+       170
+      ],
+      [
+       290,
+       150
+      ],
+      [
+       284,
+       162
+      ],
+      [
+       276,
+       146
+      ],
+      [
+       270,
+       170
+      ]
+     ],
+     "fill": "#ff7a1a"
+    }
+   ]
+  },
+  "car.side.adesivos.chamas": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/adesivos__chamas.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       608,
+       146
+      ],
+      [
+       520,
+       140
+      ],
+      [
+       560,
+       152
+      ],
+      [
+       480,
+       150
+      ],
+      [
+       540,
+       162
+      ],
+      [
+       470,
+       170
+      ],
+      [
+       560,
+       172
+      ],
+      [
+       520,
+       184
+      ],
+      [
+       608,
+       184
+      ]
+     ],
+     "fill": "#ff7a1a"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       608,
+       154
+      ],
+      [
+       560,
+       152
+      ],
+      [
+       580,
+       164
+      ],
+      [
+       550,
+       174
+      ],
+      [
+       608,
+       176
+      ]
+     ],
+     "fill": "#ffd21f"
+    }
+   ]
+  },
+  "car.rear.adesivos.numero_68": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/adesivos__numero_68.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 160,
+     "y": 103,
+     "r": 8,
+     "fill": "#ffffff"
+    },
+    {
+     "t": "text",
+     "x": 160,
+     "y": 103,
+     "text": "68",
+     "size": 9,
+     "fill": "#000000"
+    }
+   ]
+  },
+  "car.side.adesivos.numero_68": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/adesivos__numero_68.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 300,
+     "y": 160,
+     "r": 22,
+     "fill": "#ffffff"
+    },
+    {
+     "t": "text",
+     "x": 300,
+     "y": 160,
+     "text": "68",
+     "size": 24,
+     "fill": "#000000"
+    }
+   ]
+  },
+  "car.rear.adesivos.raio": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/adesivos__raio.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       24,
+       150
+      ],
+      [
+       40,
+       142
+      ],
+      [
+       34,
+       150
+      ],
+      [
+       50,
+       144
+      ],
+      [
+       30,
+       156
+      ]
+     ],
+     "fill": "#ffd21f"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       296,
+       150
+      ],
+      [
+       280,
+       142
+      ],
+      [
+       286,
+       150
+      ],
+      [
+       270,
+       144
+      ],
+      [
+       290,
+       156
+      ]
+     ],
+     "fill": "#ffd21f"
+    }
+   ]
+  },
+  "car.side.adesivos.raio": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/adesivos__raio.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       200,
+       146
+      ],
+      [
+       300,
+       160
+      ],
+      [
+       280,
+       150
+      ],
+      [
+       420,
+       166
+      ],
+      [
+       320,
+       148
+      ],
+      [
+       340,
+       156
+      ]
+     ],
+     "fill": "#ffd21f"
+    }
+   ]
+  },
+  "car.rear.aero.defletor": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/aero__defletor.png",
+   "ph": []
+  },
+  "car.side.aero.defletor": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/aero__defletor.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       560,
+       196
+      ],
+      [
+       620,
+       190
+      ],
+      [
+       624,
+       204
+      ],
+      [
+       560,
+       204
+      ]
+     ],
+     "fill": "#111111"
+    }
+   ]
+  },
+  "car.rear.aero.kit": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/aero__kit.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 22,
+     "y": 160,
+     "w": 18,
+     "h": 14,
+     "fill": "#111111"
+    },
+    {
+     "t": "rect",
+     "x": 280,
+     "y": 160,
+     "w": 18,
+     "h": 14,
+     "fill": "#111111"
+    }
+   ]
+  },
+  "car.side.aero.kit": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/aero__kit.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       560,
+       196
+      ],
+      [
+       620,
+       190
+      ],
+      [
+       624,
+       204
+      ],
+      [
+       560,
+       204
+      ]
+     ],
+     "fill": "#111111"
+    },
+    {
+     "t": "rect",
+     "x": 194,
+     "y": 196,
+     "w": 244,
+     "h": 8,
+     "fill": "#111111"
+    }
+   ]
+  },
+  "car.rear.aerofolio.asa_alta": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/aerofolio__asa_alta.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 28,
+     "y": 64,
+     "w": 264,
+     "h": 10,
+     "fill": "#111111"
+    },
+    {
+     "t": "rect",
+     "x": 80,
+     "y": 74,
+     "w": 6,
+     "h": 26,
+     "fill": "#333333"
+    },
+    {
+     "t": "rect",
+     "x": 234,
+     "y": 74,
+     "w": 6,
+     "h": 26,
+     "fill": "#333333"
+    }
+   ]
+  },
+  "car.side.aerofolio.asa_alta": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/aerofolio__asa_alta.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 26,
+     "y": 88,
+     "w": 92,
+     "h": 10,
+     "fill": "#111111"
+    },
+    {
+     "t": "line",
+     "x1": 50,
+     "y1": 98,
+     "x2": 56,
+     "y2": 126,
+     "w": 4,
+     "stroke": "#333333"
+    },
+    {
+     "t": "line",
+     "x1": 96,
+     "y1": 98,
+     "x2": 100,
+     "y2": 124,
+     "w": 4,
+     "stroke": "#333333"
+    }
+   ]
+  },
+  "car.rear.aerofolio.rabo_de_pato": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/aerofolio__rabo_de_pato.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       94
+      ],
+      [
+       280,
+       94
+      ],
+      [
+       288,
+       102
+      ],
+      [
+       32,
+       102
+      ]
+     ],
+     "fill": "#151515"
+    }
+   ]
+  },
+  "car.side.aerofolio.rabo_de_pato": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/aerofolio__rabo_de_pato.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       128
+      ],
+      [
+       84,
+       122
+      ],
+      [
+       84,
+       128
+      ],
+      [
+       44,
+       134
+      ]
+     ],
+     "fill": "#151515"
+    }
+   ]
+  },
+  "car.rear.amassados.amassado": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/amassados__amassado.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       26,
+       108
+      ],
+      [
+       44,
+       104
+      ],
+      [
+       38,
+       126
+      ]
+     ],
+     "fill": "#262626"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       270,
+       140
+      ],
+      [
+       292,
+       136
+      ],
+      [
+       288,
+       158
+      ]
+     ],
+     "fill": "#262626"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       150,
+       96
+      ],
+      [
+       176,
+       96
+      ],
+      [
+       166,
+       104
+      ]
+     ],
+     "fill": "#262626"
+    }
+   ]
+  },
+  "car.side.amassados.amassado": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/amassados__amassado.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       320,
+       150
+      ],
+      [
+       350,
+       146
+      ],
+      [
+       342,
+       166
+      ],
+      [
+       318,
+       162
+      ]
+     ],
+     "fill": "#262626"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       560,
+       160
+      ],
+      [
+       590,
+       158
+      ],
+      [
+       584,
+       176
+      ]
+     ],
+     "fill": "#262626"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       60,
+       150
+      ],
+      [
+       80,
+       146
+      ],
+      [
+       74,
+       166
+      ]
+     ],
+     "fill": "#262626"
+    }
+   ]
+  },
+  "car.rear.capo.compressor": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/capo__compressor.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 136,
+     "y": 22,
+     "w": 48,
+     "h": 14,
+     "fill": "#a8a8a8"
+    },
+    {
+     "t": "rect",
+     "x": 144,
+     "y": 14,
+     "w": 32,
+     "h": 8,
+     "fill": "#303030"
+    }
+   ]
+  },
+  "car.side.capo.compressor": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/capo__compressor.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 476,
+     "y": 96,
+     "w": 56,
+     "h": 34,
+     "fill": "#a8a8a8"
+    },
+    {
+     "t": "rect",
+     "x": 484,
+     "y": 84,
+     "w": 40,
+     "h": 12,
+     "fill": "#303030"
+    },
+    {
+     "t": "rect",
+     "x": 476,
+     "y": 128,
+     "w": 56,
+     "h": 4,
+     "fill": "#d0d0d0"
+    }
+   ]
+  },
+  "car.rear.capo.tomada_ar": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/capo__tomada_ar.png",
+   "ph": []
+  },
+  "car.side.capo.tomada_ar": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/capo__tomada_ar.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       470,
+       130
+      ],
+      [
+       520,
+       122
+      ],
+      [
+       540,
+       124
+      ],
+      [
+       540,
+       134
+      ]
+     ],
+     "fill": "#101010"
+    }
+   ]
+  },
+  "car.rear.carroceria.base": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/carroceria__base.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#4a4a4a"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
+     "fill": "#4a4a4a"
+    }
+   ]
+  },
+  "car.side.carroceria.base": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/carroceria__base.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       150
+      ],
+      [
+       48,
+       128
+      ],
+      [
+       180,
+       124
+      ],
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       612,
+       150
+      ],
+      [
+       608,
+       196
+      ],
+      [
+       526,
+       196
+      ],
+      [
+       526.0,
+       180.0
+      ],
+      [
+       523.8,
+       166.4
+      ],
+      [
+       517.6,
+       154.1
+      ],
+      [
+       507.9,
+       144.4
+      ],
+      [
+       495.6,
+       138.2
+      ],
+      [
+       482.0,
+       136.0
+      ],
+      [
+       468.4,
+       138.2
+      ],
+      [
+       456.1,
+       144.4
+      ],
+      [
+       446.4,
+       154.1
+      ],
+      [
+       440.2,
+       166.4
+      ],
+      [
+       438.0,
+       180.0
+      ],
+      [
+       438,
+       196
+      ],
+      [
+       194,
+       196
+      ],
+      [
+       194.0,
+       180.0
+      ],
+      [
+       191.8,
+       166.4
+      ],
+      [
+       185.6,
+       154.1
+      ],
+      [
+       175.9,
+       144.4
+      ],
+      [
+       163.6,
+       138.2
+      ],
+      [
+       150.0,
+       136.0
+      ],
+      [
+       136.4,
+       138.2
+      ],
+      [
+       124.1,
+       144.4
+      ],
+      [
+       114.4,
+       154.1
+      ],
+      [
+       108.2,
+       166.4
+      ],
+      [
+       106.0,
+       180.0
+      ],
+      [
+       106,
+       196
+      ],
+      [
+       40,
+       196
+      ]
+     ],
+     "fill": "#4a4a4a"
+    },
+    {
+     "t": "line",
+     "x1": 300,
+     "y1": 128,
+     "x2": 300,
+     "y2": 190,
+     "w": 1.5,
+     "stroke": "#2a2a2a"
+    }
+   ]
+  },
+  "car.rear.escapamento.duplo": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/escapamento__duplo.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 64,
+     "y": 170,
+     "w": 16,
+     "h": 9,
+     "r": 3,
+     "fill": "#9a9a9a"
+    },
+    {
+     "t": "rrect",
+     "x": 240,
+     "y": 170,
+     "w": 16,
+     "h": 9,
+     "r": 3,
+     "fill": "#9a9a9a"
+    }
+   ]
+  },
+  "car.side.escapamento.duplo": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/escapamento__duplo.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 24,
+     "y": 194,
+     "w": 44,
+     "h": 6,
+     "fill": "#9a9a9a"
+    },
+    {
+     "t": "rect",
+     "x": 30,
+     "y": 200,
+     "w": 40,
+     "h": 5,
+     "fill": "#7a7a7a"
+    }
+   ]
+  },
+  "car.rear.escapamento.esportivo": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/escapamento__esportivo.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 60,
+     "y": 168,
+     "w": 24,
+     "h": 12,
+     "r": 4,
+     "fill": "#c8c8c8"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 168,
+     "w": 24,
+     "h": 12,
+     "r": 4,
+     "fill": "#c8c8c8"
+    }
+   ]
+  },
+  "car.side.escapamento.esportivo": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/escapamento__esportivo.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 18,
+     "y": 193,
+     "w": 52,
+     "h": 9,
+     "fill": "#c8c8c8"
+    }
+   ]
+  },
+  "car.rear.escapamento.furado": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/escapamento__furado.png",
+   "ph": [
+    {
+     "t": "line",
+     "x1": 76,
+     "y1": 172,
+     "x2": 64,
+     "y2": 184,
+     "w": 4,
+     "stroke": "#6b5b4b"
+    }
+   ]
+  },
+  "car.side.escapamento.furado": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/escapamento__furado.png",
+   "ph": [
+    {
+     "t": "line",
+     "x1": 70,
+     "y1": 198,
+     "x2": 30,
+     "y2": 206,
+     "w": 4,
+     "stroke": "#6b5b4b"
+    }
+   ]
+  },
+  "car.rear.escapamento.simples": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/escapamento__simples.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 64,
+     "y": 170,
+     "w": 16,
+     "h": 9,
+     "r": 3,
+     "fill": "#8a8a8a"
+    }
+   ]
+  },
+  "car.side.escapamento.simples": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/escapamento__simples.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 26,
+     "y": 196,
+     "w": 40,
+     "h": 6,
+     "fill": "#8a8a8a"
+    }
+   ]
+  },
+  "car.rear.faixas.dupla_branca": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/faixas__dupla_branca.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 138,
+     "y": 34,
+     "w": 14,
+     "h": 66,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 168,
+     "y": 34,
+     "w": 14,
+     "h": 66,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 138,
+     "y": 100,
+     "w": 14,
+     "h": 10,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 168,
+     "y": 100,
+     "w": 14,
+     "h": 10,
+     "fill": "#f2f2f2"
+    }
+   ]
+  },
+  "car.side.faixas.dupla_branca": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/faixas__dupla_branca.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       374,
+       82
+      ],
+      [
+       234,
+       84
+      ]
+     ],
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       600,
+       138
+      ],
+      [
+       436,
+       130
+      ]
+     ],
+     "fill": "#f2f2f2"
+    }
+   ]
+  },
+  "car.rear.faixas.dupla_dourada": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/faixas__dupla_dourada.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 138,
+     "y": 34,
+     "w": 14,
+     "h": 66,
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "rect",
+     "x": 168,
+     "y": 34,
+     "w": 14,
+     "h": 66,
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "rect",
+     "x": 138,
+     "y": 100,
+     "w": 14,
+     "h": 10,
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "rect",
+     "x": 168,
+     "y": 100,
+     "w": 14,
+     "h": 10,
+     "fill": "#d4a62a"
+    }
+   ]
+  },
+  "car.side.faixas.dupla_dourada": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/faixas__dupla_dourada.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       374,
+       82
+      ],
+      [
+       234,
+       84
+      ]
+     ],
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       600,
+       138
+      ],
+      [
+       436,
+       130
+      ]
+     ],
+     "fill": "#d4a62a"
+    }
+   ]
+  },
+  "car.rear.faixas.dupla_vermelha": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/faixas__dupla_vermelha.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 138,
+     "y": 34,
+     "w": 14,
+     "h": 66,
+     "fill": "#c81e28"
+    },
+    {
+     "t": "rect",
+     "x": 168,
+     "y": 34,
+     "w": 14,
+     "h": 66,
+     "fill": "#c81e28"
+    },
+    {
+     "t": "rect",
+     "x": 138,
+     "y": 100,
+     "w": 14,
+     "h": 10,
+     "fill": "#c81e28"
+    },
+    {
+     "t": "rect",
+     "x": 168,
+     "y": 100,
+     "w": 14,
+     "h": 10,
+     "fill": "#c81e28"
+    }
+   ]
+  },
+  "car.side.faixas.dupla_vermelha": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/faixas__dupla_vermelha.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       374,
+       82
+      ],
+      [
+       234,
+       84
+      ]
+     ],
+     "fill": "#c81e28"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       600,
+       138
+      ],
+      [
+       436,
+       130
+      ]
+     ],
+     "fill": "#c81e28"
+    }
+   ]
+  },
+  "car.rear.faixas.lateral": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/faixas__lateral.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 22,
+     "y": 116,
+     "w": 12,
+     "h": 4,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 286,
+     "y": 116,
+     "w": 12,
+     "h": 4,
+     "fill": "#f2f2f2"
+    }
+   ]
+  },
+  "car.side.faixas.lateral": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/faixas__lateral.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 110,
+     "y": 150,
+     "w": 320,
+     "h": 6,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       150
+      ],
+      [
+       96,
+       166
+      ],
+      [
+       102,
+       166
+      ],
+      [
+       116,
+       156
+      ]
+     ],
+     "fill": "#f2f2f2"
+    }
+   ]
+  },
+  "car.rear.farois.novo": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/farois__novo.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 34,
+     "y": 110,
+     "w": 252,
+     "h": 32,
+     "fill": "#1a1a1a"
+    },
+    {
+     "t": "circle",
+     "x": 160,
+     "y": 126,
+     "r": 9,
+     "fill": "#c0c0c0"
+    },
+    {
+     "t": "rect",
+     "x": 46,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 74,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 236,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 250,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 264,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    }
+   ]
+  },
+  "car.side.farois.novo": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/farois__novo.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 602,
+     "y": 138,
+     "w": 10,
+     "h": 14,
+     "fill": "#fff6c0"
+    }
+   ]
+  },
+  "car.rear.farois.trincado": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/farois__trincado.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 34,
+     "y": 110,
+     "w": 252,
+     "h": 32,
+     "fill": "#1a1a1a"
+    },
+    {
+     "t": "circle",
+     "x": 160,
+     "y": 126,
+     "r": 9,
+     "fill": "#c0c0c0"
+    },
+    {
+     "t": "rect",
+     "x": 46,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 74,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 236,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 250,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#333333"
+    },
+    {
+     "t": "rect",
+     "x": 264,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
+    },
+    {
+     "t": "line",
+     "x1": 250,
+     "y1": 116,
+     "x2": 258,
+     "y2": 136,
+     "w": 1,
+     "stroke": "#888888"
+    }
+   ]
+  },
+  "car.side.farois.trincado": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/farois__trincado.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 602,
+     "y": 138,
+     "w": 10,
+     "h": 14,
+     "fill": "#bdbdbd"
+    },
+    {
+     "t": "line",
+     "x1": 603,
+     "y1": 140,
+     "x2": 611,
+     "y2": 150,
+     "w": 1,
+     "stroke": "#555555"
+    }
+   ]
+  },
+  "car.rear.ferrugem.ferrugem": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/ferrugem__ferrugem.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 40,
+     "y": 150,
+     "rx": 14,
+     "ry": 8,
+     "fill": "#8a4b1c"
+    },
+    {
+     "t": "ellipse",
+     "x": 280,
+     "y": 152,
+     "rx": 14,
+     "ry": 8,
+     "fill": "#8a4b1c"
+    },
+    {
+     "t": "ellipse",
+     "x": 120,
+     "y": 100,
+     "rx": 16,
+     "ry": 3,
+     "fill": "#9a5a22"
+    },
+    {
+     "t": "ellipse",
+     "x": 214,
+     "y": 168,
+     "rx": 18,
+     "ry": 4,
+     "fill": "#9a5a22"
+    }
+   ]
+  },
+  "car.side.ferrugem.ferrugem": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/ferrugem__ferrugem.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 150,
+     "y": 140,
+     "rx": 30,
+     "ry": 6,
+     "fill": "#8a4b1c"
+    },
+    {
+     "t": "ellipse",
+     "x": 482,
+     "y": 140,
+     "rx": 30,
+     "ry": 6,
+     "fill": "#8a4b1c"
+    },
+    {
+     "t": "ellipse",
+     "x": 300,
+     "y": 190,
+     "rx": 40,
+     "ry": 5,
+     "fill": "#9a5a22"
+    },
+    {
+     "t": "ellipse",
+     "x": 230,
+     "y": 186,
+     "rx": 16,
+     "ry": 6,
+     "fill": "#8a4b1c"
+    },
+    {
+     "t": "circle",
+     "x": 560,
+     "y": 180,
+     "r": 7,
+     "fill": "#8a4b1c"
+    }
+   ]
+  },
+  "car.rear.luzes.auxiliares": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/luzes__auxiliares.png",
+   "ph": []
+  },
+  "car.side.luzes.auxiliares": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/luzes__auxiliares.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 578,
+     "y": 186,
+     "r": 7,
+     "fill": "#ffffaa"
+    },
+    {
+     "t": "circle",
+     "x": 560,
+     "y": 186,
+     "r": 7,
+     "fill": "#ffffaa"
+    }
+   ]
+  },
+  "car.rear.neon.azul": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/neon__azul.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 188,
+     "rx": 156,
+     "ry": 14,
+     "fill": "#2aa8ff",
+     "a": 0.5
+    }
+   ]
+  },
+  "car.side.neon.azul": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/neon__azul.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 326,
+     "y": 210,
+     "rx": 280,
+     "ry": 12,
+     "fill": "#2aa8ff",
+     "a": 0.5
+    }
+   ]
+  },
+  "car.rear.parachoques.amassado": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/parachoques__amassado.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       18,
+       148
+      ],
+      [
+       160,
+       150
+      ],
+      [
+       302,
+       144
+      ],
+      [
+       302,
+       158
+      ],
+      [
+       160,
+       162
+      ],
+      [
+       18,
+       160
+      ]
+     ],
+     "fill": "#6b6b6b"
+    }
+   ]
+  },
+  "car.side.parachoques.amassado": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/parachoques__amassado.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       30,
+       154
+      ],
+      [
+       52,
+       152
+      ],
+      [
+       54,
+       176
+      ],
+      [
+       34,
+       180
+      ]
+     ],
+     "fill": "#6b6b6b"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       598,
+       152
+      ],
+      [
+       618,
+       156
+      ],
+      [
+       614,
+       178
+      ],
+      [
+       596,
+       174
+      ]
+     ],
+     "fill": "#6b6b6b"
+    }
+   ]
+  },
+  "car.rear.parachoques.cromado": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/parachoques__cromado.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 14,
+     "r": 5,
+     "fill": "#dcdcdc"
+    },
+    {
+     "t": "rect",
+     "x": 24,
+     "y": 148,
+     "w": 272,
+     "h": 2,
+     "fill": "#ffffff",
+     "a": 0.8
+    }
+   ]
+  },
+  "car.side.parachoques.cromado": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/parachoques__cromado.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 152,
+     "w": 26,
+     "h": 24,
+     "r": 6,
+     "fill": "#dcdcdc"
+    },
+    {
+     "t": "rrect",
+     "x": 596,
+     "y": 152,
+     "w": 24,
+     "h": 24,
+     "r": 6,
+     "fill": "#dcdcdc"
+    },
+    {
+     "t": "rect",
+     "x": 32,
+     "y": 156,
+     "w": 18,
+     "h": 3,
+     "fill": "#ffffff",
+     "a": 0.8
+    },
+    {
+     "t": "rect",
+     "x": 600,
+     "y": 156,
+     "w": 16,
+     "h": 3,
+     "fill": "#ffffff",
+     "a": 0.8
+    }
+   ]
+  },
+  "car.rear.pintura.azul": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pintura__azul.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#1f4fa8"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
+     "fill": "#1f4fa8"
+    },
+    {
+     "t": "rect",
+     "x": 30,
+     "y": 98,
+     "w": 260,
+     "h": 3,
+     "fill": "#ffffff",
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
+    }
+   ]
+  },
+  "car.side.pintura.azul": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pintura__azul.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       150
+      ],
+      [
+       48,
+       128
+      ],
+      [
+       180,
+       124
+      ],
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       612,
+       150
+      ],
+      [
+       608,
+       196
+      ],
+      [
+       526,
+       196
+      ],
+      [
+       526.0,
+       180.0
+      ],
+      [
+       523.8,
+       166.4
+      ],
+      [
+       517.6,
+       154.1
+      ],
+      [
+       507.9,
+       144.4
+      ],
+      [
+       495.6,
+       138.2
+      ],
+      [
+       482.0,
+       136.0
+      ],
+      [
+       468.4,
+       138.2
+      ],
+      [
+       456.1,
+       144.4
+      ],
+      [
+       446.4,
+       154.1
+      ],
+      [
+       440.2,
+       166.4
+      ],
+      [
+       438.0,
+       180.0
+      ],
+      [
+       438,
+       196
+      ],
+      [
+       194,
+       196
+      ],
+      [
+       194.0,
+       180.0
+      ],
+      [
+       191.8,
+       166.4
+      ],
+      [
+       185.6,
+       154.1
+      ],
+      [
+       175.9,
+       144.4
+      ],
+      [
+       163.6,
+       138.2
+      ],
+      [
+       150.0,
+       136.0
+      ],
+      [
+       136.4,
+       138.2
+      ],
+      [
+       124.1,
+       144.4
+      ],
+      [
+       114.4,
+       154.1
+      ],
+      [
+       108.2,
+       166.4
+      ],
+      [
+       106.0,
+       180.0
+      ],
+      [
+       106,
+       196
+      ],
+      [
+       40,
+       196
+      ]
+     ],
+     "fill": "#1f4fa8"
+    },
+    {
+     "t": "line",
+     "x1": 300,
+     "y1": 128,
+     "x2": 300,
+     "y2": 190,
+     "w": 1.5,
+     "stroke": "#000000",
+     "a": 0.5
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       60,
+       140
+      ],
+      [
+       600,
+       146
+      ],
+      [
+       600,
+       150
+      ],
+      [
+       60,
+       146
+      ]
+     ],
+     "fill": "#ffffff",
+     "a": 0.25
+    }
+   ]
+  },
+  "car.rear.pintura.branca": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pintura__branca.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#e6e6e6"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
+     "fill": "#e6e6e6"
+    },
+    {
+     "t": "rect",
+     "x": 30,
+     "y": 98,
+     "w": 260,
+     "h": 3,
+     "fill": "#ffffff",
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
+    }
+   ]
+  },
+  "car.side.pintura.branca": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pintura__branca.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       150
+      ],
+      [
+       48,
+       128
+      ],
+      [
+       180,
+       124
+      ],
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       612,
+       150
+      ],
+      [
+       608,
+       196
+      ],
+      [
+       526,
+       196
+      ],
+      [
+       526.0,
+       180.0
+      ],
+      [
+       523.8,
+       166.4
+      ],
+      [
+       517.6,
+       154.1
+      ],
+      [
+       507.9,
+       144.4
+      ],
+      [
+       495.6,
+       138.2
+      ],
+      [
+       482.0,
+       136.0
+      ],
+      [
+       468.4,
+       138.2
+      ],
+      [
+       456.1,
+       144.4
+      ],
+      [
+       446.4,
+       154.1
+      ],
+      [
+       440.2,
+       166.4
+      ],
+      [
+       438.0,
+       180.0
+      ],
+      [
+       438,
+       196
+      ],
+      [
+       194,
+       196
+      ],
+      [
+       194.0,
+       180.0
+      ],
+      [
+       191.8,
+       166.4
+      ],
+      [
+       185.6,
+       154.1
+      ],
+      [
+       175.9,
+       144.4
+      ],
+      [
+       163.6,
+       138.2
+      ],
+      [
+       150.0,
+       136.0
+      ],
+      [
+       136.4,
+       138.2
+      ],
+      [
+       124.1,
+       144.4
+      ],
+      [
+       114.4,
+       154.1
+      ],
+      [
+       108.2,
+       166.4
+      ],
+      [
+       106.0,
+       180.0
+      ],
+      [
+       106,
+       196
+      ],
+      [
+       40,
+       196
+      ]
+     ],
+     "fill": "#e6e6e6"
+    },
+    {
+     "t": "line",
+     "x1": 300,
+     "y1": 128,
+     "x2": 300,
+     "y2": 190,
+     "w": 1.5,
+     "stroke": "#000000",
+     "a": 0.5
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       60,
+       140
+      ],
+      [
+       600,
+       146
+      ],
+      [
+       600,
+       150
+      ],
+      [
+       60,
+       146
+      ]
+     ],
+     "fill": "#ffffff",
+     "a": 0.25
+    }
+   ]
+  },
+  "car.rear.pintura.desbotada": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pintura__desbotada.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#3b3a38"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
+     "fill": "#3b3a38"
+    },
+    {
+     "t": "ellipse",
+     "x": 90,
+     "y": 120,
+     "rx": 30,
+     "ry": 10,
+     "fill": "#5a5650",
+     "a": 0.5
+    },
+    {
+     "t": "ellipse",
+     "x": 240,
+     "y": 160,
+     "rx": 24,
+     "ry": 8,
+     "fill": "#5a5650",
+     "a": 0.5
+    }
+   ]
+  },
+  "car.side.pintura.desbotada": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pintura__desbotada.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       150
+      ],
+      [
+       48,
+       128
+      ],
+      [
+       180,
+       124
+      ],
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       612,
+       150
+      ],
+      [
+       608,
+       196
+      ],
+      [
+       526,
+       196
+      ],
+      [
+       526.0,
+       180.0
+      ],
+      [
+       523.8,
+       166.4
+      ],
+      [
+       517.6,
+       154.1
+      ],
+      [
+       507.9,
+       144.4
+      ],
+      [
+       495.6,
+       138.2
+      ],
+      [
+       482.0,
+       136.0
+      ],
+      [
+       468.4,
+       138.2
+      ],
+      [
+       456.1,
+       144.4
+      ],
+      [
+       446.4,
+       154.1
+      ],
+      [
+       440.2,
+       166.4
+      ],
+      [
+       438.0,
+       180.0
+      ],
+      [
+       438,
+       196
+      ],
+      [
+       194,
+       196
+      ],
+      [
+       194.0,
+       180.0
+      ],
+      [
+       191.8,
+       166.4
+      ],
+      [
+       185.6,
+       154.1
+      ],
+      [
+       175.9,
+       144.4
+      ],
+      [
+       163.6,
+       138.2
+      ],
+      [
+       150.0,
+       136.0
+      ],
+      [
+       136.4,
+       138.2
+      ],
+      [
+       124.1,
+       144.4
+      ],
+      [
+       114.4,
+       154.1
+      ],
+      [
+       108.2,
+       166.4
+      ],
+      [
+       106.0,
+       180.0
+      ],
+      [
+       106,
+       196
+      ],
+      [
+       40,
+       196
+      ]
+     ],
+     "fill": "#3b3a38"
+    },
+    {
+     "t": "line",
+     "x1": 300,
+     "y1": 128,
+     "x2": 300,
+     "y2": 190,
+     "w": 1.5,
+     "stroke": "#000000",
+     "a": 0.5
+    },
+    {
+     "t": "ellipse",
+     "x": 250,
+     "y": 160,
+     "rx": 40,
+     "ry": 14,
+     "fill": "#5a5650",
+     "a": 0.5
+    },
+    {
+     "t": "ellipse",
+     "x": 520,
+     "y": 150,
+     "rx": 30,
+     "ry": 10,
+     "fill": "#5a5650",
+     "a": 0.5
+    }
+   ]
+  },
+  "car.rear.pintura.preta": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pintura__preta.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#161616"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
+     "fill": "#161616"
+    }
+   ]
+  },
+  "car.side.pintura.preta": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pintura__preta.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       150
+      ],
+      [
+       48,
+       128
+      ],
+      [
+       180,
+       124
+      ],
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       612,
+       150
+      ],
+      [
+       608,
+       196
+      ],
+      [
+       526,
+       196
+      ],
+      [
+       526.0,
+       180.0
+      ],
+      [
+       523.8,
+       166.4
+      ],
+      [
+       517.6,
+       154.1
+      ],
+      [
+       507.9,
+       144.4
+      ],
+      [
+       495.6,
+       138.2
+      ],
+      [
+       482.0,
+       136.0
+      ],
+      [
+       468.4,
+       138.2
+      ],
+      [
+       456.1,
+       144.4
+      ],
+      [
+       446.4,
+       154.1
+      ],
+      [
+       440.2,
+       166.4
+      ],
+      [
+       438.0,
+       180.0
+      ],
+      [
+       438,
+       196
+      ],
+      [
+       194,
+       196
+      ],
+      [
+       194.0,
+       180.0
+      ],
+      [
+       191.8,
+       166.4
+      ],
+      [
+       185.6,
+       154.1
+      ],
+      [
+       175.9,
+       144.4
+      ],
+      [
+       163.6,
+       138.2
+      ],
+      [
+       150.0,
+       136.0
+      ],
+      [
+       136.4,
+       138.2
+      ],
+      [
+       124.1,
+       144.4
+      ],
+      [
+       114.4,
+       154.1
+      ],
+      [
+       108.2,
+       166.4
+      ],
+      [
+       106.0,
+       180.0
+      ],
+      [
+       106,
+       196
+      ],
+      [
+       40,
+       196
+      ]
+     ],
+     "fill": "#161616"
+    },
+    {
+     "t": "line",
+     "x1": 300,
+     "y1": 128,
+     "x2": 300,
+     "y2": 190,
+     "w": 1.5,
+     "stroke": "#000000",
+     "a": 0.5
+    }
+   ]
+  },
+  "car.rear.pintura.preta_brilhante": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pintura__preta_brilhante.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#0b0b0b"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
+     "fill": "#0b0b0b"
+    },
+    {
+     "t": "rect",
+     "x": 30,
+     "y": 98,
+     "w": 260,
+     "h": 3,
+     "fill": "#ffffff",
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
+    }
+   ]
+  },
+  "car.side.pintura.preta_brilhante": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pintura__preta_brilhante.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       150
+      ],
+      [
+       48,
+       128
+      ],
+      [
+       180,
+       124
+      ],
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       612,
+       150
+      ],
+      [
+       608,
+       196
+      ],
+      [
+       526,
+       196
+      ],
+      [
+       526.0,
+       180.0
+      ],
+      [
+       523.8,
+       166.4
+      ],
+      [
+       517.6,
+       154.1
+      ],
+      [
+       507.9,
+       144.4
+      ],
+      [
+       495.6,
+       138.2
+      ],
+      [
+       482.0,
+       136.0
+      ],
+      [
+       468.4,
+       138.2
+      ],
+      [
+       456.1,
+       144.4
+      ],
+      [
+       446.4,
+       154.1
+      ],
+      [
+       440.2,
+       166.4
+      ],
+      [
+       438.0,
+       180.0
+      ],
+      [
+       438,
+       196
+      ],
+      [
+       194,
+       196
+      ],
+      [
+       194.0,
+       180.0
+      ],
+      [
+       191.8,
+       166.4
+      ],
+      [
+       185.6,
+       154.1
+      ],
+      [
+       175.9,
+       144.4
+      ],
+      [
+       163.6,
+       138.2
+      ],
+      [
+       150.0,
+       136.0
+      ],
+      [
+       136.4,
+       138.2
+      ],
+      [
+       124.1,
+       144.4
+      ],
+      [
+       114.4,
+       154.1
+      ],
+      [
+       108.2,
+       166.4
+      ],
+      [
+       106.0,
+       180.0
+      ],
+      [
+       106,
+       196
+      ],
+      [
+       40,
+       196
+      ]
+     ],
+     "fill": "#0b0b0b"
+    },
+    {
+     "t": "line",
+     "x1": 300,
+     "y1": 128,
+     "x2": 300,
+     "y2": 190,
+     "w": 1.5,
+     "stroke": "#000000",
+     "a": 0.5
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       60,
+       140
+      ],
+      [
+       600,
+       146
+      ],
+      [
+       600,
+       150
+      ],
+      [
+       60,
+       146
+      ]
+     ],
+     "fill": "#ffffff",
+     "a": 0.25
+    }
+   ]
+  },
+  "car.rear.pintura.verde": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pintura__verde.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#1d4d2b"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
+     "fill": "#1d4d2b"
+    },
+    {
+     "t": "rect",
+     "x": 30,
+     "y": 98,
+     "w": 260,
+     "h": 3,
+     "fill": "#ffffff",
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
+    }
+   ]
+  },
+  "car.side.pintura.verde": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pintura__verde.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       150
+      ],
+      [
+       48,
+       128
+      ],
+      [
+       180,
+       124
+      ],
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       612,
+       150
+      ],
+      [
+       608,
+       196
+      ],
+      [
+       526,
+       196
+      ],
+      [
+       526.0,
+       180.0
+      ],
+      [
+       523.8,
+       166.4
+      ],
+      [
+       517.6,
+       154.1
+      ],
+      [
+       507.9,
+       144.4
+      ],
+      [
+       495.6,
+       138.2
+      ],
+      [
+       482.0,
+       136.0
+      ],
+      [
+       468.4,
+       138.2
+      ],
+      [
+       456.1,
+       144.4
+      ],
+      [
+       446.4,
+       154.1
+      ],
+      [
+       440.2,
+       166.4
+      ],
+      [
+       438.0,
+       180.0
+      ],
+      [
+       438,
+       196
+      ],
+      [
+       194,
+       196
+      ],
+      [
+       194.0,
+       180.0
+      ],
+      [
+       191.8,
+       166.4
+      ],
+      [
+       185.6,
+       154.1
+      ],
+      [
+       175.9,
+       144.4
+      ],
+      [
+       163.6,
+       138.2
+      ],
+      [
+       150.0,
+       136.0
+      ],
+      [
+       136.4,
+       138.2
+      ],
+      [
+       124.1,
+       144.4
+      ],
+      [
+       114.4,
+       154.1
+      ],
+      [
+       108.2,
+       166.4
+      ],
+      [
+       106.0,
+       180.0
+      ],
+      [
+       106,
+       196
+      ],
+      [
+       40,
+       196
+      ]
+     ],
+     "fill": "#1d4d2b"
+    },
+    {
+     "t": "line",
+     "x1": 300,
+     "y1": 128,
+     "x2": 300,
+     "y2": 190,
+     "w": 1.5,
+     "stroke": "#000000",
+     "a": 0.5
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       60,
+       140
+      ],
+      [
+       600,
+       146
+      ],
+      [
+       600,
+       150
+      ],
+      [
+       60,
+       146
+      ]
+     ],
+     "fill": "#ffffff",
+     "a": 0.25
+    }
+   ]
+  },
+  "car.rear.pintura.vermelha": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pintura__vermelha.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#b3121b"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
+     "fill": "#b3121b"
+    },
+    {
+     "t": "rect",
+     "x": 30,
+     "y": 98,
+     "w": 260,
+     "h": 3,
+     "fill": "#ffffff",
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
+    }
+   ]
+  },
+  "car.side.pintura.vermelha": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pintura__vermelha.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       150
+      ],
+      [
+       48,
+       128
+      ],
+      [
+       180,
+       124
+      ],
+      [
+       232,
+       80
+      ],
+      [
+       372,
+       78
+      ],
+      [
+       436,
+       126
+      ],
+      [
+       600,
+       134
+      ],
+      [
+       612,
+       150
+      ],
+      [
+       608,
+       196
+      ],
+      [
+       526,
+       196
+      ],
+      [
+       526.0,
+       180.0
+      ],
+      [
+       523.8,
+       166.4
+      ],
+      [
+       517.6,
+       154.1
+      ],
+      [
+       507.9,
+       144.4
+      ],
+      [
+       495.6,
+       138.2
+      ],
+      [
+       482.0,
+       136.0
+      ],
+      [
+       468.4,
+       138.2
+      ],
+      [
+       456.1,
+       144.4
+      ],
+      [
+       446.4,
+       154.1
+      ],
+      [
+       440.2,
+       166.4
+      ],
+      [
+       438.0,
+       180.0
+      ],
+      [
+       438,
+       196
+      ],
+      [
+       194,
+       196
+      ],
+      [
+       194.0,
+       180.0
+      ],
+      [
+       191.8,
+       166.4
+      ],
+      [
+       185.6,
+       154.1
+      ],
+      [
+       175.9,
+       144.4
+      ],
+      [
+       163.6,
+       138.2
+      ],
+      [
+       150.0,
+       136.0
+      ],
+      [
+       136.4,
+       138.2
+      ],
+      [
+       124.1,
+       144.4
+      ],
+      [
+       114.4,
+       154.1
+      ],
+      [
+       108.2,
+       166.4
+      ],
+      [
+       106.0,
+       180.0
+      ],
+      [
+       106,
+       196
+      ],
+      [
+       40,
+       196
+      ]
+     ],
+     "fill": "#b3121b"
+    },
+    {
+     "t": "line",
+     "x1": 300,
+     "y1": 128,
+     "x2": 300,
+     "y2": 190,
+     "w": 1.5,
+     "stroke": "#000000",
+     "a": 0.5
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       60,
+       140
+      ],
+      [
+       600,
+       146
+      ],
+      [
+       600,
+       150
+      ],
+      [
+       60,
+       146
+      ]
+     ],
+     "fill": "#ffffff",
+     "a": 0.25
+    }
+   ]
+  },
+  "car.rear.pneus.careca": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pneus__careca.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#4a4a4a"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#4a4a4a"
+    }
+   ]
+  },
+  "car.side.pneus.careca": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pneus__careca.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 36,
+     "fill": "#4a4a4a"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 36,
+     "fill": "#4a4a4a"
+    }
+   ]
+  },
+  "car.rear.pneus.esportivo": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pneus__esportivo.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 30,
+     "y": 148,
+     "w": 58,
+     "h": 48,
+     "r": 6,
+     "fill": "#161616"
+    },
+    {
+     "t": "rrect",
+     "x": 232,
+     "y": 148,
+     "w": 58,
+     "h": 48,
+     "r": 6,
+     "fill": "#161616"
+    }
+   ]
+  },
+  "car.side.pneus.esportivo": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pneus__esportivo.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 38,
+     "fill": "#161616"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 38,
+     "fill": "#161616"
+    }
+   ]
+  },
+  "car.rear.pneus.novo": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pneus__novo.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    }
+   ]
+  },
+  "car.side.pneus.novo": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pneus__novo.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 36,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 36,
+     "fill": "#1e1e1e"
+    }
+   ]
+  },
+  "car.rear.pneus.slick": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/pneus__slick.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 148,
+     "w": 62,
+     "h": 48,
+     "r": 6,
+     "fill": "#0e0e0e"
+    },
+    {
+     "t": "rrect",
+     "x": 230,
+     "y": 148,
+     "w": 62,
+     "h": 48,
+     "r": 6,
+     "fill": "#0e0e0e"
+    }
+   ]
+  },
+  "car.side.pneus.slick": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/pneus__slick.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 38,
+     "fill": "#0e0e0e"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 38,
+     "fill": "#0e0e0e"
+    }
+   ]
+  },
+  "car.rear.rodas.cinco_raios": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/rodas__cinco_raios.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#a0a0a0"
+    },
+    {
+     "t": "rect",
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#a0a0a0"
+    }
+   ]
+  },
+  "car.side.rodas.cinco_raios": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/rodas__cinco_raios.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 22,
+     "fill": "#3a3a3a"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 170.0,
+     "y2": 180.0,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 156.18033988749895,
+     "y2": 199.02113032590307,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 133.81966011250105,
+     "y2": 191.75570504584945,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 133.81966011250105,
+     "y2": 168.24429495415055,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 156.18033988749895,
+     "y2": 160.97886967409693,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 6,
+     "fill": "#bdbdbd"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 22,
+     "fill": "#3a3a3a"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 502.0,
+     "y2": 180.0,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 488.180339887499,
+     "y2": 199.02113032590307,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 465.8196601125011,
+     "y2": 191.75570504584945,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 465.819660112501,
+     "y2": 168.24429495415055,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 488.1803398874989,
+     "y2": 160.97886967409693,
+     "w": 6,
+     "stroke": "#bdbdbd"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 6,
+     "fill": "#bdbdbd"
+    }
+   ]
+  },
+  "car.rear.rodas.cromada": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/rodas__cromada.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#eeeeee"
+    },
+    {
+     "t": "rect",
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#eeeeee"
+    }
+   ]
+  },
+  "car.side.rodas.cromada": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/rodas__cromada.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 22,
+     "fill": "#eeeeee"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 170.0,
+     "y2": 180.0,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 164.14213562373095,
+     "y2": 194.14213562373095,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 150.0,
+     "y2": 200.0,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 135.85786437626905,
+     "y2": 194.14213562373095,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 130.0,
+     "y2": 180.0,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 135.85786437626905,
+     "y2": 165.85786437626905,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 150.0,
+     "y2": 160.0,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 164.14213562373095,
+     "y2": 165.85786437626905,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 6,
+     "fill": "#9a9a9a"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 22,
+     "fill": "#eeeeee"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 502.0,
+     "y2": 180.0,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 496.14213562373095,
+     "y2": 194.14213562373095,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 482.0,
+     "y2": 200.0,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 467.85786437626905,
+     "y2": 194.14213562373095,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 462.0,
+     "y2": 180.0,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 467.85786437626905,
+     "y2": 165.85786437626905,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 482.0,
+     "y2": 160.0,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 496.14213562373095,
+     "y2": 165.85786437626905,
+     "w": 2,
+     "stroke": "#b0b0b0"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 6,
+     "fill": "#9a9a9a"
+    }
+   ]
+  },
+  "car.rear.rodas.enferrujada": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/rodas__enferrujada.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#7a4a2a"
+    },
+    {
+     "t": "rect",
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#7a4a2a"
+    }
+   ]
+  },
+  "car.side.rodas.enferrujada": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/rodas__enferrujada.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 22,
+     "fill": "#6e4426"
+    },
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 6,
+     "fill": "#4a4a4a"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 22,
+     "fill": "#6e4426"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 6,
+     "fill": "#4a4a4a"
+    }
+   ]
+  },
+  "car.rear.rodas.original": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/rodas__original.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#c8c8c8"
+    },
+    {
+     "t": "rect",
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#c8c8c8"
+    }
+   ]
+  },
+  "car.side.rodas.original": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/rodas__original.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 22,
+     "fill": "#c8c8c8"
+    },
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 6,
+     "fill": "#8a8a8a"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 22,
+     "fill": "#c8c8c8"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 6,
+     "fill": "#8a8a8a"
+    }
+   ]
+  },
+  "car.rear.rodas.preta": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/rodas__preta.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#2a2a2a"
+    },
+    {
+     "t": "rect",
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#2a2a2a"
+    }
+   ]
+  },
+  "car.side.rodas.preta": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/rodas__preta.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 22,
+     "fill": "#1c1c1c"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 170.0,
+     "y2": 180.0,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 160.0,
+     "y2": 197.32050807568876,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 140.0,
+     "y2": 197.32050807568876,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 130.0,
+     "y2": 180.0,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 140.0,
+     "y2": 162.67949192431124,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 160.0,
+     "y2": 162.67949192431124,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 6,
+     "fill": "#444444"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 22,
+     "fill": "#1c1c1c"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 502.0,
+     "y2": 180.0,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 492.0,
+     "y2": 197.32050807568876,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 472.0,
+     "y2": 197.32050807568876,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 462.0,
+     "y2": 180.0,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 472.0,
+     "y2": 162.67949192431124,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 492.0,
+     "y2": 162.67949192431124,
+     "w": 4,
+     "stroke": "#444444"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 6,
+     "fill": "#444444"
+    }
+   ]
+  },
+  "car.rear.rodas.raiada": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/rodas__raiada.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#d0c090"
+    },
+    {
+     "t": "rect",
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
+     "fill": "#d0c090"
+    }
+   ]
+  },
+  "car.side.rodas.raiada": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/rodas__raiada.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 22,
+     "fill": "#d8d0b0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 170.0,
+     "y2": 180.0,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 168.47759065022575,
+     "y2": 187.6536686473018,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 164.14213562373095,
+     "y2": 194.14213562373095,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 157.6536686473018,
+     "y2": 198.47759065022575,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 150.0,
+     "y2": 200.0,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 142.3463313526982,
+     "y2": 198.47759065022575,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 135.85786437626905,
+     "y2": 194.14213562373095,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 131.52240934977425,
+     "y2": 187.6536686473018,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 130.0,
+     "y2": 180.0,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 131.52240934977425,
+     "y2": 172.3463313526982,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 135.85786437626905,
+     "y2": 165.85786437626905,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 142.3463313526982,
+     "y2": 161.52240934977428,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 150.0,
+     "y2": 160.0,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 157.6536686473018,
+     "y2": 161.52240934977428,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 164.14213562373095,
+     "y2": 165.85786437626905,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 150,
+     "y1": 180,
+     "x2": 168.47759065022572,
+     "y2": 172.3463313526982,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "circle",
+     "x": 150,
+     "y": 180,
+     "r": 6,
+     "fill": "#a0a0a0"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 22,
+     "fill": "#d8d0b0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 502.0,
+     "y2": 180.0,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 500.47759065022575,
+     "y2": 187.6536686473018,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 496.14213562373095,
+     "y2": 194.14213562373095,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 489.6536686473018,
+     "y2": 198.47759065022575,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 482.0,
+     "y2": 200.0,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 474.3463313526982,
+     "y2": 198.47759065022575,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 467.85786437626905,
+     "y2": 194.14213562373095,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 463.52240934977425,
+     "y2": 187.6536686473018,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 462.0,
+     "y2": 180.0,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 463.52240934977425,
+     "y2": 172.3463313526982,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 467.85786437626905,
+     "y2": 165.85786437626905,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 474.3463313526982,
+     "y2": 161.52240934977428,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 482.0,
+     "y2": 160.0,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 489.6536686473018,
+     "y2": 161.52240934977428,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 496.14213562373095,
+     "y2": 165.85786437626905,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "line",
+     "x1": 482,
+     "y1": 180,
+     "x2": 500.47759065022575,
+     "y2": 172.3463313526982,
+     "w": 1,
+     "stroke": "#f0f0f0"
+    },
+    {
+     "t": "circle",
+     "x": 482,
+     "y": 180,
+     "r": 6,
+     "fill": "#a0a0a0"
+    }
+   ]
+  },
+  "car.rear.sombra.base": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/sombra__base.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 152,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    }
+   ]
+  },
+  "car.side.sombra.base": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/sombra__base.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 326,
+     "y": 218,
+     "rx": 300,
+     "ry": 9,
+     "fill": "#000000",
+     "a": 0.35
+    }
+   ]
+  },
+  "car.rear.vidros.limpo": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/vidros__limpo.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       42
+      ],
+      [
+       222,
+       42
+      ],
+      [
+       248,
+       94
+      ],
+      [
+       72,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "line",
+     "x1": 110,
+     "y1": 48,
+     "x2": 130,
+     "y2": 88,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.6
+    }
+   ]
+  },
+  "car.side.vidros.limpo": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/vidros__limpo.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       240,
+       90
+      ],
+      [
+       366,
+       88
+      ],
+      [
+       422,
+       126
+      ],
+      [
+       196,
+       126
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "line",
+     "x1": 250,
+     "y1": 96,
+     "x2": 280,
+     "y2": 120,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.6
+    },
+    {
+     "t": "line",
+     "x1": 306,
+     "y1": 90,
+     "x2": 300,
+     "y2": 126,
+     "w": 3,
+     "stroke": "#161616"
+    }
+   ]
+  },
+  "car.rear.vidros.trincado": {
+   "kind": "carLayer",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/car/rear/vidros__trincado.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       42
+      ],
+      [
+       222,
+       42
+      ],
+      [
+       248,
+       94
+      ],
+      [
+       72,
+       94
+      ]
+     ],
+     "fill": "#5d6a6f"
+    },
+    {
+     "t": "line",
+     "x1": 180,
+     "y1": 50,
+     "x2": 200,
+     "y2": 76,
+     "w": 1,
+     "stroke": "#dddddd"
+    },
+    {
+     "t": "line",
+     "x1": 200,
+     "y1": 76,
+     "x2": 186,
+     "y2": 88,
+     "w": 1,
+     "stroke": "#dddddd"
+    }
+   ]
+  },
+  "car.side.vidros.trincado": {
+   "kind": "carLayer",
+   "size": [
+    640,
+    240
+   ],
+   "anchor": [
+    0.5,
+    0.9
+   ],
+   "src": "img/car/side/vidros__trincado.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       240,
+       90
+      ],
+      [
+       366,
+       88
+      ],
+      [
+       422,
+       126
+      ],
+      [
+       196,
+       126
+      ]
+     ],
+     "fill": "#5d6a6f"
+    },
+    {
+     "t": "line",
+     "x1": 380,
+     "y1": 100,
+     "x2": 396,
+     "y2": 116,
+     "w": 1.2,
+     "stroke": "#dddddd"
+    },
+    {
+     "t": "line",
+     "x1": 396,
+     "y1": 116,
+     "x2": 384,
+     "y2": 122,
+     "w": 1.2,
+     "stroke": "#dddddd"
+    }
+   ]
+  },
+  "opp.o01.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o01.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
+     "fill": "#3f8f3f"
+    },
+    {
+     "t": "rrect",
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#3f8f3f"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o02.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o02.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 104,
+     "w": 264,
+     "h": 68,
+     "r": 20,
+     "fill": "#e8c21f"
+    },
+    {
+     "t": "rrect",
+     "x": 110,
+     "y": 74,
+     "w": 100,
+     "h": 34,
+     "r": 10,
+     "fill": "#1a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 120,
+     "y": 60,
+     "w": 80,
+     "h": 8,
+     "fill": "#888888"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o03.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o03.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rect",
+     "x": 56,
+     "y": 26,
+     "w": 208,
+     "h": 76,
+     "fill": "#8a5a2a"
+    },
+    {
+     "t": "rrect",
+     "x": 20,
+     "y": 96,
+     "w": 280,
+     "h": 76,
+     "r": 8,
+     "fill": "#8a5a2a"
+    },
+    {
+     "t": "rect",
+     "x": 70,
+     "y": 34,
+     "w": 180,
+     "h": 58,
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o04.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o04.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
+     "fill": "#f07a1a"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#f07a1a"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o05.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o05.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
+     "fill": "#c0302a"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#c0302a"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o06.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o06.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
+     "fill": "#6ec6e8"
+    },
+    {
+     "t": "rrect",
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#6ec6e8"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o07.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o07.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
+     "fill": "#7a7f88"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#7a7f88"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o08.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o08.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 104,
+     "w": 264,
+     "h": 68,
+     "r": 20,
+     "fill": "#f07aa8"
+    },
+    {
+     "t": "rrect",
+     "x": 110,
+     "y": 74,
+     "w": 100,
+     "h": 34,
+     "r": 10,
+     "fill": "#1a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 120,
+     "y": 60,
+     "w": 80,
+     "h": 8,
+     "fill": "#888888"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o09.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o09.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
+     "fill": "#5a6a3a"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#5a6a3a"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o10.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o10.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rrect",
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o11.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o11.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 104,
+     "w": 264,
+     "h": 68,
+     "r": 20,
+     "fill": "#1f3a6a"
+    },
+    {
+     "t": "rrect",
+     "x": 110,
+     "y": 74,
+     "w": 100,
+     "h": 34,
+     "r": 10,
+     "fill": "#1a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 120,
+     "y": 60,
+     "w": 80,
+     "h": 8,
+     "fill": "#888888"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o12.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o12.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
+     "fill": "#1fa86a"
+    },
+    {
+     "t": "rrect",
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#1fa86a"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o13.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o13.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
+     "fill": "#7a1414"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#7a1414"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o14.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o14.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
+     "fill": "#ffd21f"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#ffd21f"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o15.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o15.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
+     "fill": "#b8b8c0"
+    },
+    {
+     "t": "rrect",
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#b8b8c0"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o16.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o16.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
+     "fill": "#4a2a6a"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#4a2a6a"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o17.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o17.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 104,
+     "w": 264,
+     "h": 68,
+     "r": 20,
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "rrect",
+     "x": 110,
+     "y": 74,
+     "w": 100,
+     "h": 34,
+     "r": 10,
+     "fill": "#1a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 120,
+     "y": 60,
+     "w": 80,
+     "h": 8,
+     "fill": "#888888"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "opp.o18.rear": {
+   "kind": "sprite",
+   "size": [
+    320,
+    200
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/opp/o18.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
+     "fill": "#000000",
+     "a": 0.35
+    },
+    {
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
+     "fill": "#2a6aff"
+    },
+    {
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#2a6aff"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
+    }
+   ]
+  },
+  "bg.bairro.ceu": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/bairro_ceu.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 1024,
+     "h": 384,
+     "fill": "#72d7ee"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 256,
+     "w": 1024,
+     "h": 128,
+     "fill": "#bfeefa"
+    },
+    {
+     "t": "circle",
+     "x": 820,
+     "y": 90,
+     "r": 40,
+     "fill": "#fff6c0",
+     "a": 0.9
+    }
+   ]
+  },
+  "bg.bairro.morros": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/bairro_morros.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       384
+      ],
+      [
+       0,
+       300.0
+      ],
+      [
+       32,
+       237.2
+      ],
+      [
+       64,
+       233.1
+      ],
+      [
+       96,
+       266.1
+      ],
+      [
+       128,
+       278.8
+      ],
+      [
+       160,
+       271.6
+      ],
+      [
+       192,
+       295.2
+      ],
+      [
+       224,
+       355.7
+      ],
+      [
+       256,
+       390.0
+      ],
+      [
+       288,
+       355.7
+      ],
+      [
+       320,
+       295.2
+      ],
+      [
+       352,
+       271.6
+      ],
+      [
+       384,
+       278.8
+      ],
+      [
+       416,
+       266.1
+      ],
+      [
+       448,
+       233.1
+      ],
+      [
+       480,
+       237.2
+      ],
+      [
+       512,
+       300.0
+      ],
+      [
+       544,
+       362.8
+      ],
+      [
+       576,
+       366.9
+      ],
+      [
+       608,
+       333.9
+      ],
+      [
+       640,
+       321.2
+      ],
+      [
+       672,
+       328.4
+      ],
+      [
+       704,
+       304.8
+      ],
+      [
+       736,
+       244.3
+      ],
+      [
+       768,
+       210.0
+      ],
+      [
+       800,
+       244.3
+      ],
+      [
+       832,
+       304.8
+      ],
+      [
+       864,
+       328.4
+      ],
+      [
+       896,
+       321.2
+      ],
+      [
+       928,
+       333.9
+      ],
+      [
+       960,
+       366.9
+      ],
+      [
+       992,
+       362.8
+      ],
+      [
+       1024,
+       300.0
+      ],
+      [
+       1024,
+       384
+      ]
+     ],
+     "fill": "#5d9e48"
+    }
+   ]
+  },
+  "bg.bairro.arvores": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/bairro_arvores.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 0,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 40,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 80,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 120,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 160,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 200,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 240,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 280,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 320,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 360,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 400,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 440,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 480,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 520,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 560,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 600,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 640,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 680,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 720,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 760,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 800,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 840,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 880,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 920,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 960,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 1000,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 350,
+     "w": 1024,
+     "h": 34,
+     "fill": "#3f7f34"
+    }
+   ]
+  },
+  "bg.cidade.ceu": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/cidade_ceu.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 1024,
+     "h": 384,
+     "fill": "#8ec8f0"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 256,
+     "w": 1024,
+     "h": 128,
+     "fill": "#d0e6f6"
+    },
+    {
+     "t": "circle",
+     "x": 820,
+     "y": 90,
+     "r": 40,
+     "fill": "#fff6c0",
+     "a": 0.9
+    }
+   ]
+  },
+  "bg.cidade.morros": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/cidade_morros.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       384
+      ],
+      [
+       0,
+       300.0
+      ],
+      [
+       32,
+       237.2
+      ],
+      [
+       64,
+       233.1
+      ],
+      [
+       96,
+       266.1
+      ],
+      [
+       128,
+       278.8
+      ],
+      [
+       160,
+       271.6
+      ],
+      [
+       192,
+       295.2
+      ],
+      [
+       224,
+       355.7
+      ],
+      [
+       256,
+       390.0
+      ],
+      [
+       288,
+       355.7
+      ],
+      [
+       320,
+       295.2
+      ],
+      [
+       352,
+       271.6
+      ],
+      [
+       384,
+       278.8
+      ],
+      [
+       416,
+       266.1
+      ],
+      [
+       448,
+       233.1
+      ],
+      [
+       480,
+       237.2
+      ],
+      [
+       512,
+       300.0
+      ],
+      [
+       544,
+       362.8
+      ],
+      [
+       576,
+       366.9
+      ],
+      [
+       608,
+       333.9
+      ],
+      [
+       640,
+       321.2
+      ],
+      [
+       672,
+       328.4
+      ],
+      [
+       704,
+       304.8
+      ],
+      [
+       736,
+       244.3
+      ],
+      [
+       768,
+       210.0
+      ],
+      [
+       800,
+       244.3
+      ],
+      [
+       832,
+       304.8
+      ],
+      [
+       864,
+       328.4
+      ],
+      [
+       896,
+       321.2
+      ],
+      [
+       928,
+       333.9
+      ],
+      [
+       960,
+       366.9
+      ],
+      [
+       992,
+       362.8
+      ],
+      [
+       1024,
+       300.0
+      ],
+      [
+       1024,
+       384
+      ]
+     ],
+     "fill": "#7a8090"
+    }
+   ]
+  },
+  "bg.cidade.arvores": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/cidade_arvores.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 304,
+     "w": 48,
+     "h": 80,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 64,
+     "y": 248,
+     "w": 48,
+     "h": 136,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 128,
+     "y": 192,
+     "w": 48,
+     "h": 192,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 192,
+     "y": 276,
+     "w": 48,
+     "h": 108,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 256,
+     "y": 220,
+     "w": 48,
+     "h": 164,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 320,
+     "y": 304,
+     "w": 48,
+     "h": 80,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 384,
+     "y": 248,
+     "w": 48,
+     "h": 136,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 448,
+     "y": 192,
+     "w": 48,
+     "h": 192,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 512,
+     "y": 276,
+     "w": 48,
+     "h": 108,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 576,
+     "y": 220,
+     "w": 48,
+     "h": 164,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 640,
+     "y": 304,
+     "w": 48,
+     "h": 80,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 704,
+     "y": 248,
+     "w": 48,
+     "h": 136,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 768,
+     "y": 192,
+     "w": 48,
+     "h": 192,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 832,
+     "y": 276,
+     "w": 48,
+     "h": 108,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 896,
+     "y": 220,
+     "w": 48,
+     "h": 164,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 960,
+     "y": 304,
+     "w": 48,
+     "h": 80,
+     "fill": "#555a66"
+    }
+   ]
+  },
+  "bg.serra.ceu": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/serra_ceu.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 1024,
+     "h": 384,
+     "fill": "#f2b46a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 256,
+     "w": 1024,
+     "h": 128,
+     "fill": "#f8dcb0"
+    },
+    {
+     "t": "circle",
+     "x": 820,
+     "y": 90,
+     "r": 40,
+     "fill": "#fff6c0",
+     "a": 0.9
+    }
+   ]
+  },
+  "bg.serra.morros": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/serra_morros.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       384
+      ],
+      [
+       0,
+       300.0
+      ],
+      [
+       32,
+       237.2
+      ],
+      [
+       64,
+       233.1
+      ],
+      [
+       96,
+       266.1
+      ],
+      [
+       128,
+       278.8
+      ],
+      [
+       160,
+       271.6
+      ],
+      [
+       192,
+       295.2
+      ],
+      [
+       224,
+       355.7
+      ],
+      [
+       256,
+       390.0
+      ],
+      [
+       288,
+       355.7
+      ],
+      [
+       320,
+       295.2
+      ],
+      [
+       352,
+       271.6
+      ],
+      [
+       384,
+       278.8
+      ],
+      [
+       416,
+       266.1
+      ],
+      [
+       448,
+       233.1
+      ],
+      [
+       480,
+       237.2
+      ],
+      [
+       512,
+       300.0
+      ],
+      [
+       544,
+       362.8
+      ],
+      [
+       576,
+       366.9
+      ],
+      [
+       608,
+       333.9
+      ],
+      [
+       640,
+       321.2
+      ],
+      [
+       672,
+       328.4
+      ],
+      [
+       704,
+       304.8
+      ],
+      [
+       736,
+       244.3
+      ],
+      [
+       768,
+       210.0
+      ],
+      [
+       800,
+       244.3
+      ],
+      [
+       832,
+       304.8
+      ],
+      [
+       864,
+       328.4
+      ],
+      [
+       896,
+       321.2
+      ],
+      [
+       928,
+       333.9
+      ],
+      [
+       960,
+       366.9
+      ],
+      [
+       992,
+       362.8
+      ],
+      [
+       1024,
+       300.0
+      ],
+      [
+       1024,
+       384
+      ]
+     ],
+     "fill": "#7a6a5a"
+    }
+   ]
+  },
+  "bg.serra.arvores": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/serra_arvores.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 0,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 40,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 80,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 120,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 160,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 200,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 240,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 280,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 320,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 360,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 400,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 440,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 480,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 520,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 560,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 600,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 640,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 680,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 720,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 760,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 800,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 840,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 880,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 920,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 960,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 1000,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 350,
+     "w": 1024,
+     "h": 34,
+     "fill": "#3e5e2c"
+    }
+   ]
+  },
+  "bg.autodromo.ceu": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/autodromo_ceu.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 1024,
+     "h": 384,
+     "fill": "#5aa0e8"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 256,
+     "w": 1024,
+     "h": 128,
+     "fill": "#c6def6"
+    },
+    {
+     "t": "circle",
+     "x": 820,
+     "y": 90,
+     "r": 40,
+     "fill": "#fff6c0",
+     "a": 0.9
+    }
+   ]
+  },
+  "bg.autodromo.morros": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/autodromo_morros.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       384
+      ],
+      [
+       0,
+       300.0
+      ],
+      [
+       32,
+       237.2
+      ],
+      [
+       64,
+       233.1
+      ],
+      [
+       96,
+       266.1
+      ],
+      [
+       128,
+       278.8
+      ],
+      [
+       160,
+       271.6
+      ],
+      [
+       192,
+       295.2
+      ],
+      [
+       224,
+       355.7
+      ],
+      [
+       256,
+       390.0
+      ],
+      [
+       288,
+       355.7
+      ],
+      [
+       320,
+       295.2
+      ],
+      [
+       352,
+       271.6
+      ],
+      [
+       384,
+       278.8
+      ],
+      [
+       416,
+       266.1
+      ],
+      [
+       448,
+       233.1
+      ],
+      [
+       480,
+       237.2
+      ],
+      [
+       512,
+       300.0
+      ],
+      [
+       544,
+       362.8
+      ],
+      [
+       576,
+       366.9
+      ],
+      [
+       608,
+       333.9
+      ],
+      [
+       640,
+       321.2
+      ],
+      [
+       672,
+       328.4
+      ],
+      [
+       704,
+       304.8
+      ],
+      [
+       736,
+       244.3
+      ],
+      [
+       768,
+       210.0
+      ],
+      [
+       800,
+       244.3
+      ],
+      [
+       832,
+       304.8
+      ],
+      [
+       864,
+       328.4
+      ],
+      [
+       896,
+       321.2
+      ],
+      [
+       928,
+       333.9
+      ],
+      [
+       960,
+       366.9
+      ],
+      [
+       992,
+       362.8
+      ],
+      [
+       1024,
+       300.0
+      ],
+      [
+       1024,
+       384
+      ]
+     ],
+     "fill": "#6aa060"
+    }
+   ]
+  },
+  "bg.autodromo.arvores": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/autodromo_arvores.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 0,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 40,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 80,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 120,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 160,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 200,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 240,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 280,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 320,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 360,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 400,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 440,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 480,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 520,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 560,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 600,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 640,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 680,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 720,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 760,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 800,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 840,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 880,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 920,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 960,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 1000,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 350,
+     "w": 1024,
+     "h": 34,
+     "fill": "#3e6e36"
+    }
+   ]
+  },
+  "dec.arvore": {
+   "kind": "billboard",
+   "size": [
+    128,
+    192
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/arvore.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 56,
+     "y": 120,
+     "w": 16,
+     "h": 72,
+     "fill": "#6b4a2a"
+    },
+    {
+     "t": "circle",
+     "x": 64,
+     "y": 70,
+     "r": 56,
+     "fill": "#2f6b2a"
+    },
+    {
+     "t": "circle",
+     "x": 52,
+     "y": 58,
+     "r": 30,
+     "fill": "#3c8034"
+    }
+   ],
+   "worldW": 700,
+   "solid": true
+  },
+  "dec.palmeira": {
+   "kind": "billboard",
+   "size": [
+    128,
+    224
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/palmeira.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       60,
+       224
+      ],
+      [
+       68,
+       224
+      ],
+      [
+       72,
+       60
+      ],
+      [
+       64,
+       60
+      ]
+     ],
+     "fill": "#7a5a2a"
+    },
+    {
+     "t": "line",
+     "x1": 66,
+     "y1": 60,
+     "x2": 10.0,
+     "y2": 60.00000000000001,
+     "w": 10,
+     "stroke": "#3c8a3a"
+    },
+    {
+     "t": "line",
+     "x1": 66,
+     "y1": 60,
+     "x2": 20.695048315002936,
+     "y2": 42.366442431225806,
+     "w": 10,
+     "stroke": "#3c8a3a"
+    },
+    {
+     "t": "line",
+     "x1": 66,
+     "y1": 60,
+     "x2": 48.695048315002936,
+     "y2": 31.468304511145394,
+     "w": 10,
+     "stroke": "#3c8a3a"
+    },
+    {
+     "t": "line",
+     "x1": 66,
+     "y1": 60,
+     "x2": 83.30495168499704,
+     "y2": 31.46830451114539,
+     "w": 10,
+     "stroke": "#3c8a3a"
+    },
+    {
+     "t": "line",
+     "x1": 66,
+     "y1": 60,
+     "x2": 111.30495168499705,
+     "y2": 42.3664424312258,
+     "w": 10,
+     "stroke": "#3c8a3a"
+    },
+    {
+     "t": "line",
+     "x1": 66,
+     "y1": 60,
+     "x2": 122.0,
+     "y2": 59.99999999999999,
+     "w": 10,
+     "stroke": "#3c8a3a"
+    }
+   ],
+   "worldW": 600,
+   "solid": true
+  },
+  "dec.casa": {
+   "kind": "billboard",
+   "size": [
+    256,
+    192
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/casa.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 80,
+     "w": 224,
+     "h": 112,
+     "fill": "#c96b4a"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       84
+      ],
+      [
+       128,
+       8
+      ],
+      [
+       256,
+       84
+      ]
+     ],
+     "fill": "#8a4430"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 128,
+     "w": 48,
+     "h": 64,
+     "fill": "#5a3a20"
+    },
+    {
+     "t": "rect",
+     "x": 40,
+     "y": 110,
+     "w": 40,
+     "h": 32,
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 176,
+     "y": 110,
+     "w": 40,
+     "h": 32,
+     "fill": "#8cc4e6"
+    }
+   ],
+   "worldW": 1400,
+   "solid": true
+  },
+  "dec.predio": {
+   "kind": "billboard",
+   "size": [
+    192,
+    320
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/predio.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 192,
+     "h": 320,
+     "fill": "#7a7f88"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 16,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 64,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 112,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 160,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 208,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 256,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 16,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 64,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 112,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 160,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 208,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 256,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 16,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 64,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 112,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 160,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 208,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 256,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 16,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 64,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 112,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 160,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 208,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 256,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    }
+   ],
+   "worldW": 1200,
+   "solid": true
+  },
+  "dec.pneus": {
+   "kind": "billboard",
+   "size": [
+    96,
+    64
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/pneus.png",
+   "ph": [
+    {
+     "t": "rrect",
+     "x": 0,
+     "y": 32,
+     "w": 96,
+     "h": 32,
+     "r": 8,
+     "fill": "#1a1a1a"
+    },
+    {
+     "t": "rrect",
+     "x": 8,
+     "y": 0,
+     "w": 80,
+     "h": 34,
+     "r": 8,
+     "fill": "#222222"
+    },
+    {
+     "t": "rect",
+     "x": 20,
+     "y": 40,
+     "w": 56,
+     "h": 6,
+     "fill": "#d42a2a"
+    }
+   ],
+   "worldW": 300,
+   "solid": true
+  },
+  "dec.cone": {
+   "kind": "billboard",
+   "size": [
+    48,
+    64
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/cone.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       24,
+       0
+      ],
+      [
+       44,
+       64
+      ],
+      [
+       4,
+       64
+      ]
+     ],
+     "fill": "#ff7a1a"
+    },
+    {
+     "t": "rect",
+     "x": 14,
+     "y": 28,
+     "w": 20,
+     "h": 8,
+     "fill": "#ffffff"
+    }
+   ],
+   "worldW": 120,
+   "solid": true
+  },
+  "dec.arquibancada": {
+   "kind": "billboard",
+   "size": [
+    384,
+    192
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/arquibancada.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 40,
+     "w": 384,
+     "h": 152,
+     "fill": "#b0b0b0"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 56,
+     "w": 384,
+     "h": 6,
+     "fill": "#7a7a7a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 76,
+     "w": 384,
+     "h": 6,
+     "fill": "#7a7a7a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 96,
+     "w": 384,
+     "h": 6,
+     "fill": "#7a7a7a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 116,
+     "w": 384,
+     "h": 6,
+     "fill": "#7a7a7a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 136,
+     "w": 384,
+     "h": 6,
+     "fill": "#7a7a7a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 156,
+     "w": 384,
+     "h": 6,
+     "fill": "#7a7a7a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 176,
+     "w": 384,
+     "h": 6,
+     "fill": "#7a7a7a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 384,
+     "h": 40,
+     "fill": "#d42a2a"
+    }
+   ],
+   "worldW": 2400,
+   "solid": true
+  },
+  "dec.pedra": {
+   "kind": "billboard",
+   "size": [
+    160,
+    112
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/pedra.png",
+   "ph": [
+    {
+     "t": "ellipse",
+     "x": 80,
+     "y": 72,
+     "rx": 78,
+     "ry": 40,
+     "fill": "#8a8a80"
+    },
+    {
+     "t": "ellipse",
+     "x": 64,
+     "y": 56,
+     "rx": 36,
+     "ry": 22,
+     "fill": "#a0a096"
+    }
+   ],
+   "worldW": 700,
+   "solid": true
+  },
+  "dec.poste": {
+   "kind": "billboard",
+   "size": [
+    48,
+    256
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/poste.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 20,
+     "y": 24,
+     "w": 8,
+     "h": 232,
+     "fill": "#555555"
+    },
+    {
+     "t": "rect",
+     "x": 8,
+     "y": 8,
+     "w": 32,
+     "h": 16,
+     "fill": "#777777"
+    },
+    {
+     "t": "rect",
+     "x": 12,
+     "y": 22,
+     "w": 24,
+     "h": 6,
+     "fill": "#ffffaa"
+    }
+   ],
+   "worldW": 120,
+   "solid": true
+  },
+  "dec.outdoor": {
+   "kind": "billboard",
+   "size": [
+    256,
+    160
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/outdoor.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 120,
+     "y": 96,
+     "w": 16,
+     "h": 64,
+     "fill": "#555555"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 256,
+     "h": 100,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 8,
+     "y": 8,
+     "w": 240,
+     "h": 84,
+     "fill": "#1f4fa8"
+    },
+    {
+     "t": "text",
+     "x": 128,
+     "y": 50,
+     "text": "GARAGEM 68",
+     "size": 28,
+     "fill": "#ffffff"
+    }
+   ],
+   "worldW": 1400,
+   "solid": true
+  },
+  "dec.placa_esq": {
+   "kind": "billboard",
+   "size": [
+    128,
+    128
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/placa_esq.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 58,
+     "y": 64,
+     "w": 12,
+     "h": 64,
+     "fill": "#555555"
+    },
+    {
+     "t": "rrect",
+     "x": 0,
+     "y": 0,
+     "w": 128,
+     "h": 72,
+     "r": 8,
+     "fill": "#ffd21f"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       20,
+       36
+      ],
+      [
+       64,
+       10
+      ],
+      [
+       64,
+       26
+      ],
+      [
+       108,
+       26
+      ],
+      [
+       108,
+       46
+      ],
+      [
+       64,
+       46
+      ],
+      [
+       64,
+       62
+      ]
+     ],
+     "fill": "#111111"
+    }
+   ],
+   "worldW": 500,
+   "solid": false
+  },
+  "dec.placa_dir": {
+   "kind": "billboard",
+   "size": [
+    128,
+    128
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/placa_dir.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 58,
+     "y": 64,
+     "w": 12,
+     "h": 64,
+     "fill": "#555555"
+    },
+    {
+     "t": "rrect",
+     "x": 0,
+     "y": 0,
+     "w": 128,
+     "h": 72,
+     "r": 8,
+     "fill": "#ffd21f"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       108,
+       36
+      ],
+      [
+       64,
+       10
+      ],
+      [
+       64,
+       26
+      ],
+      [
+       20,
+       26
+      ],
+      [
+       20,
+       46
+      ],
+      [
+       64,
+       46
+      ],
+      [
+       64,
+       62
+      ]
+     ],
+     "fill": "#111111"
+    }
+   ],
+   "worldW": 500,
+   "solid": false
+  },
+  "dec.largada": {
+   "kind": "billboard",
+   "size": [
+    512,
+    256
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/largada.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 24,
+     "h": 256,
+     "fill": "#777777"
+    },
+    {
+     "t": "rect",
+     "x": 488,
+     "y": 0,
+     "w": 24,
+     "h": 256,
+     "fill": "#777777"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 512,
+     "h": 64,
+     "fill": "#111111"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 32,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 64,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 96,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 128,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 160,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 192,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 224,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 256,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 288,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 320,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 352,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 384,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 416,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 448,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 480,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "text",
+     "x": 256,
+     "y": 90,
+     "text": "LARGADA",
+     "size": 26,
+     "fill": "#ffffff"
+    }
+   ],
+   "worldW": 2600,
+   "solid": false
+  },
+  "fx.fumaca": {
+   "kind": "sprite",
+   "size": [
+    32,
+    32
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/fx/fumaca.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 16,
+     "y": 16,
+     "r": 15,
+     "fill": "#8a8a8a",
+     "a": 0.6
+    }
+   ]
+  },
+  "fx.poeira": {
+   "kind": "sprite",
+   "size": [
+    32,
+    32
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/fx/poeira.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 16,
+     "y": 16,
+     "r": 15,
+     "fill": "#b59a6a",
+     "a": 0.5
+    }
+   ]
+  },
+  "fx.faisca": {
+   "kind": "sprite",
+   "size": [
+    16,
+    16
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/fx/faisca.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 8,
+     "y": 8,
+     "r": 6,
+     "fill": "#ffd21f"
+    }
+   ]
+  },
+  "fx.brilho": {
+   "kind": "sprite",
+   "size": [
+    64,
+    64
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/fx/brilho.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 32,
+     "y": 32,
+     "r": 30,
+     "fill": "#ffffff",
+     "a": 0.35
+    },
+    {
+     "t": "circle",
+     "x": 32,
+     "y": 32,
+     "r": 14,
+     "fill": "#ffffff",
+     "a": 0.8
+    }
+   ]
+  },
+  "ico.ferrugem": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/ferrugem.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#8a4b1c"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🧽",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.funilaria": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/funilaria.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#6b6b6b"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🔨",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.vidros": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/vidros.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#3a7fb0"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🪟",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.farois": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/farois.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#c9a227"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "💡",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.parachoques": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/parachoques.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#9a9a9a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "✨",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.rodas": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/rodas.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#444444"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🛞",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.revisao": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/revisao.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#2d6a4f"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🛢️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.pintura": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/pintura.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#1f1f1f"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🎨",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.motor": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/motor.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#b3121b"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⚙️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.inducao": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/inducao.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#7b2cbf"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🌀",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.cambio": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/cambio.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#3a3a8a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🕹️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.escapamento": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/escapamento.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#6b5b4b"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "💨",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.pneus": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/pneus.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#222222"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⭕",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.suspensao": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/suspensao.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#555555"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🔩",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.freios": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/freios.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#a01818"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🛑",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.aero": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/aero.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#1d4d2b"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🪽",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.c_rodas": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/c_rodas.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🛞",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.c_faixas": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/c_faixas.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🏁",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.c_aerofolio": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/c_aerofolio.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#111111"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🪽",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.c_luzes": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/c_luzes.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#2aa8ff"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🔦",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.c_adesivos": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/c_adesivos.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#ffd21f"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⚡",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.c_cor": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/c_cor.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#c81e28"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🎨",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.dinheiro": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/dinheiro.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#2d8a3a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "💲",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.cadeado": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/cadeado.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#555555"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🔒",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.trofeu": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/trofeu.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🏆",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.pausa": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/pausa.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#333333"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⏸️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.som": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/som.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#333333"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🔊",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.mudo": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/mudo.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#333333"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🔇",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.garagem": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/garagem.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#3a3a3a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🏠",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.corrida": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/corrida.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#b3121b"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🏎️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.ajustes": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/ajustes.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#555555"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⚙️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.voltar": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/voltar.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#555555"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⬅️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.esq": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/esq.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#1f1f1f"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "◀",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.dir": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/dir.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#1f1f1f"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "▶",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.freio": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/freio.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#a01818"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🛑",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.acelerar": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/acelerar.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#2d8a3a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⏫",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.aceleracao": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/aceleracao.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#b3121b"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🚀",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.velocidade": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/velocidade.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#1f4fa8"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "💨",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.aderencia": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/aderencia.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#2d8a3a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🧲",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.frenagem": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/frenagem.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#a01818"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🛑",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.dirigibilidade": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/dirigibilidade.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#7b2cbf"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "🎯",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.capacete_azul": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/capacete_azul.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#1f4fa8"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⛑️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.capacete_vermelho": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/capacete_vermelho.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#b3121b"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⛑️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.capacete_verde": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/capacete_verde.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#2d8a3a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⛑️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  },
+  "ico.capacete_amarelo": {
+   "kind": "icon",
+   "size": [
+    96,
+    96
+   ],
+   "anchor": [
+    0.5,
+    0.5
+   ],
+   "src": "img/ui/capacete_amarelo.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 48,
+     "y": 48,
+     "r": 46,
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "text",
+     "x": 48,
+     "y": 50,
+     "text": "⛑️",
+     "size": 52,
+     "fill": "#ffffff"
+    }
+   ]
+  }
+ },
+ "audio": {
+  "mus.menu": {
+   "kind": "music",
+   "src": "audio/music/menu.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "rock",
+    "pattern": "menu",
+    "bpm": 120
+   }
+  },
+  "mus.garagem": {
+   "kind": "music",
+   "src": "audio/music/garagem.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "rock",
+    "pattern": "garagem",
+    "bpm": 100
+   }
+  },
+  "mus.corrida": {
+   "kind": "music",
+   "src": "audio/music/corrida.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "rock",
+    "pattern": "corrida",
+    "bpm": 150
+   }
+  },
+  "mus.vitoria": {
+   "kind": "music",
+   "src": "audio/music/vitoria.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "rock",
+    "pattern": "vitoria",
+    "bpm": 160
+   }
+  },
+  "mus.resultado": {
+   "kind": "music",
+   "src": "audio/music/resultado.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "rock",
+    "pattern": "resultado",
+    "bpm": 110
+   }
+  },
+  "eng.i6_200.low": {
+   "kind": "engine",
+   "src": "audio/engine/i6_200_low.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 6,
+    "rpm": 1125,
+    "character": "rateando",
+    "seconds": 1.0
+   },
+   "refRpm": 1125
+  },
+  "eng.i6_200.high": {
+   "kind": "engine",
+   "src": "audio/engine/i6_200_high.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 6,
+    "rpm": 3300,
+    "character": "rateando",
+    "seconds": 1.0
+   },
+   "refRpm": 3300
+  },
+  "eng.v8_289.low": {
+   "kind": "engine",
+   "src": "audio/engine/v8_289_low.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 8,
+    "rpm": 1200,
+    "character": "v8",
+    "seconds": 1.0
+   },
+   "refRpm": 1200
+  },
+  "eng.v8_289.high": {
+   "kind": "engine",
+   "src": "audio/engine/v8_289_high.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 8,
+    "rpm": 4350,
+    "character": "v8",
+    "seconds": 1.0
+   },
+   "refRpm": 4350
+  },
+  "eng.v8_302.low": {
+   "kind": "engine",
+   "src": "audio/engine/v8_302_low.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 8,
+    "rpm": 1200,
+    "character": "v8",
+    "seconds": 1.0
+   },
+   "refRpm": 1200
+  },
+  "eng.v8_302.high": {
+   "kind": "engine",
+   "src": "audio/engine/v8_302_high.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 8,
+    "rpm": 4500,
+    "character": "v8",
+    "seconds": 1.0
+   },
+   "refRpm": 4500
+  },
+  "eng.v8_390.low": {
+   "kind": "engine",
+   "src": "audio/engine/v8_390_low.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 8,
+    "rpm": 1125,
+    "character": "v8_grave",
+    "seconds": 1.0
+   },
+   "refRpm": 1125
+  },
+  "eng.v8_390.high": {
+   "kind": "engine",
+   "src": "audio/engine/v8_390_high.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 8,
+    "rpm": 4200,
+    "character": "v8_grave",
+    "seconds": 1.0
+   },
+   "refRpm": 4200
+  },
+  "eng.v8_428.low": {
+   "kind": "engine",
+   "src": "audio/engine/v8_428_low.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 8,
+    "rpm": 1050,
+    "character": "v8_grave",
+    "seconds": 1.0
+   },
+   "refRpm": 1050
+  },
+  "eng.v8_428.high": {
+   "kind": "engine",
+   "src": "audio/engine/v8_428_high.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "engine",
+    "cyl": 8,
+    "rpm": 4350,
+    "character": "v8_grave",
+    "seconds": 1.0
+   },
+   "refRpm": 4350
+  },
+  "eng.turbo": {
+   "kind": "engine",
+   "src": "audio/engine/turbo.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "whine",
+    "freq": 1800,
+    "seconds": 1.0
+   },
+   "refRpm": 4000
+  },
+  "eng.compressor": {
+   "kind": "engine",
+   "src": "audio/engine/compressor.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "whine",
+    "freq": 900,
+    "seconds": 1.0
+   },
+   "refRpm": 4000
+  },
+  "sfx.ui_toque": {
+   "kind": "sfx",
+   "src": "audio/sfx/ui_toque.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "blip",
+    "freq": 880,
+    "dur": 0.06
+   }
+  },
+  "sfx.ui_voltar": {
+   "kind": "sfx",
+   "src": "audio/sfx/ui_voltar.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "blip",
+    "freq": 440,
+    "dur": 0.06
+   }
+  },
+  "sfx.ui_negado": {
+   "kind": "sfx",
+   "src": "audio/sfx/ui_negado.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "blip",
+    "freq": 220,
+    "dur": 0.15,
+    "wave": "triangle"
+   }
+  },
+  "sfx.compra": {
+   "kind": "sfx",
+   "src": "audio/sfx/compra.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "arpeggio",
+    "notes": [
+     72,
+     76,
+     79,
+     84
+    ],
+    "step": 0.07,
+    "wave": "square"
+   }
+  },
+  "sfx.instalar_restauracao": {
+   "kind": "sfx",
+   "src": "audio/sfx/instalar_restauracao.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "sparkle",
+    "dur": 0.8
+   }
+  },
+  "sfx.instalar_desempenho": {
+   "kind": "sfx",
+   "src": "audio/sfx/instalar_desempenho.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "ratchet",
+    "dur": 0.6
+   }
+  },
+  "sfx.equipar_visual": {
+   "kind": "sfx",
+   "src": "audio/sfx/equipar_visual.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "arpeggio",
+    "notes": [
+     79,
+     84
+    ],
+    "step": 0.08,
+    "wave": "triangle"
+   }
+  },
+  "sfx.contagem": {
+   "kind": "sfx",
+   "src": "audio/sfx/contagem.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "blip",
+    "freq": 660,
+    "dur": 0.18
+   }
+  },
+  "sfx.largada": {
+   "kind": "sfx",
+   "src": "audio/sfx/largada.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "blip",
+    "freq": 1320,
+    "dur": 0.45
+   }
+  },
+  "sfx.batida_objeto": {
+   "kind": "sfx",
+   "src": "audio/sfx/batida_objeto.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "noise_hit",
+    "dur": 0.25,
+    "lowpass": 900
+   }
+  },
+  "sfx.batida_carro": {
+   "kind": "sfx",
+   "src": "audio/sfx/batida_carro.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "noise_hit",
+    "dur": 0.18,
+    "lowpass": 2200
+   }
+  },
+  "sfx.derrapagem": {
+   "kind": "sfx",
+   "src": "audio/sfx/derrapagem.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "skid",
+    "dur": 1.0
+   }
+  },
+  "sfx.volta": {
+   "kind": "sfx",
+   "src": "audio/sfx/volta.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "arpeggio",
+    "notes": [
+     76,
+     81
+    ],
+    "step": 0.1,
+    "wave": "square"
+   }
+  },
+  "sfx.ultima_volta": {
+   "kind": "sfx",
+   "src": "audio/sfx/ultima_volta.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "arpeggio",
+    "notes": [
+     76,
+     81,
+     88
+    ],
+    "step": 0.1,
+    "wave": "square"
+   }
+  },
+  "sfx.chegada_vitoria": {
+   "kind": "sfx",
+   "src": "audio/sfx/chegada_vitoria.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "arpeggio",
+    "notes": [
+     72,
+     76,
+     79,
+     84,
+     88
+    ],
+    "step": 0.09,
+    "wave": "square"
+   }
+  },
+  "sfx.chegada": {
+   "kind": "sfx",
+   "src": "audio/sfx/chegada.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "arpeggio",
+    "notes": [
+     72,
+     76,
+     79
+    ],
+    "step": 0.12,
+    "wave": "triangle"
+   }
+  },
+  "sfx.moeda": {
+   "kind": "sfx",
+   "src": "audio/sfx/moeda.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "blip",
+    "freq": 1760,
+    "dur": 0.04
+   }
+  },
+  "sfx.desbloqueio": {
+   "kind": "sfx",
+   "src": "audio/sfx/desbloqueio.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "arpeggio",
+    "notes": [
+     67,
+     72,
+     76,
+     79,
+     84
+    ],
+    "step": 0.08,
+    "wave": "triangle"
+   }
+  },
+  "sfx.partida_motor": {
+   "kind": "sfx",
+   "src": "audio/sfx/partida_motor.m4a",
+   "loop": false,
+   "synth": {
+    "gen": "ratchet",
+    "dur": 0.7
+   }
+  },
+  "sfx.terra": {
+   "kind": "sfx",
+   "src": "audio/sfx/terra.m4a",
+   "loop": true,
+   "synth": {
+    "gen": "skid",
+    "dur": 1.0,
+    "band": 400
+   }
+  }
+ }
+}

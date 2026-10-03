@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "physics": {
+    "fixedDt": 0.016666667,
+    "maxStepsPerFrame": 5,
+    "segmentLength": 200,
+    "speedRef": 12000,
+    "statToPhysics": {
+      "topSpeed": {
+        "base": 7000,
+        "perPoint": 70
+      },
+      "accel": {
+        "base": 1200,
+        "perPoint": 25
+      },
+      "brake": {
+        "base": 4000,
+        "perPoint": 60
+      },
+      "centrifugal": {
+        "base": 0.6,
+        "perPoint": -0.005
+      },
+      "steer": {
+        "base": 2.2,
+        "perPoint": 0.015
+      }
+    },
+    "centrifugalScale": 2.0,
+    "steerResponse": 8.0,
+    "rollingDecel": 1500,
+    "overSpeedDecay": 2.0,
+    "offRoad": {
+      "limit": 1.0,
+      "topSpeedMul": 0.45
+    },
+    "xLimit": 2.0,
+    "drift": {
+      "minSpeedRatio": 0.5,
+      "minSteer": 0.5,
+      "centrifugalMul": 0.5,
+      "brakeMul": 0.3
+    },
+    "skidCurveSpeed": 3.0,
+    "car": {
+      "width": 0.5,
+      "length": 300
+    },
+    "carCar": {
+      "lateral": 0.4,
+      "speedKeep": 0.95,
+      "nudge": 0.05,
+      "hitRelSpeed": 600
+    },
+    "roadside": {
+      "speedKeep": 0.5,
+      "nudgeToRoad": 0.15
+    },
+    "displayKmhPerUnit": 0.0165
+  },
+  "assist": {
+    "levels": {
+      "desligada": 0.0,
+      "media": 0.35,
+      "forte": 0.7
+    },
+    "default": "forte",
+    "edgeMargin": 0.15,
+    "edgeCorrection": 0.6,
+    "edgeOffRoadMul": 1.5,
+    "edgeReturnThreshold": -0.05,
+    "handsOffMinAuto": 0.1,
+    "handsOffThrottle": 0.85,
+    "autoThrottleEase": {
+      "minAssist": 0.35,
+      "overSpeedRatio": 1.0,
+      "throttle": 0.3
+    }
+  },
+  "ai": {
+    "lookaheadSeconds": 0.6,
+    "cornerSafety": 1.3,
+    "brakeMargin": 300,
+    "laneGain": 3.0,
+    "avoid": {
+      "aheadDist": 800,
+      "lateral": 0.45,
+      "shift": 0.5,
+      "seconds": 1.0
+    },
+    "mistake": {
+      "steerNoise": 0.3,
+      "seconds": 0.5
+    },
+    "rubberBandRange": 8000
+  },
+  "difficulty": {
+    "levels": {
+      "tranquilo": {
+        "label": "Tranquilo",
+        "aiRatingMul": 0.7,
+        "aiSkillAdd": -0.15,
+        "rubberBand": 0.15,
+        "prizeMul": 1.0
+      },
+      "normal": {
+        "label": "Normal",
+        "aiRatingMul": 0.9,
+        "aiSkillAdd": -0.07,
+        "rubberBand": 0.1,
+        "prizeMul": 1.15
+      },
+      "desafio": {
+        "label": "Desafio",
+        "aiRatingMul": 1.05,
+        "aiSkillAdd": 0.0,
+        "rubberBand": 0.05,
+        "prizeMul": 1.3
+      }
+    },
+    "default": "tranquilo"
+  },
+  "economy": {
+    "startingMoney": 0,
+    "positionPayout": [
+      1.0,
+      0.7,
+      0.55,
+      0.45,
+      0.38,
+      0.32
+    ],
+    "bestLapBonus": 0.15,
+    "cleanRaceBonus": 0.1,
+    "cleanRaceMaxHits": 2,
+    "firstWinBonus": 0.5,
+    "roundTo": 10
+  },
+  "race": {
+    "carsPerRace": 6,
+    "playerGridSlot": 4,
+    "gridRowSpacing": 600,
+    "gridLateral": 0.45,
+    "gridBehindLine": 400,
+    "countdownSeconds": 3,
+    "finishAutopilotSeconds": 2.0
+  },
+  "render": {
+    "cameraHeight": 1000,
+    "fieldOfView": 100,
+    "drawDistance": 150,
+    "fogDensity": 5,
+    "roadHalfWidth": 1000,
+    "rumbleLength": 3,
+    "lanes": 3,
+    "skySpeed": 0.001,
+    "hillSpeed": 0.002,
+    "treeSpeed": 0.003,
+    "steerTilt": 0.06,
+    "offRoadShake": 2,
+    "maxDpr": 2
+  }
+}
