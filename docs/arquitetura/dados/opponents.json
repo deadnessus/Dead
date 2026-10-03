@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "opponents": [
+    { "id": "o01", "driver": "Zeca",            "car": "Tartaruga",     "body": "coupe",    "color": "#3f8f3f", "rating": 6,  "skill": 0.86, "laneOffset": -0.30, "mistakeRate": 0.08 },
+    { "id": "o02", "driver": "Lia",             "car": "Abelha",        "body": "roadster", "color": "#e8c21f", "rating": 9,  "skill": 0.87, "laneOffset":  0.25, "mistakeRate": 0.07 },
+    { "id": "o03", "driver": "Tio Beto",        "car": "Caramelo",      "body": "perua",    "color": "#8a5a2a", "rating": 12, "skill": 0.88, "laneOffset":  0.00, "mistakeRate": 0.07 },
+    { "id": "o04", "driver": "Duda",            "car": "Foguete",       "body": "muscle",   "color": "#f07a1a", "rating": 15, "skill": 0.89, "laneOffset": -0.15, "mistakeRate": 0.06 },
+    { "id": "o05", "driver": "Tião",            "car": "Boiadeiro",     "body": "muscle",   "color": "#c0302a", "rating": 18, "skill": 0.90, "laneOffset":  0.15, "mistakeRate": 0.06 },
+    { "id": "o06", "driver": "Nina",            "car": "Lince",         "body": "coupe",    "color": "#6ec6e8", "rating": 22, "skill": 0.90, "laneOffset": -0.25, "mistakeRate": 0.05 },
+    { "id": "o07", "driver": "Gui",             "car": "Trovão",        "body": "muscle",   "color": "#7a7f88", "rating": 26, "skill": 0.91, "laneOffset":  0.30, "mistakeRate": 0.05 },
+    { "id": "o08", "driver": "Rosa",            "car": "Flamingo",      "body": "roadster", "color": "#f07aa8", "rating": 30, "skill": 0.91, "laneOffset":  0.05, "mistakeRate": 0.05 },
+    { "id": "o09", "driver": "Marcão",          "car": "Rinoceronte",   "body": "muscle",   "color": "#5a6a3a", "rating": 34, "skill": 0.92, "laneOffset": -0.10, "mistakeRate": 0.04 },
+    { "id": "o10", "driver": "Bia",             "car": "Cometa",        "body": "coupe",    "color": "#f2f2f2", "rating": 40, "skill": 0.92, "laneOffset":  0.20, "mistakeRate": 0.04 },
+    { "id": "o11", "driver": "Paulão",          "car": "Tubarão",       "body": "roadster", "color": "#1f3a6a", "rating": 45, "skill": 0.93, "laneOffset": -0.20, "mistakeRate": 0.04 },
+    { "id": "o12", "driver": "Jade",            "car": "Esmeralda",     "body": "coupe",    "color": "#1fa86a", "rating": 50, "skill": 0.93, "laneOffset":  0.10, "mistakeRate": 0.03 },
+    { "id": "o13", "driver": "Rafa",            "car": "Vulcão",        "body": "muscle",   "color": "#7a1414", "rating": 55, "skill": 0.94, "laneOffset": -0.05, "mistakeRate": 0.03 },
+    { "id": "o14", "driver": "Teca",            "car": "Relâmpago",     "body": "muscle",   "color": "#ffd21f", "rating": 62, "skill": 0.95, "laneOffset":  0.25, "mistakeRate": 0.03 },
+    { "id": "o15", "driver": "Dr. Ferraz",      "car": "Barão",         "body": "coupe",    "color": "#b8b8c0", "rating": 68, "skill": 0.96, "laneOffset": -0.25, "mistakeRate": 0.02 },
+    { "id": "o16", "driver": "Lobo",            "car": "Lobo da Noite", "body": "muscle",   "color": "#4a2a6a", "rating": 74, "skill": 0.97, "laneOffset":  0.15, "mistakeRate": 0.02 },
+    { "id": "o17", "driver": "Capitã Vera",     "car": "Fênix",         "body": "roadster", "color": "#d4a62a", "rating": 80, "skill": 0.98, "laneOffset": -0.10, "mistakeRate": 0.02 },
+    { "id": "o18", "driver": "Mestre Nogueira", "car": "Tempestade",    "body": "muscle",   "color": "#2a6aff", "rating": 88, "skill": 1.00, "laneOffset":  0.00, "mistakeRate": 0.01 }
+  ]
+}

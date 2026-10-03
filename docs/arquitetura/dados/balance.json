@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "physics": {
+    "fixedDt": 0.016666667,
+    "maxStepsPerFrame": 5,
+    "statToPhysics": {
+      "topSpeed":  { "base": 380, "perPoint": 4.0 },
+      "accel":     { "base": 120, "perPoint": 3.0 },
+      "brake":     { "base": 300, "perPoint": 6.0 },
+      "grip":      { "base": 4.0, "perPoint": 0.08 },
+      "turnRate":  { "base": 1.6, "perPoint": 0.012 }
+    },
+    "steerResponse": 8.0,
+    "rollingDecel": 40,
+    "turnSpeedFull": 150,
+    "turnHighSpeedLoss": 0.3,
+    "slipSpeedLoss": 0.4,
+    "skidSlipThreshold": 0.30,
+    "overSpeedDecay": 3.0,
+    "drift": { "minSpeed": 250, "minSteer": 0.5, "gripMul": 0.45, "brakeMul": 0.3 },
+    "surfaces": {
+      "asfalto": { "topSpeedMul": 1.0,  "gripMul": 1.0 },
+      "zebra":   { "topSpeedMul": 0.95, "gripMul": 0.95 },
+      "grama":   { "topSpeedMul": 0.55, "gripMul": 0.6 }
+    },
+    "kerbWidth": 14,
+    "wall": { "speedKeepMin": 0.4, "alignToTrack": 0.5 },
+    "carCar": { "rearSpeedLoss": 0.08 },
+    "displayKmhPerUnit": 0.3,
+    "respawn": { "stuckSpeed": 30, "stuckSeconds": 2.0, "offTrackSeconds": 4.0, "wrongWaySeconds": 2.0, "fadeSeconds": 0.4 }
+  },
+  "assist": {
+    "levels": { "desligada": 0.0, "media": 0.35, "forte": 0.7 },
+    "default": "forte",
+    "lookaheadSamples": 3,
+    "steerGain": 2.0,
+    "edgeMargin": 30,
+    "edgeCorrection": 0.6,
+    "edgeOffRoadMul": 1.5,
+    "edgeReturnThreshold": -0.1,
+    "autoThrottleEase": { "minAssist": 0.35, "overSpeedRatio": 1.15, "throttle": 0.3 }
+  },
+  "ai": {
+    "lookahead": { "base": 120, "perSpeed": 0.5 },
+    "steerGain": 2.2,
+    "curvatureWindow": { "start": 50, "perSpeed": 0.9 },
+    "cornerSafety": 0.85,
+    "cornerHighSpeedTerm": 0.0003,
+    "brakeMargin": 15,
+    "avoid": { "aheadDist": 150, "lateralDist": 50, "shift": 60, "seconds": 1.0 },
+    "mistake": { "steerNoise": 0.3, "seconds": 0.5 },
+    "rubberBandRange": 1500
+  },
+  "difficulty": {
+    "levels": {
+      "tranquilo": { "label": "Tranquilo", "aiRatingMul": 0.70, "aiSkillAdd": -0.15, "rubberBand": 0.15, "prizeMul": 1.00 },
+      "normal":    { "label": "Normal",    "aiRatingMul": 0.90, "aiSkillAdd": -0.07, "rubberBand": 0.10, "prizeMul": 1.15 },
+      "desafio":   { "label": "Desafio",   "aiRatingMul": 1.05, "aiSkillAdd": 0.00,  "rubberBand": 0.05, "prizeMul": 1.30 }
+    },
+    "default": "tranquilo"
+  },
+  "economy": {
+    "startingMoney": 0,
+    "positionPayout": [1.00, 0.70, 0.55, 0.45, 0.38, 0.32],
+    "bestLapBonus": 0.15,
+    "cleanRaceBonus": 0.10,
+    "cleanRaceMaxHits": 2,
+    "firstWinBonus": 0.50,
+    "roundTo": 10
+  },
+  "race": {
+    "carsPerRace": 6,
+    "playerGridSlot": 4,
+    "gridRowSpacing": 110,
+    "gridLateral": 55,
+    "gridBehindLine": 80,
+    "countdownSeconds": 3,
+    "checkpoints": [0.25, 0.5, 0.75]
+  },
+  "camera": {
+    "screenAnchorY": 0.68,
+    "zoomAtRest": 0.85,
+    "zoomAtMax": 0.65,
+    "zoomRefSpeed": 760,
+    "followRate": 6.0,
+    "rotateRate": 4.0,
+    "lookaheadSeconds": 0.25
+  }
+}
