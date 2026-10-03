@@ -4,7 +4,7 @@ Convenções:
 - Assinaturas em JSDoc. Quem implementa **não muda nomes, parâmetros nem formato de retorno**.
 - Funções de `game/` são **imutáveis**: recebem `profile` e devolvem um **novo** `profile` (use `structuredClone`). Nunca mutam o argumento.
 - Funções de `race/` **mutam** estados de simulação recebidos (por desempenho), e isso está indicado com `(muta)`.
-- Ângulos em radianos; 0 = +x (direita), crescendo no sentido horário porque y cresce para baixo.
+- Coordenadas da corrida: `z` = distância ao longo da pista (u, 0 ≤ z < comprimento da volta); `x` = lateral **normalizado** (0 centro, ±1 borda do asfalto, + = direita); altura `y` em u (+ = para cima).
 - Tempo de simulação em segundos (`dt`); tempos exibidos/salvos em milissegundos inteiros.
 
 ## 3.1 Tipos compartilhados
@@ -18,6 +18,7 @@ Convenções:
  *  @property {Object} parts         // data/parts.json
  *  @property {Object} tracks        // data/tracks.json
  *  @property {Object} opponents     // data/opponents.json
+ *  @property {Object} themes        // data/themes.json
  *  @property {Object} balance       // data/balance.json
  */
 
@@ -34,32 +35,31 @@ Convenções:
  */
 
 /** @typedef {Object} CarPhysicsParams
- *  @property {number} topSpeed  // u/s
- *  @property {number} accel     // u/s²
- *  @property {number} brake     // u/s²
- *  @property {number} grip      // 1/s
- *  @property {number} turnRate  // rad/s
+ *  @property {number} topSpeed     // u/s
+ *  @property {number} accel        // u/s²
+ *  @property {number} brake        // u/s²
+ *  @property {number} centrifugal  // quanto a curva empurra para fora (menor = mais aderência)
+ *  @property {number} steer        // velocidade lateral máxima ao virar (meias-larguras/s em speedRef)
  */
 
 /** @typedef {Object} InputState   // objeto reutilizado (não alocar por quadro)
  *  @property {number} steer       // -1..1 (negativo = esquerda)
- *  @property {number} throttle    // 0..1
+ *  @property {number} throttle    // 0..1 (velocidade-alvo = throttle × máxima)
  *  @property {number} brake       // 0|1
  */
 
 /** @typedef {Object} CarState     // criado por carPhysics.createCarState
  *  @property {string} id          // 'player' | id do oponente ('o01'...)
- *  @property {number} x  @property {number} y
- *  @property {number} heading     // para onde o carro aponta
- *  @property {number} velDir      // para onde o carro se move (difere no drift)
+ *  @property {number} z           // posição na volta (u), 0 ≤ z < road.length
+ *  @property {number} x           // lateral normalizado, |x| ≤ xLimit
  *  @property {number} speed       // u/s, >= 0
  *  @property {number} steer       // direção suavizada -1..1
- *  @property {number} slip        // |angleDiff(velDir, heading)|
- *  @property {boolean} skidding
- *  @property {'asfalto'|'zebra'|'grama'} surface
- *  @property {number} trackIndex  // amostra mais próxima
- *  @property {number} lateral     // distância lateral assinada ao eixo (+ = direita do sentido da pista)
- *  @property {number} prevX  @property {number} prevY  @property {number} prevHeading  // para interpolação
+ *  @property {number} curve       // curva do segmento atual (cache p/ render/áudio)
+ *  @property {boolean} offRoad    // |x| > offRoad.limit
+ *  @property {boolean} drifting
+ *  @property {boolean} skidding   // derrapando (som/fumaça)
+ *  @property {boolean} braking    // luz de freio
+ *  @property {number} prevZ  @property {number} prevX   // para interpolação no render
  *  @property {CarPhysicsParams} params
  *  @property {number} speedMul    // multiplicador externo (rubber band), padrão 1
  */
@@ -131,8 +131,12 @@ export function createAssetLoader({ dpr }) {}
 //   getAudioBuffer(id) → AudioBuffer|null
 //   getAudioInfo(id) → { kind, loop, refRpm? }
 // }
-// Regras: placeholder renderizado em canvas de (w*artScale*dpr) para nitidez, com artScale=2.
+//   async loadBackgrounds(themeId) / releaseBackgrounds()  // kind 'background': só os 3 do tema da corrida,
+//                                            // renderizados em escala 1 (sem artScale/dpr) e liberados ao sair
+// }
+// Regras: placeholder renderizado em canvas de (w*artScale*dpr) para nitidez, com artScale=2 (exceto 'background').
 // Imagem final (src) é usada como está; tamanho do arquivo DEVE ser size*2.
+// loadAllImages ignora kind 'background'.
 ```
 
 ## 3.4 save
@@ -224,58 +228,58 @@ export function isCustomUnlocked(profile, data, catalog) {}
 ## 3.6 race
 
 ```js
-// race/track.js
-/** @typedef {Object} TrackGeometry
- *  @property {string} id  @property {number} n  @property {number} length
- *  @property {Float32Array} px  @property {Float32Array} py      // amostras do eixo
- *  @property {Float32Array} tx  @property {Float32Array} ty      // tangente unitária
- *  @property {Float32Array} ang                                  // atan2(ty,tx)
- *  @property {Float32Array} curv                                 // curvatura suavizada (1/u), >= 0
- *  @property {Float32Array} dist                                 // distância acumulada até a amostra i
- *  @property {number} halfWidth  @property {number} kerbWidth  @property {number} grassWidth
- *  @property {number} wallDist                                   // halfWidth + grassWidth
- *  @property {{minX:number,minY:number,maxX:number,maxY:number}} bounds
+// race/road.js
+/** @typedef {Object} Segment
+ *  @property {number} index
+ *  @property {number} curve              // curvatura deste segmento (−6..6)
+ *  @property {number} y1  @property {number} y2   // altura no início e no fim (u)
+ *  @property {number} z1                 // index * segmentLength
  */
-export function buildTrack(trackJson, physicsBalance) {}  // → TrackGeometry (algoritmo em 07 §7.1)
-export function nearest(track, x, y, hintIndex) {}        // → {index, lateral, s} ; busca janela ±30 amostras
-export function nearestGlobal(track, x, y) {}             // busca completa (usar só no spawn/respawn)
-export function sampleAt(track, s, lateral = 0) {}        // → {x, y, ang} em distância s (wrap)
-export function maxCurvatureAhead(track, index, fromDist, toDist) {}
-export function surfaceAt(track, lateral) {}              // → 'asfalto'|'zebra'|'grama'
+/** @typedef {Object} Road
+ *  @property {string} id  @property {Segment[]} segments  @property {number} segmentLength
+ *  @property {number} length             // segments.length * segmentLength
+ *  @property {Float32Array} curveAbs     // |curve| por segmento (para consultas rápidas)
+ */
+export function buildRoad(trackJson, physicsBalance) {}  // → Road (algoritmo em 07 §7.1)
+export function segmentAt(road, z) {}                    // → Segment (z com wrap)
+export function heightAt(road, z) {}                     // → y interpolado no segmento
+export function maxCurveAhead(road, z, distance) {}      // → max |curve| de z até z+distance
+export function wrapZ(road, z) {}                        // → z em [0, length)
+
+// race/roadside.js
+/** @typedef {{assetId:string, segment:number, x:number, halfW:number, solid:boolean}} RoadsideObject */
+export function placeRoadside(road, trackJson, theme, manifest) {} // → RoadsideObject[] por segmento: Array<RoadsideObject[]> (07 §7.6)
 
 // race/statsToPhysics.js
 /** @returns {CarPhysicsParams} */
 export function statsToPhysics(stats, physicsBalance) {}
 
 // race/carPhysics.js
-export function createCarState(id, x, y, heading, params) {}
-export function stepCar(car, input, physicsBalance, dt) {}        // (muta) usa car.surface já atualizado
+export function createCarState(id, z, x, params) {}
+export function stepCar(car, input, road, physicsBalance, dt) {}  // (muta) 07 §7.3
 
 // race/collision.js
-export function resolveWall(car, track, physicsBalance) {}         // (muta) → impacto 0..1 (0 = sem batida)
-export function resolveCarPair(a, b, progressA, progressB, physicsBalance, radius) {} // (muta) → bateu:boolean
+export function resolveCarPair(behind, ahead, gapZ, physicsBalance) {} // (muta behind) → bateu:boolean
+export function resolveRoadside(car, objects, physicsBalance) {}       // (muta) objects = objetos do segmento atual → bateu:boolean
 
 // race/lapTracker.js
-export function createLapTracker(track, checkpoints, laps) {}
-// → { register(carId, s0), update(carId, s, timeMs) → {lapCompleted:boolean, lap:number, lapTimeMs?:number, finished:boolean},
-//     totalProgress(carId) → number (voltasCompletas*length + s), lapsDone(carId), bestLap(carId), lapTimes(carId) }
+export function createLapTracker(road, laps) {}
+// → { register(carId, z0), update(carId, prevZ, z, timeMs) → {lapCompleted, lap, lapTimeMs?, finished},
+//     totalProgress(carId, z) → number (lapsDone*length + z), lapsDone(carId), bestLap(carId), lapTimes(carId) }
+// Volta conta quando z dá a volta (z < prevZ - length/2). Carros no grid começam com lapsDone = -1.
 
 // race/assist.js
-export function applyAssist(rawInput, car, track, assistLevel, autoAccel, balance, out) {} // (muta out: InputState)
+export function applyAssist(rawInput, car, road, assistLevel, autoAccel, balance, out) {} // (muta out: InputState) 07 §7.5
 
 // race/aiDriver.js
 export function createAiDriver(opponentJson, difficulty, balance, rng) {}
-// → { decide(car, track, others:CarState[], progressOf(id), out:InputState, dt) }  (muta out)
+// → { decide(car, road, others:CarState[], out:InputState, dt) }  (muta out) 07 §7.4
 
 // race/rubberBand.js
-export function rubberBandMul(aiProgress, playerProgress, strength, range) {} // → 1 - ... (fórmula 07 §7.6)
+export function rubberBandMul(aiProgress, playerProgress, strength, range) {} // 07 §7.4
 
 // race/grid.js
-export function gridPositions(track, count, balanceRace) {} // → [{x,y,heading,slot}] slot 1..6
-
-// race/respawn.js
-export function createRespawnWatcher(balance) {}
-// → { update(car, track, dt, raceRunning) → 'none'|'start_fade'|'teleport', reset() }
+export function gridPositions(road, count, balanceRace) {} // → [{z, x, slot}] slot 1..6
 
 // race/raceSession.js
 /** @typedef {Object} RaceConfig
@@ -290,47 +294,52 @@ export function createRespawnWatcher(balance) {}
  *  @property {string} trackId  @property {number} position (1..6)
  *  @property {number} totalTimeMs  @property {number} bestLapMs
  *  @property {boolean} playerBestLapOfRace   // melhor volta entre TODOS os carros
- *  @property {number} hits                   // batidas do jogador (muro + carro)
+ *  @property {number} hits                   // batidas do jogador (carro + objeto)
  *  @property {{id:string, name:string, isPlayer:boolean}[]} ranking
  */
 export function createRaceSession(config, data, bus) {}
 // → {
 //   phase: 'countdown'|'running'|'finished',
+//   road: Road, roadside: Array<RoadsideObject[]>,
 //   cars: CarState[]                       // [0] é sempre o jogador
 //   step(dt, playerRawInput)               // um passo fixo
 //   ranking() → string[]                   // ids por posição
-//   hud() → {position, laps, lap, speedKmh, finalLap:boolean, wrongWay:boolean, countdown:number|null}
+//   hud() → {position, laps, lap, speedKmh, finalLap:boolean, countdown:number|null}
 //   result() → RaceResult|null             // != null quando phase === 'finished'
-//   track: TrackGeometry
 // }
 ```
 
 ## 3.7 render
 
 ```js
-// render/camera.js (puro)
-export function createCamera(balanceCamera) {}  // → {x, y, rot, zoom, update(target:CarState, dt), snap(target)}
 // render/canvas.js
-export function createCanvasRenderer(canvasEl, viewport) {} // → {ctx, beginFrame(), applyCamera(cam), resetTransform(), worldViewRect(cam)}
+export function createCanvasRenderer(canvasEl, viewport, maxDpr) {} // → {ctx, beginFrame() (setTransform p/ px lógicos + limpa), W, H}
+// render/projection.js (puro)
+export function createCamera(renderBalance) {}  // → {depth, height, playerZ}; depth = 1/tan(fov/2), playerZ = height*depth
+export function project(out, worldX, worldY, worldZ, camX, camY, camZ, depth, W, H, roadHalfWidth) {}
+// (muta out) → out.scale, out.x, out.y, out.w   (fórmulas 07 §7.7)
 // render/shapePainter.js
 export function paintShapes(ctx, shapes) {}     // desenha a receita 'ph' em coordenadas lógicas do sprite
 // render/carLayers.js (puro)
 /** @returns {{layerId:string, variant:string, assetId:string, z:number}[]} ordenado por z */
-export function resolveCarLayers(profile, data, catalog, view) {}  // view 'top'|'side'
+export function resolveCarLayers(profile, data, catalog, view) {}  // view 'rear'|'side'
 export function layersKey(layers) {}            // string estável p/ cache: "pneus=novo|rodas=original|..."
 // render/carCompositor.js
 export function createCarCompositor(assets, dpr) {}
-// → { getSprite(layers, view) → {canvas, w, h, ax, ay}, clear() }   // cache LRU de 8 chaves
-// render/trackRenderer.js
-export function createTrackRenderer(track, trackJson, assets) {}   // pré-calcula Path2D por bloco de 40 amostras
-// → { draw(ctx, viewRect) }
-// render/carRenderer.js
-export function drawCar(ctx, sprite, x, y, heading, worldLen) {}   // escala sprite para 96 u de comprimento
+// → { getSprite(layers, view) → {canvas, w, h}, clear() }   // cache LRU de 8 chaves
+// render/background.js
+export function createBackground(assets, theme, renderBalance) {} // → { update(curve, speedRatio, dt), draw(ctx, W, H) }
+// render/roadRenderer.js
+export function createRoadRenderer(road, theme, renderBalance) {}
+// → { draw(ctx, W, H, camZ, playerX, playerY) → clip:Float32Array (maxy por n), base:number }  (07 §7.7)
+// render/spriteRenderer.js
+export function createSpriteRenderer(assets, renderBalance, carBalance) {}
+// → { draw(ctx, W, H, road, roadside, cars, playerSprite, frame) }   frame = saída do roadRenderer (projeções e clip)
 // render/effects.js
-export function createEffects(assets, maxSkid = 400, maxParticles = 64) {}
-// → { emitSmoke(x,y), emitSpark(x,y), addSkid(car), update(dt), drawGround(ctx), drawAir(ctx), reset() }
+export function createEffects(assets, maxParticles = 64) {}
+// → { emitSmoke(sx,sy), emitDust(sx,sy), emitSpark(sx,sy), update(dt), draw(ctx), reset() }  (coordenadas de tela)
 // render/minimap.js
-export function createMinimap(track, w = 200, h = 140) {}  // → { draw(ctx, cars, x, y) } em px lógicos de tela
+export function createMinimap(road, w = 200, h = 140) {}  // → { draw(ctx, cars, x, y) } (07 §7.8)
 // render/garageScene.js
 export function createGarageScene(assets, compositor) {}
 // → { setLayers(layers), playUpgrade(layerIds:string[]), update(dt), draw(ctx, viewport) }
@@ -392,9 +401,9 @@ Nomes exatos. Payloads são objetos simples. Emissor único por evento.
 | `race:countdown` | raceSession | `{n}` (3,2,1) | audioDirector, raceHud |
 | `race:go` | raceSession | `{}` | audioDirector, raceHud |
 | `race:lap` | raceSession | `{carId, lap, lapTimeMs, isFinalLapNext}` | audioDirector (só player), raceHud |
-| `race:hit` | raceSession | `{carId, kind:'muro'|'carro', intensity:0..1, x, y}` | audioDirector, effects (faíscas) |
-| `race:skid` | raceSession | `{carId, on:boolean}` (só player; emite na mudança) | audioDirector |
-| `race:respawn` | raceSession | `{carId}` | audioDirector, raceHud |
+| `race:hit` | raceSession | `{carId, kind:'objeto'|'carro', intensity:0..1}` (só jogador) | audioDirector, raceState (faíscas) |
+| `race:skid` | raceSession | `{carId, on:boolean}` (só jogador; emite na mudança) | audioDirector |
+| `race:offroad` | raceSession | `{carId, on:boolean}` (só jogador; emite na mudança) | audioDirector (ronco de terra), raceState (poeira, tremor) |
 | `race:finished` | raceSession | `{result}` | raceState |
 | `shop:bought` | garageState | `{partId, category}` | audioDirector, garageScene |
 | `shop:equipped` | garageState | `{partId}` | audioDirector |
@@ -409,17 +418,18 @@ loop.update(dt=1/60):
   raceState.update(dt)
     raw = touchControls.input (ou teclado)
     session.step(dt, raw):
-      para cada carro: guarda prevX/prevY/prevHeading
+      para cada carro: prevZ = z; prevX = x
       jogador: applyAssist(raw → playerInput)
       IA: driver.decide(...) → aiInput; car.speedMul = rubberBandMul(...)
-      para cada carro: nearest() → trackIndex, lateral; surface = surfaceAt(); stepCar()
-      resolveWall() por carro; resolveCarPair() por par (15 pares)
-      lapTracker.update(); respawn.update()
-      emite eventos
+      para cada carro: stepCar(car, input, road, ...)
+      colisões: ordenar índices por z (array reutilizado); para pares vizinhos com 0 < gapZ < car.length → resolveCarPair
+                jogador: resolveRoadside(player, roadside[segmento atual])
+      lapTracker.update(); emite eventos
     engineSound.update(player.speed, ...)
     effects.update(dt)
 loop.render(alpha):
-  camera.update(player interpolado, dtRender)
-  trackRenderer.draw → effects.drawGround (marcas) → carros → effects.drawAir (fumaça/faíscas)
-  minimap.draw ; raceHud.update(session.hud())  (DOM só altera texto quando o valor muda)
+  camZ = lerp(prevZ, z) do jogador − playerZ ; playerX interpolado
+  background.draw → roadRenderer.draw (frente→fundo, guarda projeções e clip)
+  spriteRenderer.draw (fundo→frente: objetos e adversários com recorte; o Mustang no centro inferior)
+  effects.draw ; minimap.draw ; raceHud.update(session.hud())  (DOM só altera texto quando o valor muda)
 ```

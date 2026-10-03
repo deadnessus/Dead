@@ -1,0 +1,82 @@
+<!doctype html><html><body style="margin:0;background:#000"><canvas id=c width=1024 height=768></canvas>
+<!-- PROTÓTIPO DE REFERÊNCIA (não é código do jogo). Abrir via servidor: http://localhost:8080/docs/arquitetura/referencia/prototipo-render.html?t=t1&z=31000&x=0.1&s=0.4&st=ferrado
+     Parâmetros: t=pista, z=posição, x=lateral do jogador, s=direção -1..1, st=ferrado|rest|max, mode=cars. Mostra as fórmulas de 07 §7.1, §7.6 e §7.7 funcionando. Simplificações do protótipo: o deslocamento do fundo usa a posição em vez de 07 §7.7 (curva × velocidade) e os adversários são fixos. -->
+<script>
+let M,TR,TH,B;
+async function boot(){const g=f=>fetch('../dados/'+f).then(r=>r.json());[M,TR,TH,B]=await Promise.all([g('assets.manifest.json'),g('tracks.json'),g('themes.json'),g("balance.json")]);SEG=B.physics.segmentLength;main();}
+function paint(ctx,shapes){for(const s of shapes){ctx.save();ctx.globalAlpha=s.a??1;ctx.fillStyle=s.fill||'#f0f';ctx.strokeStyle=s.stroke||'#f0f';
+ switch(s.t){case'rect':ctx.fillRect(s.x,s.y,s.w,s.h);break;case'rrect':ctx.beginPath();ctx.roundRect(s.x,s.y,s.w,s.h,s.r);ctx.fill();break;
+ case'circle':ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,7);ctx.fill();break;case'ellipse':ctx.beginPath();ctx.ellipse(s.x,s.y,s.rx,s.ry,0,0,7);ctx.fill();break;
+ case'poly':ctx.beginPath();s.pts.forEach((p,i)=>i?ctx.lineTo(p[0],p[1]):ctx.moveTo(p[0],p[1]));ctx.closePath();ctx.fill();break;
+ case'line':ctx.lineWidth=s.w;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(s.x1,s.y1);ctx.lineTo(s.x2,s.y2);ctx.stroke();break;
+ case'text':ctx.font=`bold ${s.size}px sans-serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(s.text,s.x,s.y);break;}ctx.restore();}}
+const cache={};function img(id,scale=2){if(cache[id])return cache[id];const a=M.images[id];const c=document.createElement('canvas');c.width=a.size[0]*scale;c.height=a.size[1]*scale;const x=c.getContext('2d');x.scale(scale,scale);paint(x,a.ph);return cache[id]=c;}
+const order=["sombra","neon","pneus","rodas","carroceria","pintura","ferrugem","amassados","faixas","adesivos","vidros","capo","escapamento","parachoques","farois","aero","aerofolio","luzes"];
+const STATES={ferrado:{sombra:"base",pneus:"careca",rodas:"enferrujada",carroceria:"base",pintura:"desbotada",ferrugem:"ferrugem",amassados:"amassado",vidros:"trincado",escapamento:"furado",parachoques:"amassado",farois:"trincado"},
+rest:{sombra:"base",pneus:"novo",rodas:"original",carroceria:"base",pintura:"preta_brilhante",vidros:"limpo",escapamento:"simples",parachoques:"cromado",farois:"novo"},
+max:{sombra:"base",neon:"azul",pneus:"slick",rodas:"cinco_raios",carroceria:"base",pintura:"preta_brilhante",faixas:"dupla_branca",adesivos:"numero_68",vidros:"limpo",capo:"compressor",escapamento:"esportivo",parachoques:"cromado",farois:"novo",aero:"kit",aerofolio:"asa_alta",luzes:"auxiliares"}};
+function composite(view,st){const a=M.images[`car.${view}.sombra.base`];const c=document.createElement('canvas');c.width=a.size[0]*2;c.height=a.size[1]*2;const x=c.getContext('2d');
+ for(const l of order){if(!st[l])continue;x.drawImage(img(`car.${view}.${l}.${st[l]}`),0,0);}return c;}
+// ---- road build (07 §7.1)
+let SEG;
+const easeIn=(a,b,p)=>a+(b-a)*p*p, easeOut=(a,b,p)=>a+(b-a)*(1-(1-p)*(1-p)), easeInOut=(a,b,p)=>a+(b-a)*((-Math.cos(p*Math.PI)/2)+0.5);
+function buildRoad(t){const segs=[];let y=0;
+ for(const s of t.sections){const [e,h,l]=s.n,tot=e+h+l,y0=y,y1=y+s.hill*SEG;
+  for(let n=0;n<tot;n++){const c=n<e?easeIn(0,s.curve,n/e):n<e+h?s.curve:easeOut(s.curve,0,(n-e-h)/l);
+   const i=segs.length;segs.push({index:i,curve:c,p1:{world:{y:i?segs[i-1].p2.world.y:0,z:i*SEG},camera:{},screen:{}},p2:{world:{y:easeInOut(y0,y1,(n+1)/tot),z:(i+1)*SEG},camera:{},screen:{}},sprites:[],cars:[]});}
+  y=y1;}
+ return segs;}
+function project(p,camX,camY,camZ,depth,W,H,rw){p.camera.x=(p.world.x||0)-camX;p.camera.y=p.world.y-camY;p.camera.z=p.world.z-camZ;
+ p.screen.scale=depth/p.camera.z;p.screen.x=Math.round(W/2+p.screen.scale*p.camera.x*W/2);p.screen.y=Math.round(H/2-p.screen.scale*p.camera.y*H/2);p.screen.w=Math.round(p.screen.scale*rw*W/2);}
+function poly(ctx,x1,y1,x2,y2,x3,y3,x4,y4,c){ctx.fillStyle=c;ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.lineTo(x3,y3);ctx.lineTo(x4,y4);ctx.closePath();ctx.fill();}
+function render(ctx,trackId,pos,playerX,steer,state,W,H){
+ const t=TR.tracks.find(t=>t.id===trackId),th=TH.themes[t.theme],col=th.colors,R=B.render;
+ const segs=buildRoad(t),N=segs.length,L=N*SEG;
+ // scatter (07): rng mulberry32
+ let a=t.scatter.seed>>>0;const rng=()=>{a|=0;a=a+0x6D2B79F5|0;let x=Math.imul(a^a>>>15,1|a);x=x+Math.imul(x^x>>>7,61|x)^x;return((x^x>>>14)>>>0)/4294967296;};
+ for(let i=0;i<N;i++){ if(rng()<t.scatter.per100/100){const side=rng()<0.5?-1:1;const off=side*(t.scatter.minOffset+rng()*(t.scatter.maxOffset-t.scatter.minOffset));segs[i].sprites.push({id:th.decor[Math.floor(rng()*th.decor.length)],offset:off});}}
+ segs[0].sprites.push({id:'dec.largada',offset:0});
+ let sIdx=0;for(const s of t.sections){if(Math.abs(s.curve)>=3){const id=s.curve>0?'dec.placa_dir':'dec.placa_esq';const o=s.curve>0?-1.4:1.4;for(const k of[10,0]){const j=(sIdx-k+N)%N;segs[j].sprites.push({id,offset:o});}}sIdx+=s.n[0]+s.n[1]+s.n[2];}
+ const depth=1/Math.tan((R.fieldOfView/2)*Math.PI/180),camH=R.cameraHeight,playerZ=camH*depth,rw=R.roadHalfWidth;
+ const base=segs[Math.floor(pos/SEG)%N],basePct=(pos%SEG)/SEG;
+ const playerSeg=segs[Math.floor((pos+playerZ)/SEG)%N],playerPct=((pos+playerZ)%SEG)/SEG;
+ const playerY=playerSeg.p1.world.y+(playerSeg.p2.world.y-playerSeg.p1.world.y)*playerPct;
+ // cars
+ const opp=[["o03",-0.45,2600],["o05",0.4,5200],["o01",0.1,9000]];
+ for(const [id,x,dz] of opp){const z=(pos+playerZ+dz)%L;segs[Math.floor(z/SEG)].cars.push({id,offset:x,z});}
+ // background
+ ctx.fillStyle=col.sky;ctx.fillRect(0,0,W,H/2);ctx.fillStyle=col.fog;ctx.fillRect(0,H/2,W,H/2);
+ for(const [k,sp] of [["sky",0],["hills",0.3],["trees",0.6]]){const im=img(th.bg[k],1);const off=(pos*0.0002*sp)%1;const h=H*0.5;const yo=0;
+  const sx=Math.floor(off*im.width);ctx.drawImage(im,sx,0,im.width-sx,im.height,0,yo,W*(1-off),h);if(sx>0)ctx.drawImage(im,0,0,sx,im.height,W*(1-off),yo,W*off,h);}
+ let maxy=H,x=0,dx=-(base.curve*basePct);
+ for(let n=0;n<R.drawDistance;n++){const seg=segs[(base.index+n)%N],looped=seg.index<base.index;
+  seg.fog=1/Math.pow(Math.E,(n/R.drawDistance)**2*R.fogDensity);seg.clip=maxy;
+  project(seg.p1,playerX*rw-x,playerY+camH,pos-(looped?L:0),depth,W,H,rw);
+  project(seg.p2,playerX*rw-x-dx,playerY+camH,pos-(looped?L:0),depth,W,H,rw);
+  x+=dx;dx+=seg.curve;
+  if(seg.p1.camera.z<=depth||seg.p2.screen.y>=seg.p1.screen.y||seg.p2.screen.y>=maxy)continue;
+  const p1=seg.p1.screen,p2=seg.p2.screen,dark=Math.floor(seg.index/R.rumbleLength)%2;
+  ctx.fillStyle=dark?col.grassDark:col.grassLight;ctx.fillRect(0,p2.y,W,p1.y-p2.y);
+  const r1=p1.w/Math.max(6,2*R.lanes),r2=p2.w/Math.max(6,2*R.lanes);
+  poly(ctx,p1.x-p1.w-r1,p1.y,p1.x-p1.w,p1.y,p2.x-p2.w,p2.y,p2.x-p2.w-r2,p2.y,dark?col.rumbleDark:col.rumbleLight);
+  poly(ctx,p1.x+p1.w+r1,p1.y,p1.x+p1.w,p1.y,p2.x+p2.w,p2.y,p2.x+p2.w+r2,p2.y,dark?col.rumbleDark:col.rumbleLight);
+  poly(ctx,p1.x-p1.w,p1.y,p1.x+p1.w,p1.y,p2.x+p2.w,p2.y,p2.x-p2.w,p2.y,dark?col.roadDark:col.roadLight);
+  if(!dark){const l1=p1.w/32,l2=p2.w/32;for(let ln=1;ln<R.lanes;ln++){const f=-1+2*ln/R.lanes;poly(ctx,p1.x+f*p1.w-l1/2,p1.y,p1.x+f*p1.w+l1/2,p1.y,p2.x+f*p2.w+l2/2,p2.y,p2.x+f*p2.w-l2/2,p2.y,col.lane);}}
+  if(seg.fog<1){ctx.globalAlpha=1-seg.fog;ctx.fillStyle=col.fog;ctx.fillRect(0,p2.y,W,p1.y-p2.y);ctx.globalAlpha=1;}
+  maxy=p1.y;}
+ function sprite(id,scale,destX,destY,offX,clipY){const a=M.images[id];const im=img(id);const ww=(a.worldW|| (id.startsWith('opp')?rw*B.physics.car.width:500));
+  const w=scale*ww*W/2, h=w*a.size[1]/a.size[0];const dx=destX+w*(offX??-0.5),dy=destY-h;const clipH=clipY?Math.max(0,dy+h-clipY):0;if(clipH<h)ctx.drawImage(im,0,0,im.width,im.height-im.height*clipH/h,dx,dy,w,h-clipH);}
+ for(let n=R.drawDistance-1;n>0;n--){const seg=segs[(base.index+n)%N];
+  for(const c of seg.cars){const pct=(c.z%SEG)/SEG,sc=seg.p1.screen.scale+(seg.p2.screen.scale-seg.p1.screen.scale)*pct;
+   const sx=seg.p1.screen.x+(seg.p2.screen.x-seg.p1.screen.x)*pct+sc*c.offset*rw*W/2,sy=seg.p1.screen.y+(seg.p2.screen.y-seg.p1.screen.y)*pct;sprite(`opp.${c.id}.rear`,sc,sx,sy,-0.5,seg.clip);}
+  for(const s of seg.sprites){const sc=seg.p1.screen.scale,sx=seg.p1.screen.x+sc*s.offset*rw*W/2,sy=seg.p1.screen.y;sprite(s.id,sc,sx,sy,-0.5,seg.clip);}
+  if(seg===playerSeg){const sc=depth/playerZ;const car=composite('rear',STATES[state]);const w=sc*rw*B.physics.car.width*W/2,h=w*200/320;
+   ctx.save();ctx.translate(W/2,H-12);ctx.rotate(steer*B.render.steerTilt);ctx.drawImage(car,-w/2,-h,w,h);ctx.restore();}}
+}
+function main(){const ctx=document.getElementById('c').getContext('2d');
+const P=new URLSearchParams(location.search);
+if(P.get('mode')==='cars'){ctx.fillStyle='#777';ctx.fillRect(0,0,1024,768);
+ ['ferrado','rest','max'].forEach((s,i)=>{ctx.drawImage(composite('rear',STATES[s]),20+i*330,20,320,200);ctx.drawImage(composite('side',STATES[s]),20+(i%2)*500,260+Math.floor(i/2)*250,480,180);});}
+else render(ctx,P.get('t')||'t1',+(P.get('z')||40000),+(P.get('x')||0),+(P.get('s')||0),P.get('st')||'ferrado',1024,768);}
+boot();
+</script></body></html>

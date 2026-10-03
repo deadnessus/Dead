@@ -37,7 +37,9 @@
 - [ ] Aceleração automática liga/desliga nos Ajustes e o botão ACELERAR aparece/some
 
 ### Desempenho
-- [ ] `?debug=1`: ≥ 58 fps na t8 com 6 carros e fumaça
+- [ ] `?debug=1`: ≥ 58 fps na t8 com 6 carros, fumaça e morros (se não, `render.drawDistance` 150 → 100)
+- [ ] Pista não "pisca" nem dobra ao completar a volta (passagem pelo segmento 0)
+- [ ] Objetos e carros somem atrás de morros sem aparecer "flutuando"
 - [ ] Sem engasgos ao entrar/sair da corrida
 - [ ] 15 min jogando sem esquentar demais nem travar
 - [ ] Carregamento inicial < 5 s (depois da primeira vez)
@@ -70,7 +72,7 @@
 | Toque longo | Lupa/menu de contexto | `-webkit-touch-callout:none; -webkit-user-select:none` |
 | Eventos de mouse simulados | Clique duplo nos botões | Só Pointer Events; nunca misturar `touchstart` e `click` no mesmo botão |
 | Orientação no manifest | iOS ignora `orientation` | Overlay "Gire o iPad" |
-| Canvas grande demais | Tela preta/crash (limite ~16 M px por canvas e memória total) | DPR ≤ 2; nenhum canvas maior que a tela; cache de sprites LRU 8; pista sem pré-render gigante |
+| Canvas grande demais | Tela preta/crash (limite ~16 M px por canvas e memória total) | DPR ≤ 2; nenhum canvas maior que a tela; cache de sprites LRU 8; fundos só do tema atual, em escala 1 |
 | Armazenamento separado | Save do Safari ≠ save do ícone | Instalar a PWA **antes** de começar a jogar; export/import para migrar |
 | Limpeza de dados (ITP 7 dias) | Save some em site não usado | PWA na tela de início não sofre a regra de 7 dias; mesmo assim `navigator.storage.persist()` e export manual de vez em quando |
 | `localStorage` lança exceção | Modo privado/cheio | `storageBackend` com try/catch + toast "Não deu para salvar" |

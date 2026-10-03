@@ -7,11 +7,11 @@ Os arquivos **completos e válidos** estão em [`dados/`](dados/). Esta seção 
 | Campo | Tipo | Significado |
 |---|---|---|
 | `id` | string | `"mustang68"` |
-| `world.length` / `world.width` | número (u) | 96 × 48: tamanho do carro no mundo |
-| `world.collisionRadius` | número (u) | 26: círculo usado em carro×carro e carro×muro |
+| `world.width` | número | 0,5: largura do carro em meias-larguras de pista (x normalizado) |
+| `world.length` | número (u) | 300: comprimento usado na colisão carro×carro |
 | `baseStats` | Stats | Estado "ferrado": `acc 10, vel 10, ade 12, frn 10, dir 15` → nível 11 |
 | `flagsDefault` | objeto | `fumaca: true` (fumaça no escapamento), `falhando: true` (motor rateando) |
-| `views.top` / `views.side` | objeto | `size` (px lógicos), `anchor` (0–1), `artScale` (2 = PNG final tem o dobro), `points` (pontos de efeito em px lógicos do sprite) |
+| `views.rear` / `views.side` | objeto | `rear` = corrida (traseira), `side` = garagem. `size` (px lógicos), `anchor` (0–1), `artScale` (2 = PNG final tem o dobro), `bodyWidth` (px do sprite ocupados pela carroceria = 0,5 de pista), `points` (pontos de efeito: escapamentos, lanternas) |
 | `layers[]` | `{id, z, default}` | Camadas, ordem de desenho e variante padrão (`null` = camada oculta) |
 | `customUnlockRequires` | string[] | Peças que liberam a aba Estética: `fer_1`, `fun_1`, `pin_1` |
 
@@ -66,34 +66,59 @@ Totais: 9 peças de restauração ($ 3.190), 23 de desempenho ($ 51.780), 21 est
 
 ```json
 {
-  "id": "t1", "name": "Rua do Bairro", "league": 1, "order": 1, "theme": "bairro",
-  "laps": 3, "roadHalfWidth": 130, "grassWidth": 90,
+  "id": "t1", "name": "Rua do Bairro", "league": 1, "order": 1, "theme": "bairro", "laps": 3,
   "prize": 200,
   "unlock": { "minCarLevel": 0, "requiresFullRestoration": false },
   "opponents": ["o01","o02","o03","o04","o05"],
-  "scatter": { "assets": ["dec.arvore","dec.casa","dec.poste"], "per1000": 6, "seed": 1000,
-               "minDistFromWall": 40, "maxDistFromWall": 420 },
-  "points": [[0,0],[1400,0],[2300,100], "..."]
+  "scatter": { "per100": 14, "seed": 1000, "minOffset": 1.8, "maxOffset": 4.0 },
+  "segments": 1025,
+  "sections": [
+    { "n": [0, 75, 0],   "curve": 0,  "hill": 0 },
+    { "n": [30, 55, 30], "curve": 2,  "hill": 0 },
+    { "n": [0, 55, 0],   "curve": 0,  "hill": 10 }
+  ]
 }
 ```
 
 | Campo | Regras |
 |---|---|
-| `theme` | `bairro` \| `cidade` \| `serra` \| `autodromo` → padrão de grama `trk.grama.<theme>` e cor de fundo |
-| `points` | pontos de controle Catmull-Rom, em u, fechado (o último liga no primeiro), sentido horário; a largada fica no ponto 0, com o carro apontando para o ponto 1 |
-| `scatter.per1000` | decorações por 1000 u de pista, **de cada lado** |
+| `theme` | chave de `themes.json` |
+| `sections[].n` | `[entrada, meio, saída]` em segmentos (200 u cada) |
+| `sections[].curve` | −6..6; + = direita. 0 = reta |
+| `sections[].hill` | variação de altura da seção, em múltiplos de 200 u; **soma da pista = 0** |
+| `segments` | total esperado (soma de todos os `n`); validado no carregamento |
+| `scatter.per100` | % de segmentos que recebem um objeto de beira (14 = 14 a cada 100) |
+| `scatter.minOffset/maxOffset` | faixa de `|x|` dos objetos (asfalto vai até 1) |
 | `unlock.minCarLevel` | nível do carro mínimo |
 
-| Pista | Liga | Comprimento (u) | Meia-largura | Prêmio | Nível mín. | Oponentes (rating) |
-|---|---|---|---|---|---|---|
-| t1 Rua do Bairro | 1 | 8.568 | 130 | 200 | 0 | 6, 9, 12, 15, 18 |
-| t2 Vila das Palmeiras | 1 | 9.158 | 130 | 240 | 15 | 9, 12, 15, 18, 22 |
-| t3 Avenida do Porto | 2 | 11.417 | 125 | 420 | 22 | 18, 22, 26, 30, 34 |
-| t4 Parque da Cidade | 2 | 11.687 | 125 | 480 | 30 | 22, 26, 30, 34, 40 |
-| t5 Serra das Curvas | 3 | 12.413 | 120 | 750 | 40 | 34, 40, 45, 50, 55 |
-| t6 Estrada do Litoral | 3 | 14.187 | 120 | 850 | 48 | 40, 45, 50, 55, 62 |
-| t7 Autódromo Clássico | 4 | 16.707 | 110 | 1.300 | 58 | 55, 62, 68, 74, 80 |
-| t8 Grande Final | 4 | 16.944 | 110 | 1.600 | 70 + restauração completa | 62, 68, 74, 80, 88 |
+| Pista | Liga | Segmentos | Volta (u) | Curva máx. | Prêmio | Nível mín. | Oponentes (rating) | Corrida IA no nível mín. |
+|---|---|---|---|---|---|---|---|---|
+| t1 Rua do Bairro | 1 | 1.025 | 205.000 | 3 | 200 | 0 | 6, 9, 12, 15, 18 | 83 s |
+| t2 Vila das Palmeiras | 1 | 1.035 | 207.000 | 3 | 240 | 15 | 9, 12, 15, 18, 22 | 81 s |
+| t3 Avenida do Porto | 2 | 1.150 | 230.000 | 4 | 420 | 22 | 18, 22, 26, 30, 34 | 84 s |
+| t4 Parque da Cidade | 2 | 1.220 | 244.000 | 4 | 480 | 30 | 22, 26, 30, 34, 40 | 84 s |
+| t5 Serra das Curvas | 3 | 1.280 | 256.000 | 5 | 750 | 40 | 34, 40, 45, 50, 55 | 81 s |
+| t6 Estrada do Litoral | 3 | 1.410 | 282.000 | 5 | 850 | 48 | 40, 45, 50, 55, 62 | 85 s |
+| t7 Autódromo Clássico | 4 | 1.440 | 288.000 | 6 | 1.300 | 58 | 55, 62, 68, 74, 80 | 81 s |
+| t8 Grande Final | 4 | 1.610 | 322.000 | 6 | 1.600 | 70 + restauração completa | 62, 68, 74, 80, 88 | 84 s |
+
+## 4.3b `data/themes.json` — temas visuais ([arquivo](dados/themes.json))
+
+```json
+"bairro": {
+  "colors": { "sky": "#72d7ee", "fog": "#a9dfee", "grassLight": "#72c24a", "grassDark": "#64b040",
+              "rumbleLight": "#f2f2f2", "rumbleDark": "#d42a2a", "roadLight": "#6e6e72", "roadDark": "#67676b", "lane": "#f2f2f2" },
+  "bg": { "sky": "bg.bairro.ceu", "hills": "bg.bairro.morros", "trees": "bg.bairro.arvores" },
+  "decor": ["dec.arvore", "dec.casa", "dec.poste", "dec.outdoor"]
+}
+```
+
+| Campo | Regras |
+|---|---|
+| `colors.*Light/*Dark` | alternam a cada `render.rumbleLength` (3) segmentos: dá a sensação de velocidade |
+| `colors.fog` | cor da neblina no fundo e da faixa abaixo do horizonte |
+| `bg` | 3 imagens `kind: background` (paralaxe) |
+| `decor` | objetos `kind: billboard` sorteados para a beira da pista |
 
 ## 4.4 `data/opponents.json` — adversários ([arquivo](dados/opponents.json))
 
@@ -107,13 +132,13 @@ Totais: 9 peças de restauração ($ 3.190), 23 de desempenho ($ 51.780), 21 est
 | `body` | `muscle` \| `roadster` \| `coupe` \| `perua` (só afeta o placeholder) |
 | `rating` | 0–100; vira os 5 stats da IA (todos iguais) após multiplicador de dificuldade |
 | `skill` | 0,85–1,0; fator de velocidade de curva |
-| `laneOffset` | −0,35..0,35 × meia-largura: faixa preferida |
+| `laneOffset` | −0,6..0,6: `x` preferido (faixa) |
 | `mistakeRate` | erros por segundo (ruído de direção) |
-| sprite | `opp.<id>.top` no manifesto |
+| sprite | `opp.<id>.rear` no manifesto (traseira) |
 
 ## 4.5 `data/balance.json` ([arquivo](dados/balance.json))
 
-Seções: `physics`, `assist`, `ai`, `difficulty`, `economy`, `race`, `camera`. Cada número é usado por exatamente uma fórmula das seções 7 e 8. **Nenhuma constante de balanceamento no código.**
+Seções: `physics`, `assist`, `ai`, `difficulty`, `economy`, `race`, `render`. Cada número é usado por exatamente uma fórmula das seções 7 e 8. **Nenhuma constante de balanceamento no código.**
 
 ## 4.6 Save (`localStorage['mustang68.save']`)
 
@@ -179,11 +204,15 @@ Regras:
 {
   "schemaVersion": 1,
   "images": {
-    "car.top.pintura.preta": {
+    "car.rear.vidros.limpo": {
       "kind": "carLayer",
-      "size": [112, 56], "anchor": [0.5, 0.5],
-      "src": "img/car/top/pintura__preta.png",
-      "ph": [ { "t": "rrect", "x": 8, "y": 6, "w": 96, "h": 44, "r": 9, "fill": "#161616" } ]
+      "size": [320, 200], "anchor": [0.5, 1.0],
+      "src": "img/car/rear/vidros__limpo.png",
+      "ph": [ { "t": "poly", "pts": [[98,42],[222,42],[248,94],[72,94]], "fill": "#8cc4e6" } ]
+    },
+    "dec.arvore": {
+      "kind": "billboard", "size": [128, 192], "anchor": [0.5, 1.0], "worldW": 700, "solid": true,
+      "src": "img/dec/arvore.png", "ph": [ "..." ]
     }
   },
   "audio": {
@@ -196,17 +225,19 @@ Regras:
 
 | Campo | Regras |
 |---|---|
-| chave | id do asset. Convenções: `car.<view>.<camada>.<variante>`, `opp.<id>.top`, `trk.*`, `dec.*`, `fx.*`, `ico.*`, `mus.*`, `eng.*`, `sfx.*` |
-| `kind` (imagem) | `carLayer` \| `sprite` \| `pattern` (repetível, 128×128 u) \| `icon` (DOM, 96×96) |
+| chave | id do asset. Convenções: `car.<rear\|side>.<camada>.<variante>`, `opp.<id>.rear`, `bg.<tema>.<ceu\|morros\|arvores>`, `dec.*`, `fx.*`, `ico.*`, `mus.*`, `eng.*`, `sfx.*` |
+| `kind` (imagem) | `carLayer` \| `sprite` \| `billboard` (objeto de beira de pista) \| `background` (paralaxe, 1024×384, renderizado só na corrida do tema) \| `icon` (DOM, 96×96) |
+| `worldW` | só `billboard`: largura no mundo (u); escala na tela = projeção × worldW |
+| `solid` | só `billboard`: `true` = bate (perde velocidade); `false` = atravessa (placas, pórtico) |
 | `size` | px lógicos. O PNG final tem `size × 2` |
 | `anchor` | fração do tamanho; ponto que vai na posição do objeto |
 | `src` | caminho relativo a `assets/`. Na Fase 1 o arquivo **não existe** → usa `ph` |
-| `ph` | lista de formas: `rect{x,y,w,h}`, `rrect{x,y,w,h,r}`, `circle{x,y,r}`, `ellipse{x,y,rx,ry}`, `poly{pts:[[x,y]...]}`, `line{x1,y1,x2,y2,w,stroke}`, `text{x,y,text,size}`; comuns: `fill` (#hex), `a` (alpha 0–1, padrão 1) |
+| `ph` | lista de formas (pode ser vazia `[]` quando a camada não aparece naquela vista, ex.: faróis auxiliares na traseira): `rect{x,y,w,h}`, `rrect{x,y,w,h,r}`, `circle{x,y,r}`, `ellipse{x,y,rx,ry}`, `poly{pts:[[x,y]...]}`, `line{x1,y1,x2,y2,w,stroke}`, `text{x,y,text,size}`; comuns: `fill` (#hex), `a` (alpha 0–1, padrão 1) |
 | `kind` (áudio) | `music` \| `engine` \| `sfx` |
 | `loop` | boolean |
 | `refRpm` | só `engine`: rpm em que o sample foi gravado (playbackRate = rpm/refRpm) |
 | `synth` | receita de placeholder (geradores em [09-audio.md](09-audio.md#94-receitas-de-placeholder)) |
 
-**Troca para a Fase 2:** colocar o arquivo no caminho de `src`. Nada mais. Se o arquivo existir, ele vence; se faltar ou falhar, o placeholder é usado e um aviso vai para `console.warn` (nunca quebra o jogo).
+**Troca para a Fase 2 (fora desta versão, por decisão da família):** colocar o arquivo no caminho de `src`. Nada mais. Se o arquivo existir, ele vence; se faltar ou falhar, o placeholder é usado e um aviso vai para `console.warn` (nunca quebra o jogo).
 
-Conteúdo do manifesto entregue: 92 camadas do carro (46 variantes × 2 vistas), 18 oponentes, 8 padrões de pista, 11 decorações, 4 efeitos, 45 ícones, 5 músicas, 12 amostras de motor, 20 efeitos sonoros.
+Conteúdo do manifesto entregue: 92 camadas do carro (46 variantes × 2 vistas: traseira e lateral), 18 traseiras de oponentes, 12 fundos (3 × 4 temas), 13 objetos de beira de pista, 4 efeitos, 45 ícones, 5 músicas, 12 amostras de motor, 20 efeitos sonoros.

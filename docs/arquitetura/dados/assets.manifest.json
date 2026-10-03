@@ -1,56 +1,40 @@
 {
  "schemaVersion": 1,
  "images": {
-  "car.top.adesivos.chamas": {
+  "car.rear.adesivos.chamas": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/adesivos__chamas.png",
+   "src": "img/car/rear/adesivos__chamas.png",
    "ph": [
     {
      "t": "poly",
      "pts": [
       [
-       104,
-       12
+       22,
+       170
       ],
       [
-       84,
-       16
+       30,
+       150
       ],
       [
-       92,
-       20
+       36,
+       162
       ],
       [
-       78,
-       24
+       44,
+       146
       ],
       [
-       92,
-       28
-      ],
-      [
-       78,
-       32
-      ],
-      [
-       92,
-       36
-      ],
-      [
-       84,
-       40
-      ],
-      [
-       104,
-       44
+       50,
+       170
       ]
      ],
      "fill": "#ff7a1a"
@@ -59,27 +43,27 @@
      "t": "poly",
      "pts": [
       [
-       104,
-       18
+       298,
+       170
       ],
       [
-       92,
-       22
+       290,
+       150
       ],
       [
-       100,
-       28
+       284,
+       162
       ],
       [
-       92,
-       34
+       276,
+       146
       ],
       [
-       104,
-       38
+       270,
+       170
       ]
      ],
-     "fill": "#ffd21f"
+     "fill": "#ff7a1a"
     }
    ]
   },
@@ -165,31 +149,31 @@
     }
    ]
   },
-  "car.top.adesivos.numero_68": {
+  "car.rear.adesivos.numero_68": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/adesivos__numero_68.png",
+   "src": "img/car/rear/adesivos__numero_68.png",
    "ph": [
     {
      "t": "circle",
-     "x": 48,
-     "y": 28,
-     "r": 7,
+     "x": 160,
+     "y": 103,
+     "r": 8,
      "fill": "#ffffff"
     },
     {
      "t": "text",
-     "x": 48,
-     "y": 28,
+     "x": 160,
+     "y": 103,
      "text": "68",
-     "size": 7,
+     "size": 9,
      "fill": "#000000"
     }
    ]
@@ -223,40 +207,40 @@
     }
    ]
   },
-  "car.top.adesivos.raio": {
+  "car.rear.adesivos.raio": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/adesivos__raio.png",
+   "src": "img/car/rear/adesivos__raio.png",
    "ph": [
     {
      "t": "poly",
      "pts": [
       [
-       30,
-       8
-      ],
-      [
-       44,
-       11
+       24,
+       150
       ],
       [
        40,
-       9
+       142
       ],
       [
-       58,
-       12
+       34,
+       150
       ],
       [
-       46,
-       8
+       50,
+       144
+      ],
+      [
+       30,
+       156
       ]
      ],
      "fill": "#ffd21f"
@@ -265,24 +249,24 @@
      "t": "poly",
      "pts": [
       [
-       30,
-       48
+       296,
+       150
       ],
       [
-       44,
-       45
+       280,
+       142
       ],
       [
-       40,
-       47
+       286,
+       150
       ],
       [
-       58,
-       44
+       270,
+       144
       ],
       [
-       46,
-       48
+       290,
+       156
       ]
      ],
      "fill": "#ffd21f"
@@ -333,27 +317,18 @@
     }
    ]
   },
-  "car.top.aero.defletor": {
+  "car.rear.aero.defletor": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/aero__defletor.png",
-   "ph": [
-    {
-     "t": "rect",
-     "x": 105,
-     "y": 8,
-     "w": 3,
-     "h": 40,
-     "fill": "#111111"
-    }
-   ]
+   "src": "img/car/rear/aero__defletor.png",
+   "ph": []
   },
   "car.side.aero.defletor": {
    "kind": "carLayer",
@@ -391,40 +366,32 @@
     }
    ]
   },
-  "car.top.aero.kit": {
+  "car.rear.aero.kit": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/aero__kit.png",
+   "src": "img/car/rear/aero__kit.png",
    "ph": [
     {
      "t": "rect",
-     "x": 105,
-     "y": 7,
-     "w": 4,
-     "h": 42,
+     "x": 22,
+     "y": 160,
+     "w": 18,
+     "h": 14,
      "fill": "#111111"
     },
     {
      "t": "rect",
-     "x": 30,
-     "y": 4,
-     "w": 52,
-     "h": 2,
-     "fill": "#111111"
-    },
-    {
-     "t": "rect",
-     "x": 30,
-     "y": 50,
-     "w": 52,
-     "h": 2,
+     "x": 280,
+     "y": 160,
+     "w": 18,
+     "h": 14,
      "fill": "#111111"
     }
    ]
@@ -473,40 +440,40 @@
     }
    ]
   },
-  "car.top.aerofolio.asa_alta": {
+  "car.rear.aerofolio.asa_alta": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/aerofolio__asa_alta.png",
+   "src": "img/car/rear/aerofolio__asa_alta.png",
    "ph": [
     {
      "t": "rect",
-     "x": 2,
-     "y": 2,
-     "w": 7,
-     "h": 52,
+     "x": 28,
+     "y": 64,
+     "w": 264,
+     "h": 10,
      "fill": "#111111"
     },
     {
      "t": "rect",
-     "x": 9,
-     "y": 14,
-     "w": 4,
-     "h": 2,
+     "x": 80,
+     "y": 74,
+     "w": 6,
+     "h": 26,
      "fill": "#333333"
     },
     {
      "t": "rect",
-     "x": 9,
-     "y": 40,
-     "w": 4,
-     "h": 2,
+     "x": 234,
+     "y": 74,
+     "w": 6,
+     "h": 26,
      "fill": "#333333"
     }
    ]
@@ -551,24 +518,38 @@
     }
    ]
   },
-  "car.top.aerofolio.rabo_de_pato": {
+  "car.rear.aerofolio.rabo_de_pato": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/aerofolio__rabo_de_pato.png",
+   "src": "img/car/rear/aerofolio__rabo_de_pato.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 8,
-     "y": 8,
-     "w": 5,
-     "h": 40,
+     "t": "poly",
+     "pts": [
+      [
+       40,
+       94
+      ],
+      [
+       280,
+       94
+      ],
+      [
+       288,
+       102
+      ],
+      [
+       32,
+       102
+      ]
+     ],
      "fill": "#151515"
     }
    ]
@@ -609,32 +590,32 @@
     }
    ]
   },
-  "car.top.amassados.amassado": {
+  "car.rear.amassados.amassado": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/amassados__amassado.png",
+   "src": "img/car/rear/amassados__amassado.png",
    "ph": [
     {
      "t": "poly",
      "pts": [
       [
-       90,
-       6
+       26,
+       108
       ],
       [
-       98,
-       6
+       44,
+       104
       ],
       [
-       95,
-       11
+       38,
+       126
       ]
      ],
      "fill": "#262626"
@@ -643,16 +624,16 @@
      "t": "poly",
      "pts": [
       [
-       40,
-       48
+       270,
+       140
       ],
       [
-       52,
-       50
+       292,
+       136
       ],
       [
-       46,
-       44
+       288,
+       158
       ]
      ],
      "fill": "#262626"
@@ -661,16 +642,16 @@
      "t": "poly",
      "pts": [
       [
-       12,
-       10
+       150,
+       96
       ],
       [
-       18,
-       8
+       176,
+       96
       ],
       [
-       16,
-       14
+       166,
+       104
       ]
      ],
      "fill": "#262626"
@@ -749,42 +730,33 @@
     }
    ]
   },
-  "car.top.capo.compressor": {
+  "car.rear.capo.compressor": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/capo__compressor.png",
+   "src": "img/car/rear/capo__compressor.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 74,
-     "y": 19,
-     "w": 22,
-     "h": 18,
-     "r": 3,
+     "t": "rect",
+     "x": 136,
+     "y": 22,
+     "w": 48,
+     "h": 14,
      "fill": "#a8a8a8"
     },
     {
      "t": "rect",
-     "x": 80,
-     "y": 23,
-     "w": 10,
-     "h": 10,
-     "fill": "#303030"
-    },
-    {
-     "t": "rect",
-     "x": 96,
-     "y": 24,
-     "w": 4,
+     "x": 144,
+     "y": 14,
+     "w": 32,
      "h": 8,
-     "fill": "#d0d0d0"
+     "fill": "#303030"
     }
    ]
   },
@@ -826,36 +798,18 @@
     }
    ]
   },
-  "car.top.capo.tomada_ar": {
+  "car.rear.capo.tomada_ar": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/capo__tomada_ar.png",
-   "ph": [
-    {
-     "t": "rrect",
-     "x": 78,
-     "y": 23,
-     "w": 14,
-     "h": 10,
-     "r": 2,
-     "fill": "#101010"
-    },
-    {
-     "t": "rect",
-     "x": 90,
-     "y": 25,
-     "w": 2,
-     "h": 6,
-     "fill": "#000000"
-    }
-   ]
+   "src": "img/car/rear/capo__tomada_ar.png",
+   "ph": []
   },
   "car.side.capo.tomada_ar": {
    "kind": "carLayer",
@@ -893,25 +847,47 @@
     }
    ]
   },
-  "car.top.carroceria.base": {
+  "car.rear.carroceria.base": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/carroceria__base.png",
+   "src": "img/car/rear/carroceria__base.png",
    "ph": [
     {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#4a4a4a"
+    },
+    {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
      "fill": "#4a4a4a"
     }
    ]
@@ -1089,32 +1065,34 @@
     }
    ]
   },
-  "car.top.escapamento.duplo": {
+  "car.rear.escapamento.duplo": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/escapamento__duplo.png",
+   "src": "img/car/rear/escapamento__duplo.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 2,
-     "y": 12,
-     "w": 7,
-     "h": 3,
+     "t": "rrect",
+     "x": 64,
+     "y": 170,
+     "w": 16,
+     "h": 9,
+     "r": 3,
      "fill": "#9a9a9a"
     },
     {
-     "t": "rect",
-     "x": 2,
-     "y": 41,
-     "w": 7,
-     "h": 3,
+     "t": "rrect",
+     "x": 240,
+     "y": 170,
+     "w": 16,
+     "h": 9,
+     "r": 3,
      "fill": "#9a9a9a"
     }
    ]
@@ -1149,32 +1127,34 @@
     }
    ]
   },
-  "car.top.escapamento.esportivo": {
+  "car.rear.escapamento.esportivo": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/escapamento__esportivo.png",
+   "src": "img/car/rear/escapamento__esportivo.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 0,
-     "y": 11,
-     "w": 9,
-     "h": 5,
+     "t": "rrect",
+     "x": 60,
+     "y": 168,
+     "w": 24,
+     "h": 12,
+     "r": 4,
      "fill": "#c8c8c8"
     },
     {
-     "t": "rect",
-     "x": 0,
-     "y": 40,
-     "w": 9,
-     "h": 5,
+     "t": "rrect",
+     "x": 236,
+     "y": 168,
+     "w": 24,
+     "h": 12,
+     "r": 4,
      "fill": "#c8c8c8"
     }
    ]
@@ -1201,25 +1181,25 @@
     }
    ]
   },
-  "car.top.escapamento.furado": {
+  "car.rear.escapamento.furado": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/escapamento__furado.png",
+   "src": "img/car/rear/escapamento__furado.png",
    "ph": [
     {
      "t": "line",
-     "x1": 8,
-     "y1": 41,
-     "x2": 1,
-     "y2": 43,
-     "w": 2,
+     "x1": 76,
+     "y1": 172,
+     "x2": 64,
+     "y2": 184,
+     "w": 4,
      "stroke": "#6b5b4b"
     }
    ]
@@ -1247,24 +1227,25 @@
     }
    ]
   },
-  "car.top.escapamento.simples": {
+  "car.rear.escapamento.simples": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/escapamento__simples.png",
+   "src": "img/car/rear/escapamento__simples.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 2,
-     "y": 40,
-     "w": 7,
-     "h": 3,
+     "t": "rrect",
+     "x": 64,
+     "y": 170,
+     "w": 16,
+     "h": 9,
+     "r": 3,
      "fill": "#8a8a8a"
     }
    ]
@@ -1291,32 +1272,48 @@
     }
    ]
   },
-  "car.top.faixas.dupla_branca": {
+  "car.rear.faixas.dupla_branca": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/faixas__dupla_branca.png",
+   "src": "img/car/rear/faixas__dupla_branca.png",
    "ph": [
     {
      "t": "rect",
-     "x": 8,
-     "y": 22,
-     "w": 96,
-     "h": 4,
+     "x": 138,
+     "y": 34,
+     "w": 14,
+     "h": 66,
      "fill": "#f2f2f2"
     },
     {
      "t": "rect",
-     "x": 8,
-     "y": 30,
-     "w": 96,
-     "h": 4,
+     "x": 168,
+     "y": 34,
+     "w": 14,
+     "h": 66,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 138,
+     "y": 100,
+     "w": 14,
+     "h": 10,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 168,
+     "y": 100,
+     "w": 14,
+     "h": 10,
      "fill": "#f2f2f2"
     }
    ]
@@ -1379,32 +1376,48 @@
     }
    ]
   },
-  "car.top.faixas.dupla_dourada": {
+  "car.rear.faixas.dupla_dourada": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/faixas__dupla_dourada.png",
+   "src": "img/car/rear/faixas__dupla_dourada.png",
    "ph": [
     {
      "t": "rect",
-     "x": 8,
-     "y": 22,
-     "w": 96,
-     "h": 4,
+     "x": 138,
+     "y": 34,
+     "w": 14,
+     "h": 66,
      "fill": "#d4a62a"
     },
     {
      "t": "rect",
-     "x": 8,
-     "y": 30,
-     "w": 96,
-     "h": 4,
+     "x": 168,
+     "y": 34,
+     "w": 14,
+     "h": 66,
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "rect",
+     "x": 138,
+     "y": 100,
+     "w": 14,
+     "h": 10,
+     "fill": "#d4a62a"
+    },
+    {
+     "t": "rect",
+     "x": 168,
+     "y": 100,
+     "w": 14,
+     "h": 10,
      "fill": "#d4a62a"
     }
    ]
@@ -1467,32 +1480,48 @@
     }
    ]
   },
-  "car.top.faixas.dupla_vermelha": {
+  "car.rear.faixas.dupla_vermelha": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/faixas__dupla_vermelha.png",
+   "src": "img/car/rear/faixas__dupla_vermelha.png",
    "ph": [
     {
      "t": "rect",
-     "x": 8,
-     "y": 22,
-     "w": 96,
-     "h": 4,
+     "x": 138,
+     "y": 34,
+     "w": 14,
+     "h": 66,
      "fill": "#c81e28"
     },
     {
      "t": "rect",
-     "x": 8,
-     "y": 30,
-     "w": 96,
-     "h": 4,
+     "x": 168,
+     "y": 34,
+     "w": 14,
+     "h": 66,
+     "fill": "#c81e28"
+    },
+    {
+     "t": "rect",
+     "x": 138,
+     "y": 100,
+     "w": 14,
+     "h": 10,
+     "fill": "#c81e28"
+    },
+    {
+     "t": "rect",
+     "x": 168,
+     "y": 100,
+     "w": 14,
+     "h": 10,
      "fill": "#c81e28"
     }
    ]
@@ -1555,32 +1584,32 @@
     }
    ]
   },
-  "car.top.faixas.lateral": {
+  "car.rear.faixas.lateral": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/faixas__lateral.png",
+   "src": "img/car/rear/faixas__lateral.png",
    "ph": [
     {
      "t": "rect",
-     "x": 26,
-     "y": 7,
-     "w": 60,
-     "h": 2,
+     "x": 22,
+     "y": 116,
+     "w": 12,
+     "h": 4,
      "fill": "#f2f2f2"
     },
     {
      "t": "rect",
-     "x": 26,
-     "y": 47,
-     "w": 60,
-     "h": 2,
+     "x": 286,
+     "y": 116,
+     "w": 12,
+     "h": 4,
      "fill": "#f2f2f2"
     }
    ]
@@ -1629,31 +1658,80 @@
     }
    ]
   },
-  "car.top.farois.novo": {
+  "car.rear.farois.novo": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/farois__novo.png",
+   "src": "img/car/rear/farois__novo.png",
    "ph": [
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3.5,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 34,
+     "y": 110,
+     "w": 252,
+     "h": 32,
+     "fill": "#1a1a1a"
     },
     {
      "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3.5,
-     "fill": "#fff6c0"
+     "x": 160,
+     "y": 126,
+     "r": 9,
+     "fill": "#c0c0c0"
+    },
+    {
+     "t": "rect",
+     "x": 46,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 74,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 236,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 250,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rect",
+     "x": 264,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#d42020"
     }
    ]
   },
@@ -1679,40 +1757,89 @@
     }
    ]
   },
-  "car.top.farois.trincado": {
+  "car.rear.farois.trincado": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/farois__trincado.png",
+   "src": "img/car/rear/farois__trincado.png",
    "ph": [
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3.5,
-     "fill": "#cfcfa0"
+     "t": "rect",
+     "x": 34,
+     "y": 110,
+     "w": 252,
+     "h": 32,
+     "fill": "#1a1a1a"
     },
     {
      "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3.5,
-     "fill": "#4a4a4a"
+     "x": 160,
+     "y": 126,
+     "r": 9,
+     "fill": "#c0c0c0"
+    },
+    {
+     "t": "rect",
+     "x": 46,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 74,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 236,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
+    },
+    {
+     "t": "rect",
+     "x": 250,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#333333"
+    },
+    {
+     "t": "rect",
+     "x": 264,
+     "y": 114,
+     "w": 10,
+     "h": 24,
+     "fill": "#6a1a1a"
     },
     {
      "t": "line",
-     "x1": 98,
-     "y1": 42,
-     "x2": 102,
-     "y2": 46,
-     "w": 0.6,
-     "stroke": "#dddddd"
+     "x1": 250,
+     "y1": 116,
+     "x2": 258,
+     "y2": 136,
+     "w": 1,
+     "stroke": "#888888"
     }
    ]
   },
@@ -1747,56 +1874,49 @@
     }
    ]
   },
-  "car.top.ferrugem.ferrugem": {
+  "car.rear.ferrugem.ferrugem": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/ferrugem__ferrugem.png",
+   "src": "img/car/rear/ferrugem__ferrugem.png",
    "ph": [
     {
      "t": "ellipse",
-     "x": 28,
-     "y": 9,
-     "rx": 7,
-     "ry": 3,
+     "x": 40,
+     "y": 150,
+     "rx": 14,
+     "ry": 8,
      "fill": "#8a4b1c"
     },
     {
      "t": "ellipse",
-     "x": 82,
-     "y": 47,
-     "rx": 7,
-     "ry": 3,
+     "x": 280,
+     "y": 152,
+     "rx": 14,
+     "ry": 8,
      "fill": "#8a4b1c"
     },
     {
      "t": "ellipse",
-     "x": 50,
-     "y": 48,
-     "rx": 9,
-     "ry": 2.5,
+     "x": 120,
+     "y": 100,
+     "rx": 16,
+     "ry": 3,
      "fill": "#9a5a22"
     },
     {
      "t": "ellipse",
-     "x": 60,
-     "y": 8,
-     "rx": 6,
-     "ry": 2.5,
+     "x": 214,
+     "y": 168,
+     "rx": 18,
+     "ry": 4,
      "fill": "#9a5a22"
-    },
-    {
-     "t": "circle",
-     "x": 95,
-     "y": 40,
-     "r": 3,
-     "fill": "#8a4b1c"
     }
    ]
   },
@@ -1853,33 +1973,18 @@
     }
    ]
   },
-  "car.top.luzes.auxiliares": {
+  "car.rear.luzes.auxiliares": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/luzes__auxiliares.png",
-   "ph": [
-    {
-     "t": "circle",
-     "x": 106,
-     "y": 20,
-     "r": 2.5,
-     "fill": "#ffffaa"
-    },
-    {
-     "t": "circle",
-     "x": 106,
-     "y": 36,
-     "r": 2.5,
-     "fill": "#ffffaa"
-    }
-   ]
+   "src": "img/car/rear/luzes__auxiliares.png",
+   "ph": []
   },
   "car.side.luzes.auxiliares": {
    "kind": "carLayer",
@@ -1909,27 +2014,26 @@
     }
    ]
   },
-  "car.top.neon.azul": {
+  "car.rear.neon.azul": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/neon__azul.png",
+   "src": "img/car/rear/neon__azul.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 2,
-     "y": 1,
-     "w": 108,
-     "h": 54,
-     "r": 14,
+     "t": "ellipse",
+     "x": 160,
+     "y": 188,
+     "rx": 156,
+     "ry": 14,
      "fill": "#2aa8ff",
-     "a": 0.45
+     "a": 0.5
     }
    ]
   },
@@ -1956,50 +2060,46 @@
     }
    ]
   },
-  "car.top.parachoques.amassado": {
+  "car.rear.parachoques.amassado": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/parachoques__amassado.png",
+   "src": "img/car/rear/parachoques__amassado.png",
    "ph": [
     {
      "t": "poly",
      "pts": [
       [
-       102,
-       8
+       18,
+       148
       ],
       [
-       106,
-       9
+       160,
+       150
       ],
       [
-       104,
-       28
+       302,
+       144
       ],
       [
-       106,
-       47
+       302,
+       158
       ],
       [
-       102,
-       48
+       160,
+       162
+      ],
+      [
+       18,
+       160
       ]
      ],
-     "fill": "#6b6b6b"
-    },
-    {
-     "t": "rect",
-     "x": 6,
-     "y": 8,
-     "w": 4,
-     "h": 40,
      "fill": "#6b6b6b"
     }
    ]
@@ -2062,42 +2162,33 @@
     }
    ]
   },
-  "car.top.parachoques.cromado": {
+  "car.rear.parachoques.cromado": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/parachoques__cromado.png",
+   "src": "img/car/rear/parachoques__cromado.png",
    "ph": [
     {
      "t": "rrect",
-     "x": 102,
-     "y": 7,
-     "w": 5,
-     "h": 42,
-     "r": 2,
-     "fill": "#dcdcdc"
-    },
-    {
-     "t": "rrect",
-     "x": 5,
-     "y": 7,
-     "w": 5,
-     "h": 42,
-     "r": 2,
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 14,
+     "r": 5,
      "fill": "#dcdcdc"
     },
     {
      "t": "rect",
-     "x": 103,
-     "y": 9,
-     "w": 1,
-     "h": 38,
+     "x": 24,
+     "y": 148,
+     "w": 272,
+     "h": 2,
      "fill": "#ffffff",
      "a": 0.8
     }
@@ -2153,35 +2244,67 @@
     }
    ]
   },
-  "car.top.pintura.azul": {
+  "car.rear.pintura.azul": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pintura__azul.png",
+   "src": "img/car/rear/pintura__azul.png",
    "ph": [
     {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#1f4fa8"
+    },
+    {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
      "fill": "#1f4fa8"
     },
     {
      "t": "rect",
      "x": 30,
-     "y": 14,
-     "w": 52,
-     "h": 4,
+     "y": 98,
+     "w": 260,
+     "h": 3,
      "fill": "#ffffff",
-     "a": 0.22
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
     }
    ]
   },
@@ -2382,35 +2505,67 @@
     }
    ]
   },
-  "car.top.pintura.branca": {
+  "car.rear.pintura.branca": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pintura__branca.png",
+   "src": "img/car/rear/pintura__branca.png",
    "ph": [
     {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#e6e6e6"
+    },
+    {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
      "fill": "#e6e6e6"
     },
     {
      "t": "rect",
      "x": 30,
-     "y": 14,
-     "w": 52,
-     "h": 4,
+     "y": 98,
+     "w": 260,
+     "h": 3,
      "fill": "#ffffff",
-     "a": 0.22
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
     }
    ]
   },
@@ -2611,42 +2766,64 @@
     }
    ]
   },
-  "car.top.pintura.desbotada": {
+  "car.rear.pintura.desbotada": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pintura__desbotada.png",
+   "src": "img/car/rear/pintura__desbotada.png",
    "ph": [
     {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#3b3a38"
+    },
+    {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
      "fill": "#3b3a38"
     },
     {
      "t": "ellipse",
-     "x": 40,
-     "y": 20,
-     "rx": 14,
-     "ry": 6,
+     "x": 90,
+     "y": 120,
+     "rx": 30,
+     "ry": 10,
      "fill": "#5a5650",
      "a": 0.5
     },
     {
      "t": "ellipse",
-     "x": 78,
-     "y": 36,
-     "rx": 12,
-     "ry": 5,
+     "x": 240,
+     "y": 160,
+     "rx": 24,
+     "ry": 8,
      "fill": "#5a5650",
      "a": 0.5
     }
@@ -2844,25 +3021,47 @@
     }
    ]
   },
-  "car.top.pintura.preta": {
+  "car.rear.pintura.preta": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pintura__preta.png",
+   "src": "img/car/rear/pintura__preta.png",
    "ph": [
     {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#161616"
+    },
+    {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
      "fill": "#161616"
     }
    ]
@@ -3041,35 +3240,67 @@
     }
    ]
   },
-  "car.top.pintura.preta_brilhante": {
+  "car.rear.pintura.preta_brilhante": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pintura__preta_brilhante.png",
+   "src": "img/car/rear/pintura__preta_brilhante.png",
    "ph": [
     {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#0b0b0b"
+    },
+    {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
      "fill": "#0b0b0b"
     },
     {
      "t": "rect",
      "x": 30,
-     "y": 14,
-     "w": 52,
-     "h": 4,
+     "y": 98,
+     "w": 260,
+     "h": 3,
      "fill": "#ffffff",
-     "a": 0.22
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
     }
    ]
   },
@@ -3270,35 +3501,67 @@
     }
    ]
   },
-  "car.top.pintura.verde": {
+  "car.rear.pintura.verde": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pintura__verde.png",
+   "src": "img/car/rear/pintura__verde.png",
    "ph": [
     {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#1d4d2b"
+    },
+    {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
      "fill": "#1d4d2b"
     },
     {
      "t": "rect",
      "x": 30,
-     "y": 14,
-     "w": 52,
-     "h": 4,
+     "y": 98,
+     "w": 260,
+     "h": 3,
      "fill": "#ffffff",
-     "a": 0.22
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
     }
    ]
   },
@@ -3499,35 +3762,67 @@
     }
    ]
   },
-  "car.top.pintura.vermelha": {
+  "car.rear.pintura.vermelha": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pintura__vermelha.png",
+   "src": "img/car/rear/pintura__vermelha.png",
    "ph": [
     {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       34
+      ],
+      [
+       234,
+       34
+      ],
+      [
+       264,
+       100
+      ],
+      [
+       56,
+       100
+      ]
+     ],
+     "fill": "#b3121b"
+    },
+    {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 22,
+     "y": 94,
+     "w": 276,
+     "h": 78,
+     "r": 14,
      "fill": "#b3121b"
     },
     {
      "t": "rect",
      "x": 30,
-     "y": 14,
-     "w": 52,
-     "h": 4,
+     "y": 98,
+     "w": 260,
+     "h": 3,
      "fill": "#ffffff",
-     "a": 0.22
+     "a": 0.25
+    },
+    {
+     "t": "line",
+     "x1": 92,
+     "y1": 38,
+     "x2": 228,
+     "y2": 38,
+     "w": 2,
+     "stroke": "#ffffff",
+     "a": 0.2
     }
    ]
   },
@@ -3728,49 +4023,35 @@
     }
    ]
   },
-  "car.top.pneus.careca": {
+  "car.rear.pneus.careca": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pneus__careca.png",
+   "src": "img/car/rear/pneus__careca.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#5a5a5a"
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#4a4a4a"
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#5a5a5a"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#5a5a5a"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#5a5a5a"
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#4a4a4a"
     }
    ]
   },
@@ -3802,48 +4083,34 @@
     }
    ]
   },
-  "car.top.pneus.esportivo": {
+  "car.rear.pneus.esportivo": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pneus__esportivo.png",
+   "src": "img/car/rear/pneus__esportivo.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 19.0,
-     "y": 1.0,
-     "w": 18,
-     "h": 9.0,
+     "t": "rrect",
+     "x": 30,
+     "y": 148,
+     "w": 58,
+     "h": 48,
+     "r": 6,
      "fill": "#161616"
     },
     {
-     "t": "rect",
-     "x": 19.0,
-     "y": 46,
-     "w": 18,
-     "h": 9.0,
-     "fill": "#161616"
-    },
-    {
-     "t": "rect",
-     "x": 73.0,
-     "y": 1.0,
-     "w": 18,
-     "h": 9.0,
-     "fill": "#161616"
-    },
-    {
-     "t": "rect",
-     "x": 73.0,
-     "y": 46,
-     "w": 18,
-     "h": 9.0,
+     "t": "rrect",
+     "x": 232,
+     "y": 148,
+     "w": 58,
+     "h": 48,
+     "r": 6,
      "fill": "#161616"
     }
    ]
@@ -3876,48 +4143,34 @@
     }
    ]
   },
-  "car.top.pneus.novo": {
+  "car.rear.pneus.novo": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pneus__novo.png",
+   "src": "img/car/rear/pneus__novo.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     }
    ]
@@ -3950,48 +4203,34 @@
     }
    ]
   },
-  "car.top.pneus.slick": {
+  "car.rear.pneus.slick": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/pneus__slick.png",
+   "src": "img/car/rear/pneus__slick.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 18.5,
-     "y": 0.5,
-     "w": 19,
-     "h": 9.5,
+     "t": "rrect",
+     "x": 28,
+     "y": 148,
+     "w": 62,
+     "h": 48,
+     "r": 6,
      "fill": "#0e0e0e"
     },
     {
-     "t": "rect",
-     "x": 18.5,
-     "y": 46,
-     "w": 19,
-     "h": 9.5,
-     "fill": "#0e0e0e"
-    },
-    {
-     "t": "rect",
-     "x": 72.5,
-     "y": 0.5,
-     "w": 19,
-     "h": 9.5,
-     "fill": "#0e0e0e"
-    },
-    {
-     "t": "rect",
-     "x": 72.5,
-     "y": 46,
-     "w": 19,
-     "h": 9.5,
+     "t": "rrect",
+     "x": 230,
+     "y": 148,
+     "w": 62,
+     "h": 48,
+     "r": 6,
      "fill": "#0e0e0e"
     }
    ]
@@ -4024,48 +4263,32 @@
     }
    ]
   },
-  "car.top.rodas.cinco_raios": {
+  "car.rear.rodas.cinco_raios": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/rodas__cinco_raios.png",
+   "src": "img/car/rear/rodas__cinco_raios.png",
    "ph": [
     {
      "t": "rect",
-     "x": 25,
-     "y": 4,
-     "w": 6,
-     "h": 3,
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#a0a0a0"
     },
     {
      "t": "rect",
-     "x": 25,
-     "y": 49,
-     "w": 6,
-     "h": 3,
-     "fill": "#a0a0a0"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 4,
-     "w": 6,
-     "h": 3,
-     "fill": "#a0a0a0"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 49,
-     "w": 6,
-     "h": 3,
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#a0a0a0"
     }
    ]
@@ -4202,48 +4425,32 @@
     }
    ]
   },
-  "car.top.rodas.cromada": {
+  "car.rear.rodas.cromada": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/rodas__cromada.png",
+   "src": "img/car/rear/rodas__cromada.png",
    "ph": [
     {
      "t": "rect",
-     "x": 25,
-     "y": 4,
-     "w": 6,
-     "h": 3,
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#eeeeee"
     },
     {
      "t": "rect",
-     "x": 25,
-     "y": 49,
-     "w": 6,
-     "h": 3,
-     "fill": "#eeeeee"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 4,
-     "w": 6,
-     "h": 3,
-     "fill": "#eeeeee"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 49,
-     "w": 6,
-     "h": 3,
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#eeeeee"
     }
    ]
@@ -4434,48 +4641,32 @@
     }
    ]
   },
-  "car.top.rodas.enferrujada": {
+  "car.rear.rodas.enferrujada": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/rodas__enferrujada.png",
+   "src": "img/car/rear/rodas__enferrujada.png",
    "ph": [
     {
      "t": "rect",
-     "x": 25,
-     "y": 4,
-     "w": 6,
-     "h": 3,
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#7a4a2a"
     },
     {
      "t": "rect",
-     "x": 25,
-     "y": 49,
-     "w": 6,
-     "h": 3,
-     "fill": "#7a4a2a"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 4,
-     "w": 6,
-     "h": 3,
-     "fill": "#7a4a2a"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 49,
-     "w": 6,
-     "h": 3,
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#7a4a2a"
     }
    ]
@@ -4522,48 +4713,32 @@
     }
    ]
   },
-  "car.top.rodas.original": {
+  "car.rear.rodas.original": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/rodas__original.png",
+   "src": "img/car/rear/rodas__original.png",
    "ph": [
     {
      "t": "rect",
-     "x": 25,
-     "y": 4,
-     "w": 6,
-     "h": 3,
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#c8c8c8"
     },
     {
      "t": "rect",
-     "x": 25,
-     "y": 49,
-     "w": 6,
-     "h": 3,
-     "fill": "#c8c8c8"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 4,
-     "w": 6,
-     "h": 3,
-     "fill": "#c8c8c8"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 49,
-     "w": 6,
-     "h": 3,
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#c8c8c8"
     }
    ]
@@ -4610,48 +4785,32 @@
     }
    ]
   },
-  "car.top.rodas.preta": {
+  "car.rear.rodas.preta": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/rodas__preta.png",
+   "src": "img/car/rear/rodas__preta.png",
    "ph": [
     {
      "t": "rect",
-     "x": 25,
-     "y": 4,
-     "w": 6,
-     "h": 3,
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#2a2a2a"
     },
     {
      "t": "rect",
-     "x": 25,
-     "y": 49,
-     "w": 6,
-     "h": 3,
-     "fill": "#2a2a2a"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 4,
-     "w": 6,
-     "h": 3,
-     "fill": "#2a2a2a"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 49,
-     "w": 6,
-     "h": 3,
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#2a2a2a"
     }
    ]
@@ -4806,48 +4965,32 @@
     }
    ]
   },
-  "car.top.rodas.raiada": {
+  "car.rear.rodas.raiada": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/rodas__raiada.png",
+   "src": "img/car/rear/rodas__raiada.png",
    "ph": [
     {
      "t": "rect",
-     "x": 25,
-     "y": 4,
-     "w": 6,
-     "h": 3,
+     "x": 82,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#d0c090"
     },
     {
      "t": "rect",
-     "x": 25,
-     "y": 49,
-     "w": 6,
-     "h": 3,
-     "fill": "#d0c090"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 4,
-     "w": 6,
-     "h": 3,
-     "fill": "#d0c090"
-    },
-    {
-     "t": "rect",
-     "x": 79,
-     "y": 49,
-     "w": 6,
-     "h": 3,
+     "x": 233,
+     "y": 160,
+     "w": 5,
+     "h": 30,
      "fill": "#d0c090"
     }
    ]
@@ -5182,25 +5325,24 @@
     }
    ]
   },
-  "car.top.sombra.base": {
+  "car.rear.sombra.base": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/sombra__base.png",
+   "src": "img/car/rear/sombra__base.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 152,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     }
@@ -5229,71 +5371,49 @@
     }
    ]
   },
-  "car.top.vidros.limpo": {
+  "car.rear.vidros.limpo": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/vidros__limpo.png",
+   "src": "img/car/rear/vidros__limpo.png",
    "ph": [
     {
      "t": "poly",
      "pts": [
       [
-       64,
-       10
+       98,
+       42
+      ],
+      [
+       222,
+       42
+      ],
+      [
+       248,
+       94
       ],
       [
        72,
-       13
-      ],
-      [
-       72,
-       43
-      ],
-      [
-       64,
-       46
-      ]
-     ],
-     "fill": "#8cc4e6"
-    },
-    {
-     "t": "poly",
-     "pts": [
-      [
-       30,
-       13
-      ],
-      [
-       36,
-       11
-      ],
-      [
-       36,
-       45
-      ],
-      [
-       30,
-       43
+       94
       ]
      ],
      "fill": "#8cc4e6"
     },
     {
      "t": "line",
-     "x1": 65,
-     "y1": 14,
-     "x2": 70,
-     "y2": 20,
-     "w": 1,
+     "x1": 110,
+     "y1": 48,
+     "x2": 130,
+     "y2": 88,
+     "w": 2,
      "stroke": "#ffffff",
-     "a": 0.7
+     "a": 0.6
     }
    ]
   },
@@ -5352,78 +5472,56 @@
     }
    ]
   },
-  "car.top.vidros.trincado": {
+  "car.rear.vidros.trincado": {
    "kind": "carLayer",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/car/top/vidros__trincado.png",
+   "src": "img/car/rear/vidros__trincado.png",
    "ph": [
     {
      "t": "poly",
      "pts": [
       [
-       64,
-       10
+       98,
+       42
+      ],
+      [
+       222,
+       42
+      ],
+      [
+       248,
+       94
       ],
       [
        72,
-       13
-      ],
-      [
-       72,
-       43
-      ],
-      [
-       64,
-       46
-      ]
-     ],
-     "fill": "#5d6a6f"
-    },
-    {
-     "t": "poly",
-     "pts": [
-      [
-       30,
-       13
-      ],
-      [
-       36,
-       11
-      ],
-      [
-       36,
-       45
-      ],
-      [
-       30,
-       43
+       94
       ]
      ],
      "fill": "#5d6a6f"
     },
     {
      "t": "line",
-     "x1": 66,
-     "y1": 16,
-     "x2": 70,
-     "y2": 26,
-     "w": 0.6,
+     "x1": 180,
+     "y1": 50,
+     "x2": 200,
+     "y2": 76,
+     "w": 1,
      "stroke": "#dddddd"
     },
     {
      "t": "line",
-     "x1": 70,
-     "y1": 26,
-     "x2": 67,
-     "y2": 34,
-     "w": 0.6,
+     "x1": 200,
+     "y1": 76,
+     "x2": 186,
+     "y2": 88,
+     "w": 1,
      "stroke": "#dddddd"
     }
    ]
@@ -5482,2490 +5580,3763 @@
     }
    ]
   },
-  "opp.o01.top": {
+  "opp.o01.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o01.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 10,
-     "y": 7,
-     "w": 92,
-     "h": 42,
-     "r": 12,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
      "fill": "#3f8f3f"
     },
     {
      "t": "rrect",
-     "x": 36,
-     "y": 12,
-     "w": 36,
-     "h": 32,
-     "r": 8,
-     "fill": "#222222",
-     "a": 0.35
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#3f8f3f"
     },
     {
-     "t": "rect",
-     "x": 70,
-     "y": 12,
-     "w": 5,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o02.top": {
+  "opp.o02.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o02.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 12,
-     "y": 8,
-     "w": 88,
-     "h": 40,
-     "r": 14,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 104,
+     "w": 264,
+     "h": 68,
+     "r": 20,
      "fill": "#e8c21f"
     },
     {
      "t": "rrect",
-     "x": 40,
-     "y": 16,
-     "w": 26,
-     "h": 24,
-     "r": 6,
+     "x": 110,
+     "y": 74,
+     "w": 100,
+     "h": 34,
+     "r": 10,
      "fill": "#1a1a1a"
     },
     {
      "t": "rect",
-     "x": 68,
-     "y": 14,
-     "w": 4,
-     "h": 28,
-     "fill": "#8cc4e6"
+     "x": 120,
+     "y": 60,
+     "w": 80,
+     "h": 8,
+     "fill": "#888888"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o03.top": {
+  "opp.o03.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o03.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 6,
-     "y": 6,
-     "w": 100,
-     "h": 44,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
      "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rect",
+     "x": 56,
+     "y": 26,
+     "w": 208,
+     "h": 76,
+     "fill": "#8a5a2a"
+    },
+    {
+     "t": "rrect",
+     "x": 20,
+     "y": 96,
+     "w": 280,
+     "h": 76,
+     "r": 8,
      "fill": "#8a5a2a"
     },
     {
      "t": "rect",
-     "x": 16,
-     "y": 12,
-     "w": 58,
-     "h": 32,
-     "fill": "#222222",
-     "a": 0.35
-    },
-    {
-     "t": "rect",
-     "x": 72,
-     "y": 12,
-     "w": 5,
-     "h": 32,
+     "x": 70,
+     "y": 34,
+     "w": 180,
+     "h": 58,
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o04.top": {
+  "opp.o04.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o04.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
      "fill": "#f07a1a"
     },
     {
-     "t": "rect",
-     "x": 30,
-     "y": 12,
-     "w": 40,
-     "h": 32,
-     "fill": "#222222",
-     "a": 0.35
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#f07a1a"
     },
     {
-     "t": "rect",
-     "x": 66,
-     "y": 12,
-     "w": 6,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o05.top": {
+  "opp.o05.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o05.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
      "fill": "#c0302a"
     },
     {
-     "t": "rect",
-     "x": 30,
-     "y": 12,
-     "w": 40,
-     "h": 32,
-     "fill": "#222222",
-     "a": 0.35
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#c0302a"
     },
     {
-     "t": "rect",
-     "x": 66,
-     "y": 12,
-     "w": 6,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o06.top": {
+  "opp.o06.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o06.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 10,
-     "y": 7,
-     "w": 92,
-     "h": 42,
-     "r": 12,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
      "fill": "#6ec6e8"
     },
     {
      "t": "rrect",
-     "x": 36,
-     "y": 12,
-     "w": 36,
-     "h": 32,
-     "r": 8,
-     "fill": "#222222",
-     "a": 0.35
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#6ec6e8"
     },
     {
-     "t": "rect",
-     "x": 70,
-     "y": 12,
-     "w": 5,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o07.top": {
+  "opp.o07.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o07.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
      "fill": "#7a7f88"
     },
     {
-     "t": "rect",
-     "x": 30,
-     "y": 12,
-     "w": 40,
-     "h": 32,
-     "fill": "#222222",
-     "a": 0.35
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#7a7f88"
     },
     {
-     "t": "rect",
-     "x": 66,
-     "y": 12,
-     "w": 6,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o08.top": {
+  "opp.o08.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o08.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 12,
-     "y": 8,
-     "w": 88,
-     "h": 40,
-     "r": 14,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 104,
+     "w": 264,
+     "h": 68,
+     "r": 20,
      "fill": "#f07aa8"
     },
     {
      "t": "rrect",
-     "x": 40,
-     "y": 16,
-     "w": 26,
-     "h": 24,
-     "r": 6,
+     "x": 110,
+     "y": 74,
+     "w": 100,
+     "h": 34,
+     "r": 10,
      "fill": "#1a1a1a"
     },
     {
      "t": "rect",
-     "x": 68,
-     "y": 14,
-     "w": 4,
-     "h": 28,
-     "fill": "#8cc4e6"
+     "x": 120,
+     "y": 60,
+     "w": 80,
+     "h": 8,
+     "fill": "#888888"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o09.top": {
+  "opp.o09.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o09.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
      "fill": "#5a6a3a"
     },
     {
-     "t": "rect",
-     "x": 30,
-     "y": 12,
-     "w": 40,
-     "h": 32,
-     "fill": "#222222",
-     "a": 0.35
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#5a6a3a"
     },
     {
-     "t": "rect",
-     "x": 66,
-     "y": 12,
-     "w": 6,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o10.top": {
+  "opp.o10.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o10.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 10,
-     "y": 7,
-     "w": 92,
-     "h": 42,
-     "r": 12,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
      "fill": "#f2f2f2"
     },
     {
      "t": "rrect",
-     "x": 36,
-     "y": 12,
-     "w": 36,
-     "h": 32,
-     "r": 8,
-     "fill": "#222222",
-     "a": 0.35
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#f2f2f2"
     },
     {
-     "t": "rect",
-     "x": 70,
-     "y": 12,
-     "w": 5,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o11.top": {
+  "opp.o11.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o11.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 12,
-     "y": 8,
-     "w": 88,
-     "h": 40,
-     "r": 14,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 104,
+     "w": 264,
+     "h": 68,
+     "r": 20,
      "fill": "#1f3a6a"
     },
     {
      "t": "rrect",
-     "x": 40,
-     "y": 16,
-     "w": 26,
-     "h": 24,
-     "r": 6,
+     "x": 110,
+     "y": 74,
+     "w": 100,
+     "h": 34,
+     "r": 10,
      "fill": "#1a1a1a"
     },
     {
      "t": "rect",
-     "x": 68,
-     "y": 14,
-     "w": 4,
-     "h": 28,
-     "fill": "#8cc4e6"
+     "x": 120,
+     "y": 60,
+     "w": 80,
+     "h": 8,
+     "fill": "#888888"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o12.top": {
+  "opp.o12.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o12.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 10,
-     "y": 7,
-     "w": 92,
-     "h": 42,
-     "r": 12,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
      "fill": "#1fa86a"
     },
     {
      "t": "rrect",
-     "x": 36,
-     "y": 12,
-     "w": 36,
-     "h": 32,
-     "r": 8,
-     "fill": "#222222",
-     "a": 0.35
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#1fa86a"
     },
     {
-     "t": "rect",
-     "x": 70,
-     "y": 12,
-     "w": 5,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o13.top": {
+  "opp.o13.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o13.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
      "fill": "#7a1414"
     },
     {
-     "t": "rect",
-     "x": 30,
-     "y": 12,
-     "w": 40,
-     "h": 32,
-     "fill": "#222222",
-     "a": 0.35
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#7a1414"
     },
     {
-     "t": "rect",
-     "x": 66,
-     "y": 12,
-     "w": 6,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o14.top": {
+  "opp.o14.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o14.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
      "fill": "#ffd21f"
     },
     {
-     "t": "rect",
-     "x": 30,
-     "y": 12,
-     "w": 40,
-     "h": 32,
-     "fill": "#222222",
-     "a": 0.35
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#ffd21f"
     },
     {
-     "t": "rect",
-     "x": 66,
-     "y": 12,
-     "w": 6,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o15.top": {
+  "opp.o15.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o15.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 10,
-     "y": 7,
-     "w": 92,
-     "h": 42,
-     "r": 12,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       100,
+       34
+      ],
+      [
+       220,
+       34
+      ],
+      [
+       256,
+       100
+      ],
+      [
+       64,
+       100
+      ]
+     ],
      "fill": "#b8b8c0"
     },
     {
      "t": "rrect",
-     "x": 36,
-     "y": 12,
-     "w": 36,
-     "h": 32,
-     "r": 8,
-     "fill": "#222222",
-     "a": 0.35
+     "x": 24,
+     "y": 96,
+     "w": 272,
+     "h": 76,
+     "r": 22,
+     "fill": "#b8b8c0"
     },
     {
-     "t": "rect",
-     "x": 70,
-     "y": 12,
-     "w": 5,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       110,
+       42
+      ],
+      [
+       210,
+       42
+      ],
+      [
+       238,
+       94
+      ],
+      [
+       82,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o16.top": {
+  "opp.o16.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o16.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
      "fill": "#4a2a6a"
     },
     {
-     "t": "rect",
-     "x": 30,
-     "y": 12,
-     "w": 40,
-     "h": 32,
-     "fill": "#222222",
-     "a": 0.35
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#4a2a6a"
     },
     {
-     "t": "rect",
-     "x": 66,
-     "y": 12,
-     "w": 6,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o17.top": {
+  "opp.o17.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o17.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 12,
-     "y": 8,
-     "w": 88,
-     "h": 40,
-     "r": 14,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "rrect",
+     "x": 28,
+     "y": 104,
+     "w": 264,
+     "h": 68,
+     "r": 20,
      "fill": "#d4a62a"
     },
     {
      "t": "rrect",
-     "x": 40,
-     "y": 16,
-     "w": 26,
-     "h": 24,
-     "r": 6,
+     "x": 110,
+     "y": 74,
+     "w": 100,
+     "h": 34,
+     "r": 10,
      "fill": "#1a1a1a"
     },
     {
      "t": "rect",
-     "x": 68,
-     "y": 14,
-     "w": 4,
-     "h": 28,
-     "fill": "#8cc4e6"
+     "x": 120,
+     "y": 60,
+     "w": 80,
+     "h": 8,
+     "fill": "#888888"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "opp.o18.top": {
+  "opp.o18.rear": {
    "kind": "sprite",
    "size": [
-    112,
-    56
+    320,
+    200
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/opp/o18.png",
    "ph": [
     {
-     "t": "rrect",
-     "x": 11,
-     "y": 9,
-     "w": 96,
-     "h": 44,
-     "r": 10,
+     "t": "ellipse",
+     "x": 160,
+     "y": 194,
+     "rx": 150,
+     "ry": 8,
      "fill": "#000000",
      "a": 0.35
     },
     {
-     "t": "rect",
-     "x": 20.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 20.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 2.0,
-     "w": 16,
-     "h": 8.0,
-     "fill": "#1e1e1e"
-    },
-    {
-     "t": "rect",
-     "x": 74.0,
-     "y": 46,
-     "w": 16,
-     "h": 8.0,
+     "t": "rrect",
+     "x": 34,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
      "fill": "#1e1e1e"
     },
     {
      "t": "rrect",
-     "x": 8,
-     "y": 6,
-     "w": 96,
-     "h": 44,
-     "r": 9,
+     "x": 236,
+     "y": 148,
+     "w": 50,
+     "h": 48,
+     "r": 6,
+     "fill": "#1e1e1e"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       86,
+       38
+      ],
+      [
+       234,
+       38
+      ],
+      [
+       262,
+       100
+      ],
+      [
+       58,
+       100
+      ]
+     ],
      "fill": "#2a6aff"
     },
     {
-     "t": "rect",
-     "x": 30,
-     "y": 12,
-     "w": 40,
-     "h": 32,
-     "fill": "#222222",
-     "a": 0.35
+     "t": "rrect",
+     "x": 22,
+     "y": 96,
+     "w": 276,
+     "h": 76,
+     "r": 12,
+     "fill": "#2a6aff"
     },
     {
-     "t": "rect",
-     "x": 66,
-     "y": 12,
-     "w": 6,
-     "h": 32,
+     "t": "poly",
+     "pts": [
+      [
+       98,
+       46
+      ],
+      [
+       222,
+       46
+      ],
+      [
+       246,
+       94
+      ],
+      [
+       74,
+       94
+      ]
+     ],
      "fill": "#8cc4e6"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 12,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 36,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
     },
     {
-     "t": "circle",
-     "x": 100,
-     "y": 44,
-     "r": 3,
-     "fill": "#fff6c0"
+     "t": "rect",
+     "x": 244,
+     "y": 120,
+     "w": 40,
+     "h": 14,
+     "fill": "#d42020"
+    },
+    {
+     "t": "rrect",
+     "x": 16,
+     "y": 146,
+     "w": 288,
+     "h": 12,
+     "r": 5,
+     "fill": "#bbbbbb"
     }
    ]
   },
-  "trk.asfalto": {
-   "kind": "pattern",
+  "bg.bairro.ceu": {
+   "kind": "background",
    "size": [
-    128,
-    128
+    1024,
+    384
    ],
    "anchor": [
     0,
     0
    ],
-   "src": "img/track/asfalto.png",
+   "src": "img/bg/bairro_ceu.png",
    "ph": [
     {
      "t": "rect",
      "x": 0,
      "y": 0,
-     "w": 128,
-     "h": 128,
-     "fill": "#3d3d40"
+     "w": 1024,
+     "h": 384,
+     "fill": "#72d7ee"
     },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 256,
+     "w": 1024,
+     "h": 128,
+     "fill": "#bfeefa"
+    },
+    {
+     "t": "circle",
+     "x": 820,
+     "y": 90,
+     "r": 40,
+     "fill": "#fff6c0",
+     "a": 0.9
+    }
+   ]
+  },
+  "bg.bairro.morros": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/bairro_morros.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       384
+      ],
+      [
+       0,
+       300.0
+      ],
+      [
+       32,
+       237.2
+      ],
+      [
+       64,
+       233.1
+      ],
+      [
+       96,
+       266.1
+      ],
+      [
+       128,
+       278.8
+      ],
+      [
+       160,
+       271.6
+      ],
+      [
+       192,
+       295.2
+      ],
+      [
+       224,
+       355.7
+      ],
+      [
+       256,
+       390.0
+      ],
+      [
+       288,
+       355.7
+      ],
+      [
+       320,
+       295.2
+      ],
+      [
+       352,
+       271.6
+      ],
+      [
+       384,
+       278.8
+      ],
+      [
+       416,
+       266.1
+      ],
+      [
+       448,
+       233.1
+      ],
+      [
+       480,
+       237.2
+      ],
+      [
+       512,
+       300.0
+      ],
+      [
+       544,
+       362.8
+      ],
+      [
+       576,
+       366.9
+      ],
+      [
+       608,
+       333.9
+      ],
+      [
+       640,
+       321.2
+      ],
+      [
+       672,
+       328.4
+      ],
+      [
+       704,
+       304.8
+      ],
+      [
+       736,
+       244.3
+      ],
+      [
+       768,
+       210.0
+      ],
+      [
+       800,
+       244.3
+      ],
+      [
+       832,
+       304.8
+      ],
+      [
+       864,
+       328.4
+      ],
+      [
+       896,
+       321.2
+      ],
+      [
+       928,
+       333.9
+      ],
+      [
+       960,
+       366.9
+      ],
+      [
+       992,
+       362.8
+      ],
+      [
+       1024,
+       300.0
+      ],
+      [
+       1024,
+       384
+      ]
+     ],
+     "fill": "#5d9e48"
+    }
+   ]
+  },
+  "bg.bairro.arvores": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/bairro_arvores.png",
+   "ph": [
     {
      "t": "circle",
      "x": 0,
-     "y": 0,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 37,
-     "y": 61,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 74,
-     "y": 122,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 111,
-     "y": 55,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 20,
-     "y": 116,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 57,
-     "y": 49,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 94,
-     "y": 110,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 3,
-     "y": 43,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
      "x": 40,
-     "y": 104,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 77,
-     "y": 37,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 114,
-     "y": 98,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 23,
-     "y": 31,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 60,
-     "y": 92,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 97,
-     "y": 25,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 6,
-     "y": 86,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 43,
-     "y": 19,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
      "x": 80,
-     "y": 80,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 117,
-     "y": 13,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 26,
-     "y": 74,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 63,
-     "y": 7,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 100,
-     "y": 68,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 9,
-     "y": 1,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 46,
-     "y": 62,
-     "r": 1.5,
-     "fill": "#4a4a4e"
-    },
-    {
-     "t": "circle",
-     "x": 83,
-     "y": 123,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
      "x": 120,
-     "y": 56,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 29,
-     "y": 117,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 160,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 66,
-     "y": 50,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 200,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 103,
-     "y": 111,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 240,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 12,
-     "y": 44,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 280,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 49,
-     "y": 105,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 320,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 86,
-     "y": 38,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 360,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 123,
-     "y": 99,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 400,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 32,
-     "y": 32,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 440,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 69,
-     "y": 93,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 480,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 106,
-     "y": 26,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 520,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 15,
-     "y": 87,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 560,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 52,
-     "y": 20,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 600,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 89,
-     "y": 81,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 640,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 126,
-     "y": 14,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 680,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
     },
     {
      "t": "circle",
-     "x": 35,
-     "y": 75,
-     "r": 1.5,
-     "fill": "#4a4a4e"
+     "x": 720,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 760,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 800,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 840,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 880,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 920,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 960,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "circle",
+     "x": 1000,
+     "y": 350,
+     "r": 22,
+     "fill": "#3f7f34"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 350,
+     "w": 1024,
+     "h": 34,
+     "fill": "#3f7f34"
     }
    ]
   },
-  "trk.grama.bairro": {
-   "kind": "pattern",
+  "bg.cidade.ceu": {
+   "kind": "background",
    "size": [
-    128,
-    128
+    1024,
+    384
    ],
    "anchor": [
     0,
     0
    ],
-   "src": "img/track/grama_bairro.png",
+   "src": "img/bg/cidade_ceu.png",
    "ph": [
     {
      "t": "rect",
      "x": 0,
      "y": 0,
-     "w": 128,
-     "h": 128,
-     "fill": "#4f8a3a"
+     "w": 1024,
+     "h": 384,
+     "fill": "#8ec8f0"
     },
     {
      "t": "rect",
      "x": 0,
-     "y": 0,
-     "w": 64,
-     "h": 64,
-     "fill": "#5a9a44"
+     "y": 256,
+     "w": 1024,
+     "h": 128,
+     "fill": "#d0e6f6"
     },
     {
-     "t": "rect",
-     "x": 64,
-     "y": 64,
-     "w": 64,
-     "h": 64,
-     "fill": "#5a9a44"
+     "t": "circle",
+     "x": 820,
+     "y": 90,
+     "r": 40,
+     "fill": "#fff6c0",
+     "a": 0.9
     }
    ]
   },
-  "trk.grama.cidade": {
-   "kind": "pattern",
+  "bg.cidade.morros": {
+   "kind": "background",
    "size": [
-    128,
-    128
+    1024,
+    384
    ],
    "anchor": [
     0,
     0
    ],
-   "src": "img/track/grama_cidade.png",
+   "src": "img/bg/cidade_morros.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 128,
-     "h": 128,
-     "fill": "#5d8f4a"
-    },
-    {
-     "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 64,
-     "h": 64,
-     "fill": "#6aa055"
-    },
-    {
-     "t": "rect",
-     "x": 64,
-     "y": 64,
-     "w": 64,
-     "h": 64,
-     "fill": "#6aa055"
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       384
+      ],
+      [
+       0,
+       300.0
+      ],
+      [
+       32,
+       237.2
+      ],
+      [
+       64,
+       233.1
+      ],
+      [
+       96,
+       266.1
+      ],
+      [
+       128,
+       278.8
+      ],
+      [
+       160,
+       271.6
+      ],
+      [
+       192,
+       295.2
+      ],
+      [
+       224,
+       355.7
+      ],
+      [
+       256,
+       390.0
+      ],
+      [
+       288,
+       355.7
+      ],
+      [
+       320,
+       295.2
+      ],
+      [
+       352,
+       271.6
+      ],
+      [
+       384,
+       278.8
+      ],
+      [
+       416,
+       266.1
+      ],
+      [
+       448,
+       233.1
+      ],
+      [
+       480,
+       237.2
+      ],
+      [
+       512,
+       300.0
+      ],
+      [
+       544,
+       362.8
+      ],
+      [
+       576,
+       366.9
+      ],
+      [
+       608,
+       333.9
+      ],
+      [
+       640,
+       321.2
+      ],
+      [
+       672,
+       328.4
+      ],
+      [
+       704,
+       304.8
+      ],
+      [
+       736,
+       244.3
+      ],
+      [
+       768,
+       210.0
+      ],
+      [
+       800,
+       244.3
+      ],
+      [
+       832,
+       304.8
+      ],
+      [
+       864,
+       328.4
+      ],
+      [
+       896,
+       321.2
+      ],
+      [
+       928,
+       333.9
+      ],
+      [
+       960,
+       366.9
+      ],
+      [
+       992,
+       362.8
+      ],
+      [
+       1024,
+       300.0
+      ],
+      [
+       1024,
+       384
+      ]
+     ],
+     "fill": "#7a8090"
     }
    ]
   },
-  "trk.grama.serra": {
-   "kind": "pattern",
+  "bg.cidade.arvores": {
+   "kind": "background",
    "size": [
-    128,
-    128
+    1024,
+    384
    ],
    "anchor": [
     0,
     0
    ],
-   "src": "img/track/grama_serra.png",
+   "src": "img/bg/cidade_arvores.png",
    "ph": [
     {
      "t": "rect",
      "x": 0,
-     "y": 0,
-     "w": 128,
-     "h": 128,
-     "fill": "#4a7a35"
-    },
-    {
-     "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 64,
-     "h": 64,
-     "fill": "#3f6a2c"
+     "y": 304,
+     "w": 48,
+     "h": 80,
+     "fill": "#555a66"
     },
     {
      "t": "rect",
      "x": 64,
-     "y": 64,
-     "w": 64,
-     "h": 64,
-     "fill": "#3f6a2c"
+     "y": 248,
+     "w": 48,
+     "h": 136,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 128,
+     "y": 192,
+     "w": 48,
+     "h": 192,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 192,
+     "y": 276,
+     "w": 48,
+     "h": 108,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 256,
+     "y": 220,
+     "w": 48,
+     "h": 164,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 320,
+     "y": 304,
+     "w": 48,
+     "h": 80,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 384,
+     "y": 248,
+     "w": 48,
+     "h": 136,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 448,
+     "y": 192,
+     "w": 48,
+     "h": 192,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 512,
+     "y": 276,
+     "w": 48,
+     "h": 108,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 576,
+     "y": 220,
+     "w": 48,
+     "h": 164,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 640,
+     "y": 304,
+     "w": 48,
+     "h": 80,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 704,
+     "y": 248,
+     "w": 48,
+     "h": 136,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 768,
+     "y": 192,
+     "w": 48,
+     "h": 192,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 832,
+     "y": 276,
+     "w": 48,
+     "h": 108,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 896,
+     "y": 220,
+     "w": 48,
+     "h": 164,
+     "fill": "#555a66"
+    },
+    {
+     "t": "rect",
+     "x": 960,
+     "y": 304,
+     "w": 48,
+     "h": 80,
+     "fill": "#555a66"
     }
    ]
   },
-  "trk.grama.autodromo": {
-   "kind": "pattern",
+  "bg.serra.ceu": {
+   "kind": "background",
    "size": [
-    128,
-    128
+    1024,
+    384
    ],
    "anchor": [
     0,
     0
    ],
-   "src": "img/track/grama_autodromo.png",
+   "src": "img/bg/serra_ceu.png",
    "ph": [
     {
      "t": "rect",
      "x": 0,
      "y": 0,
-     "w": 128,
-     "h": 128,
-     "fill": "#5aa048"
+     "w": 1024,
+     "h": 384,
+     "fill": "#f2b46a"
     },
     {
      "t": "rect",
      "x": 0,
-     "y": 0,
-     "w": 64,
-     "h": 64,
-     "fill": "#66ad52"
+     "y": 256,
+     "w": 1024,
+     "h": 128,
+     "fill": "#f8dcb0"
     },
     {
-     "t": "rect",
-     "x": 64,
-     "y": 64,
-     "w": 64,
-     "h": 64,
-     "fill": "#66ad52"
+     "t": "circle",
+     "x": 820,
+     "y": 90,
+     "r": 40,
+     "fill": "#fff6c0",
+     "a": 0.9
     }
    ]
   },
-  "trk.zebra": {
-   "kind": "pattern",
+  "bg.serra.morros": {
+   "kind": "background",
    "size": [
-    128,
-    128
+    1024,
+    384
    ],
    "anchor": [
     0,
     0
    ],
-   "src": "img/track/zebra.png",
+   "src": "img/bg/serra_morros.png",
    "ph": [
     {
-     "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 128,
-     "h": 128,
-     "fill": "#d42a2a"
-    },
-    {
-     "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 32,
-     "h": 128,
-     "fill": "#f2f2f2"
-    },
-    {
-     "t": "rect",
-     "x": 64,
-     "y": 0,
-     "w": 32,
-     "h": 128,
-     "fill": "#f2f2f2"
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       384
+      ],
+      [
+       0,
+       300.0
+      ],
+      [
+       32,
+       237.2
+      ],
+      [
+       64,
+       233.1
+      ],
+      [
+       96,
+       266.1
+      ],
+      [
+       128,
+       278.8
+      ],
+      [
+       160,
+       271.6
+      ],
+      [
+       192,
+       295.2
+      ],
+      [
+       224,
+       355.7
+      ],
+      [
+       256,
+       390.0
+      ],
+      [
+       288,
+       355.7
+      ],
+      [
+       320,
+       295.2
+      ],
+      [
+       352,
+       271.6
+      ],
+      [
+       384,
+       278.8
+      ],
+      [
+       416,
+       266.1
+      ],
+      [
+       448,
+       233.1
+      ],
+      [
+       480,
+       237.2
+      ],
+      [
+       512,
+       300.0
+      ],
+      [
+       544,
+       362.8
+      ],
+      [
+       576,
+       366.9
+      ],
+      [
+       608,
+       333.9
+      ],
+      [
+       640,
+       321.2
+      ],
+      [
+       672,
+       328.4
+      ],
+      [
+       704,
+       304.8
+      ],
+      [
+       736,
+       244.3
+      ],
+      [
+       768,
+       210.0
+      ],
+      [
+       800,
+       244.3
+      ],
+      [
+       832,
+       304.8
+      ],
+      [
+       864,
+       328.4
+      ],
+      [
+       896,
+       321.2
+      ],
+      [
+       928,
+       333.9
+      ],
+      [
+       960,
+       366.9
+      ],
+      [
+       992,
+       362.8
+      ],
+      [
+       1024,
+       300.0
+      ],
+      [
+       1024,
+       384
+      ]
+     ],
+     "fill": "#7a6a5a"
     }
    ]
   },
-  "trk.muro": {
-   "kind": "pattern",
+  "bg.serra.arvores": {
+   "kind": "background",
    "size": [
-    128,
-    128
+    1024,
+    384
    ],
    "anchor": [
     0,
     0
    ],
-   "src": "img/track/muro.png",
-   "ph": [
-    {
-     "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 128,
-     "h": 128,
-     "fill": "#9a9a9a"
-    },
-    {
-     "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 128,
-     "h": 8,
-     "fill": "#c0c0c0"
-    }
-   ]
-  },
-  "trk.largada": {
-   "kind": "pattern",
-   "size": [
-    128,
-    128
-   ],
-   "anchor": [
-    0,
-    0
-   ],
-   "src": "img/track/largada.png",
-   "ph": [
-    {
-     "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 128,
-     "h": 128,
-     "fill": "#f2f2f2"
-    },
-    {
-     "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 32,
-     "h": 32,
-     "fill": "#111111"
-    },
-    {
-     "t": "rect",
-     "x": 0,
-     "y": 64,
-     "w": 32,
-     "h": 32,
-     "fill": "#111111"
-    },
-    {
-     "t": "rect",
-     "x": 32,
-     "y": 32,
-     "w": 32,
-     "h": 32,
-     "fill": "#111111"
-    },
-    {
-     "t": "rect",
-     "x": 32,
-     "y": 96,
-     "w": 32,
-     "h": 32,
-     "fill": "#111111"
-    },
-    {
-     "t": "rect",
-     "x": 64,
-     "y": 0,
-     "w": 32,
-     "h": 32,
-     "fill": "#111111"
-    },
-    {
-     "t": "rect",
-     "x": 64,
-     "y": 64,
-     "w": 32,
-     "h": 32,
-     "fill": "#111111"
-    },
-    {
-     "t": "rect",
-     "x": 96,
-     "y": 32,
-     "w": 32,
-     "h": 32,
-     "fill": "#111111"
-    },
-    {
-     "t": "rect",
-     "x": 96,
-     "y": 96,
-     "w": 32,
-     "h": 32,
-     "fill": "#111111"
-    }
-   ]
-  },
-  "dec.arvore": {
-   "kind": "sprite",
-   "size": [
-    96,
-    96
-   ],
-   "anchor": [
-    0.5,
-    0.5
-   ],
-   "src": "img/dec/arvore.png",
+   "src": "img/bg/serra_arvores.png",
    "ph": [
     {
      "t": "circle",
-     "x": 48,
-     "y": 48,
-     "r": 44,
-     "fill": "#2f6b2a"
+     "x": 0,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
     },
     {
      "t": "circle",
      "x": 40,
-     "y": 40,
-     "r": 26,
-     "fill": "#3c8034"
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 80,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 120,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 160,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 200,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 240,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 280,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 320,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 360,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 400,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 440,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 480,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 520,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 560,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 600,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 640,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 680,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 720,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 760,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 800,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 840,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 880,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 920,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 960,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "circle",
+     "x": 1000,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e5e2c"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 350,
+     "w": 1024,
+     "h": 34,
+     "fill": "#3e5e2c"
     }
    ]
   },
-  "dec.palmeira": {
-   "kind": "sprite",
+  "bg.autodromo.ceu": {
+   "kind": "background",
    "size": [
-    96,
-    96
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/autodromo_ceu.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 1024,
+     "h": 384,
+     "fill": "#5aa0e8"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 256,
+     "w": 1024,
+     "h": 128,
+     "fill": "#c6def6"
+    },
+    {
+     "t": "circle",
+     "x": 820,
+     "y": 90,
+     "r": 40,
+     "fill": "#fff6c0",
+     "a": 0.9
+    }
+   ]
+  },
+  "bg.autodromo.morros": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/autodromo_morros.png",
+   "ph": [
+    {
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       384
+      ],
+      [
+       0,
+       300.0
+      ],
+      [
+       32,
+       237.2
+      ],
+      [
+       64,
+       233.1
+      ],
+      [
+       96,
+       266.1
+      ],
+      [
+       128,
+       278.8
+      ],
+      [
+       160,
+       271.6
+      ],
+      [
+       192,
+       295.2
+      ],
+      [
+       224,
+       355.7
+      ],
+      [
+       256,
+       390.0
+      ],
+      [
+       288,
+       355.7
+      ],
+      [
+       320,
+       295.2
+      ],
+      [
+       352,
+       271.6
+      ],
+      [
+       384,
+       278.8
+      ],
+      [
+       416,
+       266.1
+      ],
+      [
+       448,
+       233.1
+      ],
+      [
+       480,
+       237.2
+      ],
+      [
+       512,
+       300.0
+      ],
+      [
+       544,
+       362.8
+      ],
+      [
+       576,
+       366.9
+      ],
+      [
+       608,
+       333.9
+      ],
+      [
+       640,
+       321.2
+      ],
+      [
+       672,
+       328.4
+      ],
+      [
+       704,
+       304.8
+      ],
+      [
+       736,
+       244.3
+      ],
+      [
+       768,
+       210.0
+      ],
+      [
+       800,
+       244.3
+      ],
+      [
+       832,
+       304.8
+      ],
+      [
+       864,
+       328.4
+      ],
+      [
+       896,
+       321.2
+      ],
+      [
+       928,
+       333.9
+      ],
+      [
+       960,
+       366.9
+      ],
+      [
+       992,
+       362.8
+      ],
+      [
+       1024,
+       300.0
+      ],
+      [
+       1024,
+       384
+      ]
+     ],
+     "fill": "#6aa060"
+    }
+   ]
+  },
+  "bg.autodromo.arvores": {
+   "kind": "background",
+   "size": [
+    1024,
+    384
+   ],
+   "anchor": [
+    0,
+    0
+   ],
+   "src": "img/bg/autodromo_arvores.png",
+   "ph": [
+    {
+     "t": "circle",
+     "x": 0,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 40,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 80,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 120,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 160,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 200,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 240,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 280,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 320,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 360,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 400,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 440,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 480,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 520,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 560,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 600,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 640,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 680,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 720,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 760,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 800,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 840,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 880,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 920,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 960,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "circle",
+     "x": 1000,
+     "y": 350,
+     "r": 22,
+     "fill": "#3e6e36"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 350,
+     "w": 1024,
+     "h": 34,
+     "fill": "#3e6e36"
+    }
+   ]
+  },
+  "dec.arvore": {
+   "kind": "billboard",
+   "size": [
+    128,
+    192
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
+   ],
+   "src": "img/dec/arvore.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 56,
+     "y": 120,
+     "w": 16,
+     "h": 72,
+     "fill": "#6b4a2a"
+    },
+    {
+     "t": "circle",
+     "x": 64,
+     "y": 70,
+     "r": 56,
+     "fill": "#2f6b2a"
+    },
+    {
+     "t": "circle",
+     "x": 52,
+     "y": 58,
+     "r": 30,
+     "fill": "#3c8034"
+    }
+   ],
+   "worldW": 700,
+   "solid": true
+  },
+  "dec.palmeira": {
+   "kind": "billboard",
+   "size": [
+    128,
+    224
+   ],
+   "anchor": [
+    0.5,
+    1.0
    ],
    "src": "img/dec/palmeira.png",
    "ph": [
     {
-     "t": "circle",
-     "x": 48,
-     "y": 48,
-     "r": 10,
+     "t": "poly",
+     "pts": [
+      [
+       60,
+       224
+      ],
+      [
+       68,
+       224
+      ],
+      [
+       72,
+       60
+      ],
+      [
+       64,
+       60
+      ]
+     ],
      "fill": "#7a5a2a"
     },
     {
      "t": "line",
-     "x1": 48,
-     "y1": 48,
-     "x2": 92.0,
-     "y2": 48.0,
-     "w": 8,
+     "x1": 66,
+     "y1": 60,
+     "x2": 10.0,
+     "y2": 60.00000000000001,
+     "w": 10,
      "stroke": "#3c8a3a"
     },
     {
      "t": "line",
-     "x1": 48,
-     "y1": 48,
-     "x2": 70.0,
-     "y2": 86.10511776651529,
-     "w": 8,
+     "x1": 66,
+     "y1": 60,
+     "x2": 20.695048315002936,
+     "y2": 42.366442431225806,
+     "w": 10,
      "stroke": "#3c8a3a"
     },
     {
      "t": "line",
-     "x1": 48,
-     "y1": 48,
-     "x2": 26.00000000000001,
-     "y2": 86.1051177665153,
-     "w": 8,
+     "x1": 66,
+     "y1": 60,
+     "x2": 48.695048315002936,
+     "y2": 31.468304511145394,
+     "w": 10,
      "stroke": "#3c8a3a"
     },
     {
      "t": "line",
-     "x1": 48,
-     "y1": 48,
-     "x2": 4.0,
-     "y2": 48.00000000000001,
-     "w": 8,
+     "x1": 66,
+     "y1": 60,
+     "x2": 83.30495168499704,
+     "y2": 31.46830451114539,
+     "w": 10,
      "stroke": "#3c8a3a"
     },
     {
      "t": "line",
-     "x1": 48,
-     "y1": 48,
-     "x2": 25.99999999999998,
-     "y2": 9.894882233484708,
-     "w": 8,
+     "x1": 66,
+     "y1": 60,
+     "x2": 111.30495168499705,
+     "y2": 42.3664424312258,
+     "w": 10,
      "stroke": "#3c8a3a"
     },
     {
      "t": "line",
-     "x1": 48,
-     "y1": 48,
-     "x2": 70.0,
-     "y2": 9.8948822334847,
-     "w": 8,
+     "x1": 66,
+     "y1": 60,
+     "x2": 122.0,
+     "y2": 59.99999999999999,
+     "w": 10,
      "stroke": "#3c8a3a"
     }
-   ]
+   ],
+   "worldW": 600,
+   "solid": true
   },
   "dec.casa": {
-   "kind": "sprite",
+   "kind": "billboard",
    "size": [
-    160,
-    128
+    256,
+    192
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/dec/casa.png",
    "ph": [
     {
      "t": "rect",
-     "x": 0,
-     "y": 0,
-     "w": 160,
-     "h": 128,
+     "x": 16,
+     "y": 80,
+     "w": 224,
+     "h": 112,
      "fill": "#c96b4a"
     },
     {
-     "t": "line",
-     "x1": 0,
-     "y1": 64,
-     "x2": 160,
-     "y2": 64,
-     "w": 4,
-     "stroke": "#8a4430"
+     "t": "poly",
+     "pts": [
+      [
+       0,
+       84
+      ],
+      [
+       128,
+       8
+      ],
+      [
+       256,
+       84
+      ]
+     ],
+     "fill": "#8a4430"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 128,
+     "w": 48,
+     "h": 64,
+     "fill": "#5a3a20"
+    },
+    {
+     "t": "rect",
+     "x": 40,
+     "y": 110,
+     "w": 40,
+     "h": 32,
+     "fill": "#8cc4e6"
+    },
+    {
+     "t": "rect",
+     "x": 176,
+     "y": 110,
+     "w": 40,
+     "h": 32,
+     "fill": "#8cc4e6"
     }
-   ]
+   ],
+   "worldW": 1400,
+   "solid": true
   },
   "dec.predio": {
-   "kind": "sprite",
+   "kind": "billboard",
    "size": [
     192,
-    192
+    320
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/dec/predio.png",
    "ph": [
@@ -7974,262 +9345,806 @@
      "x": 0,
      "y": 0,
      "w": 192,
-     "h": 192,
+     "h": 320,
      "fill": "#7a7f88"
     },
     {
      "t": "rect",
      "x": 16,
      "y": 16,
-     "w": 160,
-     "h": 160,
-     "fill": "#8a909a"
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 64,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 112,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 160,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 208,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 16,
+     "y": 256,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 16,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 64,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 112,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 160,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 208,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 60,
+     "y": 256,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 16,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 64,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 112,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 160,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 208,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 104,
+     "y": 256,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 16,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 64,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 112,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 160,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 208,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
+    },
+    {
+     "t": "rect",
+     "x": 148,
+     "y": 256,
+     "w": 28,
+     "h": 30,
+     "fill": "#cfe6f6"
     }
-   ]
+   ],
+   "worldW": 1200,
+   "solid": true
   },
   "dec.pneus": {
-   "kind": "sprite",
+   "kind": "billboard",
    "size": [
-    48,
-    48
+    96,
+    64
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/dec/pneus.png",
    "ph": [
     {
-     "t": "circle",
-     "x": 24,
-     "y": 24,
-     "r": 22,
+     "t": "rrect",
+     "x": 0,
+     "y": 32,
+     "w": 96,
+     "h": 32,
+     "r": 8,
      "fill": "#1a1a1a"
     },
     {
-     "t": "circle",
-     "x": 24,
-     "y": 24,
-     "r": 9,
-     "fill": "#555555"
+     "t": "rrect",
+     "x": 8,
+     "y": 0,
+     "w": 80,
+     "h": 34,
+     "r": 8,
+     "fill": "#222222"
+    },
+    {
+     "t": "rect",
+     "x": 20,
+     "y": 40,
+     "w": 56,
+     "h": 6,
+     "fill": "#d42a2a"
     }
-   ]
+   ],
+   "worldW": 300,
+   "solid": true
   },
   "dec.cone": {
-   "kind": "sprite",
+   "kind": "billboard",
    "size": [
-    24,
-    24
+    48,
+    64
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/dec/cone.png",
    "ph": [
     {
-     "t": "circle",
-     "x": 12,
-     "y": 12,
-     "r": 11,
+     "t": "poly",
+     "pts": [
+      [
+       24,
+       0
+      ],
+      [
+       44,
+       64
+      ],
+      [
+       4,
+       64
+      ]
+     ],
      "fill": "#ff7a1a"
     },
     {
-     "t": "circle",
-     "x": 12,
-     "y": 12,
-     "r": 4,
+     "t": "rect",
+     "x": 14,
+     "y": 28,
+     "w": 20,
+     "h": 8,
      "fill": "#ffffff"
     }
-   ]
+   ],
+   "worldW": 120,
+   "solid": true
   },
   "dec.arquibancada": {
-   "kind": "sprite",
+   "kind": "billboard",
    "size": [
-    320,
-    96
+    384,
+    192
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/dec/arquibancada.png",
    "ph": [
     {
      "t": "rect",
      "x": 0,
-     "y": 0,
-     "w": 320,
-     "h": 96,
+     "y": 40,
+     "w": 384,
+     "h": 152,
      "fill": "#b0b0b0"
     },
     {
      "t": "rect",
      "x": 0,
-     "y": 10,
-     "w": 320,
+     "y": 56,
+     "w": 384,
      "h": 6,
      "fill": "#7a7a7a"
     },
     {
      "t": "rect",
      "x": 0,
-     "y": 26,
-     "w": 320,
+     "y": 76,
+     "w": 384,
      "h": 6,
      "fill": "#7a7a7a"
     },
     {
      "t": "rect",
      "x": 0,
-     "y": 42,
-     "w": 320,
+     "y": 96,
+     "w": 384,
      "h": 6,
      "fill": "#7a7a7a"
     },
     {
      "t": "rect",
      "x": 0,
-     "y": 58,
-     "w": 320,
+     "y": 116,
+     "w": 384,
      "h": 6,
      "fill": "#7a7a7a"
     },
     {
      "t": "rect",
      "x": 0,
-     "y": 74,
-     "w": 320,
+     "y": 136,
+     "w": 384,
      "h": 6,
      "fill": "#7a7a7a"
     },
     {
      "t": "rect",
      "x": 0,
-     "y": 90,
-     "w": 320,
+     "y": 156,
+     "w": 384,
      "h": 6,
      "fill": "#7a7a7a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 176,
+     "w": 384,
+     "h": 6,
+     "fill": "#7a7a7a"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 384,
+     "h": 40,
+     "fill": "#d42a2a"
     }
-   ]
+   ],
+   "worldW": 2400,
+   "solid": true
   },
   "dec.pedra": {
-   "kind": "sprite",
+   "kind": "billboard",
    "size": [
-    80,
-    64
+    160,
+    112
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/dec/pedra.png",
    "ph": [
     {
      "t": "ellipse",
-     "x": 40,
-     "y": 32,
-     "rx": 38,
-     "ry": 28,
+     "x": 80,
+     "y": 72,
+     "rx": 78,
+     "ry": 40,
      "fill": "#8a8a80"
     },
     {
      "t": "ellipse",
-     "x": 32,
-     "y": 24,
-     "rx": 18,
-     "ry": 12,
+     "x": 64,
+     "y": 56,
+     "rx": 36,
+     "ry": 22,
      "fill": "#a0a096"
     }
-   ]
+   ],
+   "worldW": 700,
+   "solid": true
   },
   "dec.poste": {
-   "kind": "sprite",
+   "kind": "billboard",
    "size": [
-    24,
-    24
+    48,
+    256
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
    "src": "img/dec/poste.png",
    "ph": [
     {
-     "t": "circle",
-     "x": 12,
-     "y": 12,
-     "r": 8,
+     "t": "rect",
+     "x": 20,
+     "y": 24,
+     "w": 8,
+     "h": 232,
      "fill": "#555555"
     },
     {
-     "t": "circle",
+     "t": "rect",
+     "x": 8,
+     "y": 8,
+     "w": 32,
+     "h": 16,
+     "fill": "#777777"
+    },
+    {
+     "t": "rect",
      "x": 12,
-     "y": 12,
-     "r": 4,
+     "y": 22,
+     "w": 24,
+     "h": 6,
      "fill": "#ffffaa"
     }
-   ]
+   ],
+   "worldW": 120,
+   "solid": true
   },
-  "dec.barco": {
-   "kind": "sprite",
+  "dec.outdoor": {
+   "kind": "billboard",
    "size": [
-    120,
-    48
+    256,
+    160
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/dec/barco.png",
+   "src": "img/dec/outdoor.png",
    "ph": [
     {
-     "t": "ellipse",
-     "x": 60,
-     "y": 24,
-     "rx": 58,
-     "ry": 20,
+     "t": "rect",
+     "x": 120,
+     "y": 96,
+     "w": 16,
+     "h": 64,
+     "fill": "#555555"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 256,
+     "h": 100,
      "fill": "#f2f2f2"
     },
     {
      "t": "rect",
-     "x": 40,
-     "y": 16,
-     "w": 30,
-     "h": 16,
+     "x": 8,
+     "y": 8,
+     "w": 240,
+     "h": 84,
      "fill": "#1f4fa8"
+    },
+    {
+     "t": "text",
+     "x": 128,
+     "y": 50,
+     "text": "GARAGEM 68",
+     "size": 28,
+     "fill": "#ffffff"
     }
-   ]
+   ],
+   "worldW": 1400,
+   "solid": true
   },
-  "dec.agua": {
-   "kind": "sprite",
+  "dec.placa_esq": {
+   "kind": "billboard",
    "size": [
     128,
     128
    ],
    "anchor": [
     0.5,
-    0.5
+    1.0
    ],
-   "src": "img/dec/agua.png",
+   "src": "img/dec/placa_esq.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 58,
+     "y": 64,
+     "w": 12,
+     "h": 64,
+     "fill": "#555555"
+    },
+    {
+     "t": "rrect",
+     "x": 0,
+     "y": 0,
+     "w": 128,
+     "h": 72,
+     "r": 8,
+     "fill": "#ffd21f"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       20,
+       36
+      ],
+      [
+       64,
+       10
+      ],
+      [
+       64,
+       26
+      ],
+      [
+       108,
+       26
+      ],
+      [
+       108,
+       46
+      ],
+      [
+       64,
+       46
+      ],
+      [
+       64,
+       62
+      ]
+     ],
+     "fill": "#111111"
+    }
+   ],
+   "worldW": 500,
+   "solid": false
+  },
+  "dec.placa_dir": {
+   "kind": "billboard",
+   "size": [
+    128,
+    128
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/placa_dir.png",
+   "ph": [
+    {
+     "t": "rect",
+     "x": 58,
+     "y": 64,
+     "w": 12,
+     "h": 64,
+     "fill": "#555555"
+    },
+    {
+     "t": "rrect",
+     "x": 0,
+     "y": 0,
+     "w": 128,
+     "h": 72,
+     "r": 8,
+     "fill": "#ffd21f"
+    },
+    {
+     "t": "poly",
+     "pts": [
+      [
+       108,
+       36
+      ],
+      [
+       64,
+       10
+      ],
+      [
+       64,
+       26
+      ],
+      [
+       20,
+       26
+      ],
+      [
+       20,
+       46
+      ],
+      [
+       64,
+       46
+      ],
+      [
+       64,
+       62
+      ]
+     ],
+     "fill": "#111111"
+    }
+   ],
+   "worldW": 500,
+   "solid": false
+  },
+  "dec.largada": {
+   "kind": "billboard",
+   "size": [
+    512,
+    256
+   ],
+   "anchor": [
+    0.5,
+    1.0
+   ],
+   "src": "img/dec/largada.png",
    "ph": [
     {
      "t": "rect",
      "x": 0,
      "y": 0,
-     "w": 128,
-     "h": 128,
-     "fill": "#2c6fa8"
+     "w": 24,
+     "h": 256,
+     "fill": "#777777"
+    },
+    {
+     "t": "rect",
+     "x": 488,
+     "y": 0,
+     "w": 24,
+     "h": 256,
+     "fill": "#777777"
     },
     {
      "t": "rect",
      "x": 0,
-     "y": 40,
-     "w": 128,
-     "h": 6,
-     "fill": "#3a80bb"
+     "y": 0,
+     "w": 512,
+     "h": 64,
+     "fill": "#111111"
+    },
+    {
+     "t": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 32,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 64,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 96,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 128,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 160,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 192,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 224,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 256,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 288,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 320,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 352,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 384,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 416,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 448,
+     "y": 0,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "rect",
+     "x": 480,
+     "y": 32,
+     "w": 32,
+     "h": 32,
+     "fill": "#f2f2f2"
+    },
+    {
+     "t": "text",
+     "x": 256,
+     "y": 90,
+     "text": "LARGADA",
+     "size": 26,
+     "fill": "#ffffff"
     }
-   ]
+   ],
+   "worldW": 2600,
+   "solid": false
   },
   "fx.fumaca": {
    "kind": "sprite",
@@ -9934,9 +11849,9 @@
     "dur": 0.45
    }
   },
-  "sfx.batida_muro": {
+  "sfx.batida_objeto": {
    "kind": "sfx",
-   "src": "audio/sfx/batida_muro.m4a",
+   "src": "audio/sfx/batida_objeto.m4a",
    "loop": false,
    "synth": {
     "gen": "noise_hit",
@@ -10060,13 +11975,14 @@
     "dur": 0.7
    }
   },
-  "sfx.reboque": {
+  "sfx.terra": {
    "kind": "sfx",
-   "src": "audio/sfx/reboque.m4a",
-   "loop": false,
+   "src": "audio/sfx/terra.m4a",
+   "loop": true,
    "synth": {
-    "gen": "sparkle",
-    "dur": 0.5
+    "gen": "skid",
+    "dur": 1.0,
+    "band": 400
    }
   }
  }

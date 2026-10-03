@@ -18,7 +18,8 @@ Regras globais:
 │   ├── parts.json                # slots + todas as peças (restauração, desempenho, estética)
 │   ├── tracks.json               # ligas + 8 pistas (pontos de controle, prêmio, desbloqueio, oponentes)
 │   ├── opponents.json            # 18 pilotos IA
-│   └── balance.json              # física, assistência, IA, dificuldade, economia, câmera, corrida
+│   ├── themes.json               # 4 temas: cores da pista, camadas de fundo, objetos de beira
+│   └── balance.json              # física, assistência, IA, dificuldade, economia, corrida, render
 ├── assets/
 │   ├── manifest.json             # todos os assets: imagens (src + receita ph) e áudios (src + receita synth)
 │   ├── img/...                   # FASE 2: PNGs finais (caminhos já definidos no manifesto)
@@ -35,7 +36,7 @@ Regras globais:
 │   │   ├── viewport.js           # tamanho lógico, DPR, safe areas, orientação, resize       [usa window]
 │   │   └── format.js             # formatMoney(1250) → "$ 1.250", formatTime(ms) → "1:05.32", ordinal(3) → "3º"
 │   ├── data/
-│   │   ├── dataLoader.js         # fetch dos 5 JSON de /data → objeto GameData congelado     [usa fetch]
+│   │   ├── dataLoader.js         # fetch dos 6 JSON de /data → objeto GameData congelado     [usa fetch]
 │   │   └── validate.js           # validações estruturais de GameData (lança Error com caminho do campo)
 │   ├── save/
 │   │   ├── saveSchema.js         # SCHEMA_VERSION, createDefaultSave(), createDefaultProfile(slotId)
@@ -51,28 +52,28 @@ Regras globais:
 │   │   ├── economy.js            # computePrize(resultado, pista, dificuldade, perfil) → PrizeBreakdown
 │   │   └── progression.js        # pistas desbloqueadas, novos desbloqueios, estética liberada
 │   ├── race/
-│   │   ├── track.js              # buildTrack(json) → TrackGeometry; nearest(), sampleAt(), curvatureAhead()
-│   │   ├── carPhysics.js         # createCarState(), stepCar(state, input, params, surface, dt)
+│   │   ├── road.js               # buildRoad(trackJson) → Road (segmentos com curva/altura); segmentAt(), heightAt(), maxCurveAhead()
+│   │   ├── roadside.js           # placeRoadside(road, trackJson, theme, manifest) → objetos de beira (semente) + placas + pórtico
+│   │   ├── carPhysics.js         # createCarState(), stepCar(car, input, road, balance, dt)
 │   │   ├── statsToPhysics.js     # stats 0–100 → CarPhysicsParams (fórmulas de balance.json)
-│   │   ├── collision.js          # resolveWall(), resolveCarPair()
-│   │   ├── lapTracker.js         # progresso, checkpoints, voltas, melhor volta por carro
+│   │   ├── collision.js          # resolveCarPair(), resolveRoadside()
+│   │   ├── lapTracker.js         # voltas, progresso total, tempos por carro
 │   │   ├── assist.js             # assistência de direção/aceleração do jogador
 │   │   ├── aiDriver.js           # IA: estado por oponente + decide(input) a cada passo
 │   │   ├── rubberBand.js         # multiplicador de velocidade da IA pela distância ao jogador
-│   │   ├── grid.js               # posições de largada
-│   │   ├── respawn.js            # detector de travado/fora/contramão + reposicionamento
+│   │   ├── grid.js               # posições de largada (z, x)
 │   │   └── raceSession.js        # orquestra corrida: countdown, passos, ranking, eventos, RaceResult
 │   ├── render/
-│   │   ├── canvas.js             # contexto 2D, limpar, aplicar câmera                      [usa DOM]
-│   │   ├── camera.js             # estado da câmera (pos, rot, zoom) e update suavizado      [puro]
+│   │   ├── canvas.js             # contexto 2D, DPR, limpar                                  [usa DOM]
+│   │   ├── projection.js         # projeção pseudo-3D de pontos (camera → tela)              [puro]
 │   │   ├── shapePainter.js       # desenha receitas "ph" (rect, rrect, circle, ellipse, poly, line, text)
 │   │   ├── carLayers.js          # perfil+dados → lista ordenada de assetIds de camadas       [puro]
 │   │   ├── carCompositor.js      # compõe camadas em canvas offscreen com cache por chave     [usa DOM]
-│   │   ├── trackRenderer.js      # grama, muro, zebra, asfalto, linha de largada, decoração
-│   │   ├── decorScatter.js       # gera posições de decoração com rng por semente            [puro]
-│   │   ├── carRenderer.js        # desenha carros (sprite composto) interpolados
-│   │   ├── effects.js            # fumaça, marcas de pneu (ring buffer), faíscas, brilho de compra
-│   │   ├── minimap.js            # minimapa
+│   │   ├── background.js         # céu, morros, árvores com paralaxe
+│   │   ├── roadRenderer.js       # segmentos (grama, zebra, asfalto, faixas, neblina) + lista de recorte (clip)
+│   │   ├── spriteRenderer.js     # objetos de beira, adversários e jogador, de trás para frente, com recorte
+│   │   ├── effects.js            # fumaça, poeira, faíscas, luz de freio, brilho de compra
+│   │   ├── minimap.js            # minimapa (traçado aproximado integrando as curvas)
 │   │   └── garageScene.js        # cena da garagem: piso, carro lateral grande, animação de upgrade
 │   ├── assets/
 │   │   └── assetLoader.js        # carrega manifesto; getImage(id), getImageURL(id), getAudioBuffer(id)
@@ -112,7 +113,7 @@ Regras globais:
     ├── math.test.js  rng.test.js  eventBus.test.js  stateMachine.test.js
     ├── validate.test.js  saveSchema.test.js  migrations.test.js  saveStore.test.js
     ├── partsCatalog.test.js  carBuild.test.js  shop.test.js  economy.test.js  progression.test.js
-    ├── track.test.js  carPhysics.test.js  collision.test.js  lapTracker.test.js
+    ├── road.test.js  roadside.test.js  projection.test.js  carPhysics.test.js  collision.test.js  lapTracker.test.js
     ├── aiDriver.test.js  raceSession.test.js  carLayers.test.js  rpmModel.test.js  strings.test.js
     └── precache.test.js
 ```
@@ -125,7 +126,7 @@ Regras globais:
 | `data`, `save` | `core` |
 | `game` | `core` |
 | `race` | `core` |
-| `render` | `core`, `race/track.js` (consultas de geometria), `assets`, `game` (somente funções puras de consulta) |
+| `render` | `core`, `race/road.js` (consultas de segmentos), `assets`, `game` (somente funções puras de consulta) |
 | `audio` | `core`, `assets` |
 | `input`, `ui` | `core` |
 | `states` | tudo |
@@ -135,4 +136,4 @@ Regras globais:
 
 ## Origem dos dados
 
-Os arquivos de referência desta especificação estão em `docs/arquitetura/dados/`. A tarefa T02 os **copia sem alteração** para `/data/` e `/assets/manifest.json`. Depois disso, `/data` é a fonte da verdade e os ajustes de balanceamento são feitos lá.
+Os arquivos de referência desta especificação estão em `docs/arquitetura/dados/`. A tarefa T02 os **copia sem alteração** para `/data/` e `/assets/manifest.json`. O protótipo `docs/arquitetura/referencia/prototipo-render.html` é material de consulta (mostra a projeção funcionando); não é copiado para o jogo, mas suas fórmulas podem ser portadas para os módulos de `render/`. Depois disso, `/data` é a fonte da verdade e os ajustes de balanceamento são feitos lá.

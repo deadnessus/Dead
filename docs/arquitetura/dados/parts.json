@@ -34,8 +34,8 @@
     { "id": "vid_0", "slot": "vidros", "tier": 0, "name": "Vidros trincados", "desc": "Sujos e trincados.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
     { "id": "vid_1", "slot": "vidros", "tier": 1, "name": "Vidros novos", "desc": "Para enxergar bem a pista.", "price": 120, "requires": [], "stats": { "dir": 1 }, "visual": [{ "layer": "vidros", "variant": "limpo", "priority": 10 }], "flags": {} },
 
-    { "id": "far_0", "slot": "farois", "tier": 0, "name": "Farol trincado", "desc": "Um farol está quebrado.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
-    { "id": "far_1", "slot": "farois", "tier": 1, "name": "Faróis novos", "desc": "Faróis redondos brilhando.", "price": 120, "requires": [], "stats": { "dir": 1 }, "visual": [{ "layer": "farois", "variant": "novo", "priority": 10 }], "flags": {} },
+    { "id": "far_0", "slot": "farois", "tier": 0, "name": "Farol trincado", "desc": "Farol e lanterna quebrados.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
+    { "id": "far_1", "slot": "farois", "tier": 1, "name": "Faróis e lanternas", "desc": "Faróis e lanternas novos, brilhando.", "price": 120, "requires": [], "stats": { "dir": 1 }, "visual": [{ "layer": "farois", "variant": "novo", "priority": 10 }], "flags": {} },
 
     { "id": "pch_0", "slot": "parachoques", "tier": 0, "name": "Para-choque amassado", "desc": "Torto e sem brilho.", "price": 0, "requires": [], "stats": {}, "visual": [], "flags": {} },
     { "id": "pch_1", "slot": "parachoques", "tier": 1, "name": "Para-choques cromados", "desc": "Cromado de espelho!", "price": 300, "requires": [], "stats": { "frn": 1 }, "visual": [{ "layer": "parachoques", "variant": "cromado", "priority": 10 }], "flags": {} },

@@ -33,14 +33,14 @@
 | `sfx.partida_motor` | sfx | entrada no estado race | 1 |
 | `sfx.contagem` | sfx | `race:countdown` | 1 |
 | `sfx.largada` | sfx | `race:go` | 1 |
-| `sfx.batida_muro` | sfx | `race:hit {kind:'muro'}`, volume = 0,3 + 0,7×intensity; ignora se < 0,15 | 2 |
+| `sfx.batida_objeto` | sfx | `race:hit {kind:'objeto'}`, volume = 0,3 + 0,7×intensity | 2 |
 | `sfx.batida_carro` | sfx | `race:hit {kind:'carro'}` | 2 |
-| `sfx.derrapagem` | sfx (loop) | `race:skid {on:true}` inicia loop, volume = clamp(slip/0,6) atualizado por quadro; `on:false` → rampa 150 ms a 0 e para | 1 |
+| `sfx.derrapagem` | sfx (loop) | `race:skid {on:true}` inicia loop (volume 0,8); `on:false` → rampa 150 ms a 0 e para | 1 |
+| `sfx.terra` | sfx (loop) | `race:offroad {on:true}` inicia ronco de terra/cascalho (volume 0,7); `on:false` → rampa 150 ms e para | 1 |
 | `sfx.volta` | sfx | `race:lap` do jogador | 1 |
 | `sfx.ultima_volta` | sfx | `race:lap` com `isFinalLapNext` | 1 |
 | `sfx.chegada_vitoria` / `sfx.chegada` | sfx | `race:finished` (posição 1 / outras) | 1 |
 | `sfx.moeda` | sfx | `money:counted` (limite: 1 a cada 50 ms) | 3 |
-| `sfx.reboque` | sfx | `race:respawn` | 1 |
 | `eng.*` | engine | contínuo durante race (9.3) | 2 + 1 |
 
 Limite de vozes: se o id já tem o máximo tocando, para a mais antiga.
@@ -97,7 +97,7 @@ Renderizadas uma vez após o desbloqueio do áudio, em `OfflineAudioContext(1 ca
 | `blip` | `freq`, `dur`, `wave` (padrão square) | oscilador + envelope ataque 5 ms, decaimento exponencial |
 | `arpeggio` | `notes` (MIDI), `step`, `wave` | notas em sequência; cada uma `step` s com envelope curto |
 | `noise_hit` | `dur`, `lowpass` | ruído branco → lowpass → envelope decaimento 1/e em dur/4 |
-| `skid` | `dur` | ruído → bandpass 1.800 Hz Q 4 + LFO 13 Hz no ganho; loop sem clique (fade 10 ms nas pontas) |
+| `skid` | `dur`, `band` (padrão 1.800) | ruído → bandpass `band` Hz Q 4 + LFO 13 Hz no ganho; loop sem clique (fade 10 ms nas pontas) |
 | `sparkle` | `dur` | 8 senos agudos aleatórios (2–5 kHz, seed fixa) com envelopes curtos espalhados |
 | `ratchet` | `dur` | 10 cliques de ruído filtrado (catraca) espaçados igualmente |
 | `whine` | `freq` | seno + seno ×2 (ganho 0,3), loop de 1 s |

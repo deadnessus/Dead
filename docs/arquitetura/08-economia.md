@@ -116,8 +116,10 @@ Política "só restauração primeiro" (Normal h=6): restauração completa na c
 | Demora para comprar | `tracks[].prize` × 1,2 (todas) — não mexer nos preços |
 | Compra rápido demais / acaba cedo | preços de desempenho tier ≥ 2 × 1,2 |
 | Nova pista demora | baixar `unlock.minCarLevel` da pista em 3–5 |
-| Carro escorrega demais no início | `physics.statToPhysics.grip.base` 4,0 → 4,6 |
-| Curvas difíceis no fim | `turnRate.base` +0,1 |
+| Carro sai da pista nas curvas no início | `physics.statToPhysics.centrifugal.base` 0,60 → 0,52 |
+| Virar parece lento | `physics.statToPhysics.steer.base` 2,2 → 2,5 |
+| Corridas longas demais | reduzir os `n` das retas em `tracks.json` (e atualizar `segments`) |
+| Engasgos no iPad | `render.drawDistance` 150 → 100 |
 
 Depois de qualquer ajuste: rodar `node tools/sim-economy.mjs` e conferir que (a) 1ª compra ≤ 2 corridas, (b) restauração completa entre 20 e 35, (c) carro máximo entre 60 e 95 em Normal h=6.
 

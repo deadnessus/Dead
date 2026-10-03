@@ -2,12 +2,14 @@
   "schemaVersion": 1,
   "id": "mustang68",
   "name": "Mustang 1968",
-  "world": { "length": 96, "width": 48, "collisionRadius": 26 },
+  "world": { "width": 0.5, "length": 300 },
   "baseStats": { "acc": 10, "vel": 10, "ade": 12, "frn": 10, "dir": 15 },
   "flagsDefault": { "fumaca": true, "falhando": true },
   "views": {
-    "top":  { "size": [112, 56],  "anchor": [0.5, 0.5], "artScale": 2, "points": { "escapamento": [4, 42], "farolEsq": [100, 12], "farolDir": [100, 44] } },
-    "side": { "size": [640, 240], "anchor": [0.5, 0.9], "artScale": 2, "points": { "escapamento": [30, 200], "rodaTras": [150, 180], "rodaFrente": [482, 180] } }
+    "rear": { "size": [320, 200], "anchor": [0.5, 1.0], "artScale": 2, "bodyWidth": 280,
+              "points": { "escapamentoEsq": [72, 176], "escapamentoDir": [248, 176], "lanternaEsq": [67, 126], "lanternaDir": [253, 126] } },
+    "side": { "size": [640, 240], "anchor": [0.5, 0.9], "artScale": 2,
+              "points": { "escapamento": [30, 200], "rodaTras": [150, 180], "rodaFrente": [482, 180] } }
   },
   "layers": [
     { "id": "sombra",      "z": 0,   "default": "base" },

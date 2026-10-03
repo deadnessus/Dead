@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "themes": {
+    "bairro": {
+      "colors": { "sky": "#72d7ee", "fog": "#a9dfee", "grassLight": "#72c24a", "grassDark": "#64b040",
+                  "rumbleLight": "#f2f2f2", "rumbleDark": "#d42a2a", "roadLight": "#6e6e72", "roadDark": "#67676b", "lane": "#f2f2f2" },
+      "bg": { "sky": "bg.bairro.ceu", "hills": "bg.bairro.morros", "trees": "bg.bairro.arvores" },
+      "decor": ["dec.arvore", "dec.casa", "dec.poste", "dec.outdoor"]
+    },
+    "cidade": {
+      "colors": { "sky": "#8ec8f0", "fog": "#b9d6e8", "grassLight": "#8a8f96", "grassDark": "#7f848b",
+                  "rumbleLight": "#f2f2f2", "rumbleDark": "#2a5ad4", "roadLight": "#5e5e62", "roadDark": "#58585c", "lane": "#ffd21f" },
+      "bg": { "sky": "bg.cidade.ceu", "hills": "bg.cidade.morros", "trees": "bg.cidade.arvores" },
+      "decor": ["dec.predio", "dec.poste", "dec.palmeira", "dec.outdoor"]
+    },
+    "serra": {
+      "colors": { "sky": "#f2b46a", "fog": "#e8c79e", "grassLight": "#5a8a3a", "grassDark": "#4e7c32",
+                  "rumbleLight": "#f2f2f2", "rumbleDark": "#3a3a3a", "roadLight": "#706c66", "roadDark": "#6a6660", "lane": "#f2f2f2" },
+      "bg": { "sky": "bg.serra.ceu", "hills": "bg.serra.morros", "trees": "bg.serra.arvores" },
+      "decor": ["dec.pedra", "dec.arvore", "dec.palmeira", "dec.pneus"]
+    },
+    "autodromo": {
+      "colors": { "sky": "#5aa0e8", "fog": "#9cc4ec", "grassLight": "#5aa048", "grassDark": "#4f9440",
+                  "rumbleLight": "#f2f2f2", "rumbleDark": "#d42a2a", "roadLight": "#59595d", "roadDark": "#535357", "lane": "#f2f2f2" },
+      "bg": { "sky": "bg.autodromo.ceu", "hills": "bg.autodromo.morros", "trees": "bg.autodromo.arvores" },
+      "decor": ["dec.arquibancada", "dec.pneus", "dec.outdoor", "dec.poste"]
+    }
+  }
+}

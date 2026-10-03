@@ -47,8 +47,8 @@ Legenda de modelo: **H** = Haiku basta (tarefa mecânica, contrato fechado, test
 - **Aceite:** `on` devolve função que remove o ouvinte; `emit` sem ouvintes não falha; ordem enter/exit correta; `change()` dentro de `update()` só aplica depois do update; `state:changed` emitido com `{from,to}`.
 
 ### T05 — Carga e validação de dados · S
-- **Arquivos:** `src/data/dataLoader.js`, `src/data/validate.js`, `tools/validate-data.mjs`, `tests/validate.test.js`.
-- **Regras de validação (cada uma gera mensagem com caminho):** ids de slot/peça/pista/oponente únicos; `part.slot` existe; restauração/desempenho têm tiers contíguos começando em 0 com preço 0 no tier 0; estética tier 1; `requires` aponta para peça existente; chaves de `stats` ∈ {acc,vel,ade,frn,dir}; `visual.layer` existe em `car.layers`; toda variante não nula de `visual` e todo `default` de camada existe como `car.top.<camada>.<variante>` **e** `car.side.<...>` no manifesto; `slot.icon` existe no manifesto; motor tem `engineProfile` com `eng.<perfil>.low` e `.high` no manifesto; `track.opponents` existem e são 5; `track.points.length >= 6`; `opp.<id>.top` existe; `balance.difficulty.default` existe; `positionPayout.length === race.carsPerRace`; `customUnlockRequires` existem.
+- **Arquivos:** `src/data/dataLoader.js` (carrega os 6 JSON de `/data`), `src/data/validate.js`, `tools/validate-data.mjs`, `tests/validate.test.js`.
+- **Regras de validação (cada uma gera mensagem com caminho):** ids de slot/peça/pista/oponente únicos; `part.slot` existe; restauração/desempenho têm tiers contíguos começando em 0 com preço 0 no tier 0; estética tier 1; `requires` aponta para peça existente; chaves de `stats` ∈ {acc,vel,ade,frn,dir}; `visual.layer` existe em `car.layers`; toda variante não nula de `visual` e todo `default` de camada existe como `car.rear.<camada>.<variante>` **e** `car.side.<...>` no manifesto; `slot.icon` existe no manifesto; motor tem `engineProfile` com `eng.<perfil>.low` e `.high` no manifesto; `track.opponents` existem e são 5; `track.theme` existe em `themes.json`; soma dos `n` das seções = `track.segments`; soma dos `hill` = 0; soma de `curve × (n[0]/3 + n[1] + n[2]/3)` > 0 (giro total para a direita, usado no minimapa); todo `bg.*` e `decor` dos temas existem no manifesto e todo `decor` é `kind: billboard` com `worldW` e `solid`; `opp.<id>.rear` existe; `balance.difficulty.default` existe; `positionPayout.length === race.carsPerRace`; `customUnlockRequires` existem.
 - **Aceite:** dados reais → 0 erros; teste com cópia dos dados alterada (slot inexistente, variante sem asset) → mensagem específica; `tools/validate-data.mjs` lê arquivos com `fs` e imprime `OK` ou a lista e sai com código 1.
 
 ### T06 — Save · S
@@ -70,12 +70,12 @@ Legenda de modelo: **H** = Haiku basta (tarefa mecânica, contrato fechado, test
 
 ### T10 — Assets de imagem com placeholder · S
 - **Arquivos:** `src/render/shapePainter.js`, `src/assets/assetLoader.js` (parte de imagens), `src/main.js` (carrega manifesto e imagens com barra de progresso simples).
-- **Aceite:** com `assets/img` vazio, todas as 178 imagens carregam como placeholder sem nenhum erro no console (só `console.info` com a contagem); colocar manualmente um PNG qualquer em `assets/img/dec/cone.png` faz `getImageInfo('dec.cone').isPlaceholder === false`; `getImageURL('ico.motor')` funciona em um `<img>`.
+- **Aceite:** com `assets/img` vazio, as 172 imagens que não são `background` carregam como placeholder; `loadBackgrounds('serra')` carrega as 3 do tema e `releaseBackgrounds()` as descarta; sem nenhum erro no console (só `console.info` com a contagem); colocar manualmente um PNG qualquer em `assets/img/dec/cone.png` faz `getImageInfo('dec.cone').isPlaceholder === false`; `getImageURL('ico.motor')` funciona em um `<img>`.
 
 ### T11 — Camadas do carro · S
 - **Arquivos:** `src/render/carLayers.js`, `src/render/carCompositor.js`, `tests/carLayers.test.js`.
 - **Entradas:** 05 §5.2–5.3.
-- **Aceite:** os 5 testes de propriedade de 05 §5.2; `layersKey` estável; no navegador, `?debug=layers` desenha perfil novo e perfil máximo nas duas vistas (igual à imagem de referência `img/placeholder-camadas.png`).
+- **Aceite:** os 5 testes de propriedade de 05 §5.2; `layersKey` estável; no navegador, `?debug=layers` desenha perfil novo, restaurado e máximo nas vistas `rear` e `side` (igual à imagem de referência `img/placeholder-camadas.png`).
 
 ### T12a — Textos e DOM · H
 - **Arquivos:** `src/ui/strings.js`, `src/ui/dom.js`.
@@ -90,30 +90,37 @@ Legenda de modelo: **H** = Haiku basta (tarefa mecânica, contrato fechado, test
 - **Arquivos:** `src/states/bootState.js`, `src/states/profileState.js`, `src/states/menuState.js`, `src/main.js`.
 - **Aceite:** fluxo boot → toque → perfis → menu; editar nome persiste após recarregar; o menu mostra o carro **ferrado** lateral, dinheiro "$ 0" e nível 11; "Trocar piloto" volta; `settings.lastProfileId` destaca o último perfil usado.
 
-### T14 — Geometria da pista · S
-- **Arquivos:** `src/race/track.js`, `tests/track.test.js`.
-- **Aceite:** comprimentos (±1%): t1 8.568, t2 9.158, t3 11.417, t4 11.687, t5 12.413, t6 14.187, t7 16.707, t8 16.944; `N = floor(L/20)`; `nearest` de um ponto deslocado 50 u à direita da amostra 100 → índice 100 e `lateral ≈ +50`; `surfaceAt(0)` asfalto, `surfaceAt(halfWidth-5)` zebra, `surfaceAt(halfWidth+10)` grama; `sampleAt(L+10)` = `sampleAt(10)`; `max(curv)` de cada pista ≤ 1/250.
+### T14 — Pista em segmentos · S
+- **Arquivos:** `src/race/road.js`, `tests/road.test.js`.
+- **Entradas:** 07 §7.1, 03 §3.6.
+- **Aceite:** nº de segmentos: t1 1.025, t2 1.035, t3 1.150, t4 1.220, t5 1.280, t6 1.410, t7 1.440, t8 1.610; `length = segmentos × 200`; na t1: `segments[85].curve ≈ 0,222`, `segments[105].curve === 2`, `segments[244].y2 === 2000` (±0,01), `segments[245].y1 === segments[244].y2`, `|último.y2| < 1`; `segmentAt(length + 10) === segments[0]`; `maxCurveAhead(t1, 0, 30000) === 2`; `heightAt` contínuo (diferença entre z e z+1 < 5 u em toda a t5).
 
 ### T15 — Física do carro · S
 - **Arquivos:** `src/race/statsToPhysics.js`, `src/race/carPhysics.js`, `tests/carPhysics.test.js`.
 - **Aceite:** tabela de 07 §7.2 (valores ferrado/máximo) e tabela de testes de 07 §7.3.
 
-### T16 — Colisão, voltas, grid · S
-- **Arquivos:** `src/race/collision.js`, `src/race/lapTracker.js`, `src/race/grid.js`, `tests/collision.test.js`, `tests/lapTracker.test.js`.
-- **Aceite:** carro com lateral 300 em t1 → volta a `wallDist-26` e perde velocidade; impacto de raspão (velDir paralela à pista) < 0,2; dois carros sobrepostos se separam para distância ≥ 52 e o de trás perde 8%; volta só conta com os 3 checkpoints; andar para trás pela linha desfaz; grid de 6 sem sobreposição e todos atrás da linha.
+### T16 — Beira de pista, colisão, voltas, grid · S
+- **Arquivos:** `src/race/roadside.js`, `src/race/collision.js`, `src/race/lapTracker.js`, `src/race/grid.js`, `tests/roadside.test.js`, `tests/collision.test.js`, `tests/lapTracker.test.js`.
+- **Entradas:** 07 §7.6 e §7.9.
+- **Aceite:** `placeRoadside` é determinístico (mesma seed → mesma lista) e todo objeto sorteado tem `1,8 ≤ |x| ≤ 4,0`; há placa antes de toda curva com `|curve| ≥ 3` do lado de fora; pórtico no segmento 0; jogador em `x = 1,9` com árvore sólida em `x = 2,2` no mesmo segmento → bate, velocidade cai à metade, `x` vai para 1,75; placa (não sólida) não bate; carro de trás mais rápido a 200 u do da frente com `|Δx| = 0,2` → velocidade = 95% da do da frente; com `|Δx| = 0,5` → nada; volta conta ao passar de `z` próximo de `length` para próximo de 0; grid: 6 posições distintas, todas com `z > length − 2.000`, jogador no slot 4 com `x = +0,45`.
 
-### T17 — IA, assistência, respawn · S
-- **Arquivos:** `src/race/aiDriver.js`, `src/race/rubberBand.js`, `src/race/assist.js`, `src/race/respawn.js`, `tests/aiDriver.test.js`.
-- **Aceite:** IA rating 10 sozinha completa 3 voltas na t1 em 60–75 s simulados sem nenhuma batida no muro e sem respawn; IA rating 90 na t8 em 75–90 s; `rubberBandMul(1500 à frente, 0.15)` = 0,85; jogador com entrada nula + assistência Forte + aceleração automática completa as 3 voltas da t1 e da t4 sem bater no muro, sem respawn, em tempo entre 1,05× e 1,30× o da IA de mesmo nível; respawn dispara após 2 s parado.
+### T17 — IA, assistência, rubber band · S
+- **Arquivos:** `src/race/aiDriver.js`, `src/race/rubberBand.js`, `src/race/assist.js`, `tests/aiDriver.test.js`.
+- **Entradas:** 07 §7.4–7.5.
+- **Aceite (simulação headless, 1 carro sozinho, `laneOffset 0`, `skill 0,95`, `mistakeRate 0`, `speedMul 1`):** IA com stats 11 na t1 completa 3 voltas em 80–88 s; IA com stats 70 na t8 em 80–88 s; em ambas `|x| ≤ 1` o tempo todo. Jogador com entrada nula + assistência Forte + aceleração automática, stats 11 na t1 e stats 40 na t5: completa 3 voltas, nunca fica mais de 1 s seguido com `|x| > 1`, tempo entre 1,08× e 1,22× o da IA de mesmos stats. `rubberBandMul(8000 à frente, 0.15)` = 0,85; `rubberBandMul(8000 atrás, 0.15)` = 1,075.
 
 ### T18 — Sessão de corrida · S
 - **Arquivos:** `src/race/raceSession.js`, `tests/raceSession.test.js`.
-- **Aceite:** corrida headless (jogador = entrada nula com assistência forte) termina, `result()` tem 6 posições únicas e `position` do jogador; mesma seed → mesmo resultado; eventos `race:countdown` ×3, `race:go`, `race:lap` ×3 do jogador, `race:finished` exatamente 1 vez; após `finished`, `step` continua sem erro.
+- **Aceite:** testes de 07 §7.9; após `finished`, `step` continua sem erro (piloto automático por 2 s).
 
-### T19 — Render da corrida · S
-- **Arquivos:** `src/render/camera.js`, `src/render/trackRenderer.js`, `src/render/decorScatter.js`, `src/render/carRenderer.js`, `src/render/minimap.js`.
-- **Ordem de desenho da pista:** fundo cor da grama → padrão grama em toda a vista → muro (traço largura `2*(wallDist+10)` padrão `trk.muro`) → grama (traço `2*wallDist`) → zebra (traço `2*halfWidth`, padrão `trk.zebra`) → asfalto (traço `2*(halfWidth-kerbWidth)`, padrão `trk.asfalto`) → faixa central tracejada branca (largura 4, traço `[40,40]`, alpha 0,5) → linha de largada (retângulo `2*halfWidth × 40` com `trk.largada`) → decoração.
-- **Aceite:** `?debug=track&t=t3` mostra a pista inteira com zoom para caber e um carro andando sozinho (IA) com câmera girando; 60 fps no desktop com `?debug=1`.
+### T19a — Render da estrada · S
+- **Arquivos:** `src/render/projection.js`, `src/render/background.js`, `src/render/roadRenderer.js`, `tests/projection.test.js`.
+- **Entradas:** 07 §7.7 (pode portar as funções `project`, `buildRoad`-render e o laço de segmentos do protótipo `docs/arquitetura/referencia/prototipo-render.html`, adaptando aos contratos e sem alocar por quadro).
+- **Aceite:** teste de projeção de 07 §7.7; `?debug=road&t=t3` mostra a câmera andando sozinha pela pista a 8.000 u/s (curvas, morros, faixas alternando, neblina, fundo com paralaxe nas curvas); comparar com `img/corrida-t1.png` / `corrida-t5.png` (mesmas cores e proporções, sem sprites); ≥ 58 fps no desktop com `?debug=1`.
+
+### T19b — Sprites e minimapa · S
+- **Arquivos:** `src/render/spriteRenderer.js`, `src/render/minimap.js`.
+- **Aceite:** `?debug=race&t=t5` roda uma corrida inteira com 6 IAs (uma delas no lugar do Mustang, usando o sprite composto do perfil) vista de trás; objetos e carros somem corretamente atrás de morros (recorte); Mustang no centro inferior inclinando nas curvas e luz de freio acendendo; minimapa fecha o circuito sem salto e mostra os 6 pontos; ≥ 58 fps no desktop.
 
 ### T20 — Corrida jogável · S
 - **Arquivos:** `src/input/touchControls.js`, `src/input/keyboard.js`, `src/states/raceState.js`, `src/states/raceHud.js`, `src/states/pauseOverlay.js`.
@@ -125,7 +132,7 @@ Legenda de modelo: **H** = Haiku basta (tarefa mecânica, contrato fechado, test
 
 ### T22 — Efeitos · S
 - **Arquivos:** `src/render/effects.js` (+ integração em `raceState.js`).
-- **Aceite:** marcas de pneu aparecem em derrapagem; fumaça sai do escapamento do Mustang enquanto `flags.fumaca`; faíscas em batida no muro; nenhuma queda de fps (pool fixo).
+- **Aceite:** fumaça sai dos escapamentos do Mustang enquanto `flags.fumaca` (some após a Revisão do motor); fumaça branca dos pneus em `skidding`; poeira e tremor fora do asfalto; faíscas em `race:hit`; nenhuma queda de fps (pool fixo de 64 partículas).
 
 ### T23 — Garagem e loja · S
 - **Arquivos:** `src/states/garageState.js`, `src/render/garageScene.js`.
@@ -161,8 +168,8 @@ Legenda de modelo: **H** = Haiku basta (tarefa mecânica, contrato fechado, test
 - **Aceite:** `layer-preview.html` (aberto pelo servidor) mostra 3 perfis × 2 vistas usando `assetLoader` real; `sim-economy.mjs` reproduz a tabela 08 §8.4 (Normal h=6) com diferença ≤ 2 corridas em cada marco.
 
 ### T30 — Acabamento · S
-- **Arquivos:** `src/states/raceHud.js` (contramão, "Última volta!", tutorial), `src/states/*` (fade de transição), `src/ui/styles.css`.
-- **Aceite:** itens "Tutorial", "Transições", "Contramão" de 06 §6.3 e 07 §7.7 funcionando; nenhuma tela com texto cortado em 1024×768 e 1180×820.
+- **Arquivos:** `src/states/raceHud.js` ("Última volta!", tutorial), `src/states/*` (fade de transição), `src/ui/styles.css`.
+- **Aceite:** itens "Tutorial" e "Transições" de 06 §6.3 funcionando; nenhuma tela com texto cortado em 1024×768 e 1180×820.
 
 ### T31 — Teste no iPad · humano
 - Executar o checklist de [12-testes-ipad.md](12-testes-ipad.md) e abrir uma tarefa de correção por item reprovado.
@@ -172,7 +179,7 @@ Legenda de modelo: **H** = Haiku basta (tarefa mecânica, contrato fechado, test
 ```
 T01 → T02 → T03 → T04 → T05 → T06 → T07 → T08
                          T05 → T09 → T10 → T11 → T12a → T12b → T13
-T03 → T14 → T15 → T16 → T17 → T18 → T19 → T20 → T21 → T22 → T23
+T03 → T14 → T15 → T16 → T17 → T18 → T19a → T19b → T20 → T21 → T22 → T23
 T13 ─────────────────────────────────────┘ (T20 precisa de T13)
 T13 → T24 → T25 → T26a → T26b
 T21 → T27 → T28 → T29 → T30 → T31
